@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Emoji renders without errors and matches snapshot 1`] = `
+<div
+  aria-hidden="true"
+  aria-label=""
+  class="sc-bdfBwQ diaCZk"
+  role="img"
+>
+  😃
+</div>
+`;

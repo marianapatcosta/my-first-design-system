@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ itArps"
+>
+  <div
+    class="sc-gsTCUz fmiOCA"
+  >
+    <select
+      aria-label="Select "
+      class="sc-hKgILt BPORt"
+      name=""
+    >
+      <option
+        class="sc-eCssSg iESBah"
+        hidden=""
+        value=""
+      >
+        select an option
+      </option>
+      <option
+        class="sc-eCssSg iESBah"
+        value="option 1"
+      >
+        option 1
+      </option>
+      <option
+        class="sc-eCssSg iESBah"
+        value="option 2"
+      >
+        option 2
+      </option>
+      <option
+        class="sc-eCssSg iESBah"
+        value="option 3"
+      >
+        option 3
+      </option>
+    </select>
+  </div>
+</div>
+`;

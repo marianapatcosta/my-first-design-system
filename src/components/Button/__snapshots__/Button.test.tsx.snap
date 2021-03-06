@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders without errors and matches snapshot 1`] = `
+<button
+  class="sc-bdfBwQ eaMcSU"
+  id=""
+>
+  Button
+</button>
+`;
