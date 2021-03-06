@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders without errors and matches snapshot 1`] = `
+<label
+  class="sc-bdfBwQ cDBEUr"
+  id=""
+>
+  <input
+    class="sc-hKgILt fEjjZ"
+    name="Checkbox"
+    type="checkbox"
+  />
+  <div
+    class="sc-dlfnbm fOaMIF"
+  />
+  Checkbox
+</label>
+`;
