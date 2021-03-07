@@ -49,11 +49,9 @@ export const StyledDropdown = styled.div<{
 `;
 
 export const StyledDropdownLabel = styled.label<{ disabled?: boolean }>`
-  display: block;
   color: ${colors.highlight};
   margin: 0 0.8rem 0.3rem 0.3rem;
   font-size: 95%;
-  text-align: left;
   white-space: nowrap;
   text-overflow: ellipsis;
 
@@ -79,13 +77,10 @@ export const StyledDropdownHeader = styled.select`
   white-space: nowrap;
   text-overflow: ellipsis;
   position: relative;
+  cursor: pointer;
 
   ::-ms-expand {
     display: none;
-  }
-
-  :hover {
-    cursor: pointer;
   }
 
   ${({ disabled }) =>
@@ -93,9 +88,7 @@ export const StyledDropdownHeader = styled.select`
     `
     opacity: 0.75;
     pointer-events: none;
-    &:hover {  
-      cursor: default;
-    }
+    cursor: default;
     `}
 `;
 
@@ -103,9 +96,9 @@ export const StyledDropdownOption = styled.option`
   padding: 0.625rem 0.3rem;
   line-height: 4rem;
   box-sizing: border-box;
+  cursor: pointer;
 
   :hover {
-    cursor: pointer;
     background-color: ${colors.secondary} !important;
   }
 

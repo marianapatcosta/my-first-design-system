@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch renders without errors and matches snapshot 1`] = `
+<label
+  class="sc-bdfBwQ hzwUHJ"
+>
+  <input
+    class="sc-hKgILt jZJSDB"
+    name=""
+    type="checkbox"
+  />
+  <span
+    class="sc-dlfnbm eoKAYI"
+    data-testid="toggle-slider"
+    label=""
+  >
+    <span
+      class="sc-gsTCUz eFFOmb"
+    />
+    <span
+      class="sc-gsTCUz eFFOmb"
+    >
+      on
+    </span>
+  </span>
+</label>
+`;

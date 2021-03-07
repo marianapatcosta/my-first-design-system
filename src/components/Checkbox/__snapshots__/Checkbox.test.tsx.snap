@@ -11,7 +11,7 @@ exports[`Checkbox renders without errors and matches snapshot 1`] = `
     type="checkbox"
   />
   <div
-    class="sc-dlfnbm fOaMIF"
+    class="sc-dlfnbm cVmCWh"
   />
   Checkbox
 </label>

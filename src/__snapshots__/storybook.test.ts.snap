@@ -70,7 +70,7 @@ exports[`Storyshots Checkbox Default 1`] = `
     type="checkbox"
   />
   <div
-    className="sc-eCssSg iXgYrM"
+    className="sc-eCssSg hFUvHw"
     disabled={false}
   />
   Checkbox
@@ -87,7 +87,7 @@ exports[`Storyshots Dropdown Default 1`] = `
   >
     <select
       aria-label="Select "
-      className="sc-pFZIQ gHxVpY"
+      className="sc-pFZIQ fTwRts"
       disabled={false}
       name=""
       onBlur={[Function]}
@@ -98,26 +98,26 @@ exports[`Storyshots Dropdown Default 1`] = `
       value=""
     >
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         hidden={true}
         value=""
       >
         select an option
       </option>
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         value="option 1"
       >
         option 1
       </option>
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         value="option 2"
       >
         option 2
       </option>
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         value="option 3"
       >
         option 3
@@ -132,7 +132,7 @@ exports[`Storyshots Dropdown With Label 1`] = `
   className="sc-gKsewC hDqNhi"
 >
   <label
-    className="sc-fubCfw kIiqxd"
+    className="sc-fubCfw duEMxo"
     disabled={false}
     htmlFor="Example"
   >
@@ -144,7 +144,7 @@ exports[`Storyshots Dropdown With Label 1`] = `
   >
     <select
       aria-label="Select Example"
-      className="sc-pFZIQ gHxVpY"
+      className="sc-pFZIQ fTwRts"
       disabled={false}
       name="Example"
       onBlur={[Function]}
@@ -155,26 +155,26 @@ exports[`Storyshots Dropdown With Label 1`] = `
       value=""
     >
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         hidden={true}
         value=""
       >
         select an option
       </option>
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         value="option 1"
       >
         option 1
       </option>
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         value="option 2"
       >
         option 2
       </option>
       <option
-        className="sc-jrAGrp hIfFcH"
+        className="sc-jrAGrp bGGrQb"
         value="option 3"
       >
         option 3
@@ -567,4 +567,71 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
     </div>
   </section>
 </article>
+`;
+
+exports[`Storyshots ToggleSwitch Default 1`] = `
+<label
+  className="sc-iqHYGH fMfMxj"
+  disabled={false}
+>
+  <input
+    checked={false}
+    className="sc-bqyKva epswXi"
+    disabled={false}
+    name=""
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <span
+    checked={false}
+    className="sc-dQppl fTnEJG"
+    data-testid="toggle-slider"
+    disabled={false}
+    label=""
+  >
+    <span
+      className="sc-crrsfI eotjWY"
+      disabled={false}
+    />
+    <span
+      className="sc-crrsfI eotjWY"
+    >
+      on
+    </span>
+  </span>
+</label>
+`;
+
+exports[`Storyshots ToggleSwitch With Label 1`] = `
+<label
+  className="sc-iqHYGH fMfMxj"
+  disabled={false}
+>
+  <input
+    checked={false}
+    className="sc-bqyKva epswXi"
+    disabled={false}
+    name="ToggleSwitch"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  ToggleSwitch
+  <span
+    checked={false}
+    className="sc-dQppl knaYIg"
+    data-testid="toggle-slider"
+    disabled={false}
+    label="ToggleSwitch"
+  >
+    <span
+      className="sc-crrsfI eotjWY"
+      disabled={false}
+    />
+    <span
+      className="sc-crrsfI eotjWY"
+    >
+      on
+    </span>
+  </span>
+</label>
 `;

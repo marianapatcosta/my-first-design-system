@@ -38,24 +38,20 @@ export const StyledCheckboxToggle = styled.div<{ disabled?: boolean }>`
   border-radius: 0.2rem;
   background-color: ${colors.primary};
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 
   :hover {
-    cursor: pointer;
     opacity: 0.75;
   }
 
   ${({ disabled }) =>
     disabled
-      ? `
+      && `
       background-color: ${colors.disabled};
       opacity: 0.3;
       pointer-events: none;
-
-      &:hover {  
-        cursor: default;
-      }
-    `
-      : ''}
+      cursor: default;
+    `}
 `;
 
 export const StyledCheckboxInput = styled.input`
