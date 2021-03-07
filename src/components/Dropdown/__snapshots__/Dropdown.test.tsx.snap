@@ -9,30 +9,30 @@ exports[`Dropdown renders without errors and matches snapshot 1`] = `
   >
     <select
       aria-label="Select "
-      class="sc-hKgILt BPORt"
+      class="sc-hKgILt gObMHR"
       name=""
     >
       <option
-        class="sc-eCssSg iESBah"
+        class="sc-eCssSg kgbcsp"
         hidden=""
         value=""
       >
         select an option
       </option>
       <option
-        class="sc-eCssSg iESBah"
+        class="sc-eCssSg kgbcsp"
         value="option 1"
       >
         option 1
       </option>
       <option
-        class="sc-eCssSg iESBah"
+        class="sc-eCssSg kgbcsp"
         value="option 2"
       >
         option 2
       </option>
       <option
-        class="sc-eCssSg iESBah"
+        class="sc-eCssSg kgbcsp"
         value="option 3"
       >
         option 3

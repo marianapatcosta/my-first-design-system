@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Button, Card, Checkbox, Dropdown } from './components';
+import { Button, Card, Checkbox, Dropdown, ToggleSwitch } from './components';
 
 function App() {
   const [checked, setChecked] = useState(false);
@@ -23,6 +23,11 @@ function App() {
       <Button label='Hello' onClick={() => console.log('clicked')}></Button>
       <Checkbox
         label='checkbox'
+        checked={checked}
+        onChange={(e: any) => setChecked(e.target.checked)}
+      />
+       <ToggleSwitch
+        label='toggle'
         checked={checked}
         onChange={(e: any) => setChecked(e.target.checked)}
       />

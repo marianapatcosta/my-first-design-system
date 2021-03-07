@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { ToggleSwitch } from './ToggleSwitch';
+
+<Meta title="Design System|ToggleSwitch" component=ToggleSwitch />
+
+# ToggleSwitch
+Simple ToggleSwitch component, which mimics the checkbox behaviour but with different styling
+
+## Usage
+Use ToggleSwitch when the value alternates between two values
+
+- Default ToggleSwitch:
+  <Story name='Default'>
+    <ToggleSwitch checked={false}
+      leftLabel='off' 
+      rightLabel='on' 
+    />
+  </Story>
+
+- ToggleSwitch With Label:
+  <Story name='WithLabel'>
+    <ToggleSwitch checked={false}
+      leftLabel='off' 
+      rightLabel='on' 
+      label='ToggleSwitch' 
+    />
+  </Story>
+
+## Other important notes
+not applicable.
