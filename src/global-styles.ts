@@ -18,7 +18,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   * :focus:not(:focus-visible) {
-    border-color: ${colors.highlight};
     outline: none;
   }
 `;

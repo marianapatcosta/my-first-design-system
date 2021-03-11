@@ -1,0 +1,26 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { Search } from "./Search";
+
+<Meta title="Design System|Search" component={Search} />
+
+# Search
+use search field when it is supposed that the user provides some written information for searching purposes
+
+## Usage
+- Default Search:
+  <Story name='Default'>
+    <Search value='hello' />
+  </Story>
+
+- Expansible Search:
+  <Story name='Expansible'>
+    <Search value='hello' isExpandable={true}/>
+  </Story>
+
+- Search With Label:
+  <Story name='WithLabel'>
+    <Search value='hello' label='Search'/>
+  </Story>
+
+## Other important notes
+not applicable.

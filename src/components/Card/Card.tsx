@@ -1,4 +1,4 @@
-import React, { forwardRef, ReactNode } from 'react';
+import React, { CSSProperties, forwardRef, ReactNode } from 'react';
 import { StyledCard } from './Card.style';
 
 export interface CardProps {
@@ -10,6 +10,10 @@ export interface CardProps {
    * additional css class
    */
   className?: string;
+  /**
+   * additional style
+   */
+  style?: CSSProperties;
   /**
    * element id
    */
@@ -27,7 +31,8 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
 );
 
 Card.defaultProps = {
-  className: '',
   id: '',
+  className: '',
+  style: {},
   children: null,
 };

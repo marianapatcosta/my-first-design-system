@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { baseStyles, colors } from '../../styles';
+import { baseStyles, disabledStyles, colors } from '../../styles';
 
 export const StyledCheckbox = styled.label<{ disabled?: boolean }>`
   ${baseStyles}
@@ -14,7 +14,7 @@ export const StyledCheckbox = styled.label<{ disabled?: boolean }>`
   ${({ disabled }) =>
     disabled
       ? `
-      color: ${disabled};
+      color: ${colors.disabled};
     `
       : ''}
 `;
@@ -37,7 +37,7 @@ export const StyledCheckboxToggle = styled.div<{ disabled?: boolean }>`
   box-shadow: 0 0.063rem 0.25rem ${colors.shadow};
   border-radius: 0.2rem;
   background-color: ${colors.primary};
-  transition: all 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   cursor: pointer;
 
   :hover {
@@ -45,12 +45,10 @@ export const StyledCheckboxToggle = styled.div<{ disabled?: boolean }>`
   }
 
   ${({ disabled }) =>
-    disabled
-      && `
+    disabled &&
+    `
       background-color: ${colors.disabled};
-      opacity: 0.3;
-      pointer-events: none;
-      cursor: default;
+      ${disabledStyles}
     `}
 `;
 

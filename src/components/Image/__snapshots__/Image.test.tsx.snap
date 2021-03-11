@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ gjsWpT"
+>
+  <div
+    class="sc-dlfnbm cZjHnf"
+    data-testid="image-placeholder"
+  />
+  <img
+    alt=""
+    class="sc-gsTCUz jUMYtE"
+    data-testid="image"
+    id=""
+    loading="lazy"
+    role="img"
+    src="test.jpg"
+    tabindex="-1"
+  />
+</div>
+`;

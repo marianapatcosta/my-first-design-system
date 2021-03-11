@@ -1,0 +1,25 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { Textarea } from "./Textarea";
+
+<Meta title="Design System|Textarea" component={Textarea} />
+
+# Textarea
+use textarea when it is supposed that the user provides multi-line written information
+
+- Default Textarea:
+  <Story name='Default'>
+    <Textarea value='hello' />
+  </Story>
+
+- Textarea with Label:
+  <Story name='WithIcon'>
+    <Textarea value='hello' label='Input' />
+  </Story>
+
+- Textarea with Error:
+  <Story name='WithError'>
+    <Textarea value='hello' errorMessage='This is an error!' />
+  </Story>
+
+## Other important notes
+not applicable.

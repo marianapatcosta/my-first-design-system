@@ -3,8 +3,9 @@ import { render } from '@testing-library/react';
 import { {{pascalCase name}} } from './{{pascalCase name}}';
 
 describe('{{pascalCase name}}', () => {
+  const defaultProps = {};
    test('renders without errors and matches snapshot', () => {
-     const { container: { firstChild }  } = render(<{{pascalCase name}} />); 
+     const { container: { firstChild }  } = render(<{{pascalCase name}}  {...defaultProps}/>); 
 
      expect(firstChild).toMatchSnapshot();
    });

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ bSfouD"
+>
+  <label
+    class="sc-gsTCUz ecMFjJ"
+    for=""
+  >
+    Search
+  </label>
+  <div
+    class="sc-dlfnbm hoLpfF"
+  >
+    <input
+      class="sc-hKgILt dDwLED"
+      data-testid="search-field"
+      id=""
+      maxlength="150"
+      name=""
+      placeholder="Search"
+      type="search"
+      value="Hello"
+    />
+    <div
+      class="sc-eCssSg cUBvld"
+    >
+      <img
+        alt="clear-icon"
+        class="sc-jSgupP izDhMj"
+        data-testid="search-icon"
+        src="close.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

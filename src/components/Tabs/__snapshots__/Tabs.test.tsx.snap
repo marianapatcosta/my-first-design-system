@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-gsTCUz iAoJMQ"
+  id=""
+>
+  <div
+    class="sc-dlfnbm HXBti"
+  >
+    <ul
+      aria-label="Select "
+      class="sc-hKgILt dHFEmC"
+      role="tablist"
+    >
+      <li
+        aria-selected="true"
+        class="sc-bdfBwQ khaniN"
+        id=""
+        role="tab"
+        tabindex="0"
+      >
+        Tab 1
+      </li>
+      <li
+        aria-selected="false"
+        class="sc-bdfBwQ jQYLcU"
+        id=""
+        role="tab"
+        tabindex="0"
+      >
+        Tab 2
+      </li>
+    </ul>
+  </div>
+  <div
+    aria-labelledby="Tab 1"
+    class="sc-eCssSg"
+    role="tabpanel"
+  >
+    <div
+      class="sc-jSgupP jaxZJz"
+    />
+    <div>
+      Tab 1 content
+    </div>
+  </div>
+</div>
+`;

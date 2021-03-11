@@ -2,7 +2,7 @@
 
 exports[`Button renders without errors and matches snapshot 1`] = `
 <button
-  class="sc-bdfBwQ eaMcSU"
+  class="sc-bdfBwQ eUeOhf"
   id=""
 >
   Button

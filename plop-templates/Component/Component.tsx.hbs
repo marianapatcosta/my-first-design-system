@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { Styled{{ pascalCase name }} } from './{{pascalCase name}}.style';
 
 export interface {{ pascalCase name }}Props {
@@ -10,6 +10,10 @@ export interface {{ pascalCase name }}Props {
    * additional css class
    */
   className?: string;
+  /**
+   * additional style
+   */
+  style?: CSSProperties;
 };
 
 export const {{pascalCase name}}: React.FC<{{ pascalCase name }}Props>= ({ ...props}) => {
@@ -22,6 +26,7 @@ export const {{pascalCase name}}: React.FC<{{ pascalCase name }}Props>= ({ ...pr
 
 
 {{pascalCase name}}.defaultProps = {
+  id: '',
   className: '',
-  id: ''
+  style: {}
 };

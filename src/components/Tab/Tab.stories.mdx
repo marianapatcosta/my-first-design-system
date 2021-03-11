@@ -1,0 +1,23 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { Tab } from "./Tab";
+
+<Meta title="Design System|Tab" component={Tab} />
+
+# Tab
+Tab component to show a certain content that will be rendered when the tab is active
+
+## Usage
+Tab should be used as child of 'Tabs' component and its content is only rendered when the tab is active
+
+- Default Tab:
+  <Story name='Default'>
+    <Tab label='Tab 1'/>
+  </Story>
+
+- Active Tab:
+  <Story name='Active'>
+    <Tab label='Tab 1' isActive={true}/>
+  </Story>
+
+## Other important notes
+not applicable.

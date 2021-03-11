@@ -1,0 +1,22 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { Tabs } from "./Tabs";
+
+<Meta title="Design System|Tabs" component={Tabs} />
+
+# Tabs
+Simple Tabs component.
+
+## Usage
+Use Tabs when different contents should be shown in separate, according to the user's needs
+
+- Default Tabs:
+  <Story name='Default'>
+    <Tabs  tabsMetadata={[
+      { label: 'Tab 1', content: <div>Tab 1 content</div> },
+      { label: 'Tab 2', content: <div>Tab 2 content</div> },
+    ]}/>
+  </Story>
+
+
+## Other important notes
+not applicable.

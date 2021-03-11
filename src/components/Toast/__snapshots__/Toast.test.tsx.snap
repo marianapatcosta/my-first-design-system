@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ ilLozv"
+  id=""
+  type="info"
+>
+  <img
+    alt="info.svg icon"
+    class="sc-gsTCUz zGLeb"
+    src="info.svg"
+  />
+  <div
+    class="sc-dlfnbm ePtxbt"
+    type="info"
+  >
+    info toast
+  </div>
+</div>
+`;

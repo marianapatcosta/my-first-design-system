@@ -1,7 +1,8 @@
-import React, { forwardRef, MouseEventHandler } from 'react';
+import React, { CSSProperties, forwardRef, MouseEventHandler } from 'react';
 import { StyledButton } from './Button.style';
 
 type ButtonType = 'button' | 'submit' | 'reset' | undefined;
+type ButtonSize = 'small' | 'medium' | 'large';
 
 export interface ButtonProps {
   /**
@@ -13,6 +14,10 @@ export interface ButtonProps {
    */
   className?: string;
   /**
+   * additional style
+   */
+  style?: CSSProperties;
+  /**
    * Is this the principal call to action on the page?
    */
   primary?: boolean;
@@ -23,7 +28,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: ButtonSize;
   /**
    * Will the button occupy all the available width?
    */
@@ -66,13 +71,14 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 Button.defaultProps = {
+  id: '',
+  className: '',
+  style: {},
   primary: false,
   size: 'medium',
   isFullLength: false,
   label: '',
   disabled: false,
   type: 'button',
-  className: '',
-  id: '',
   onClick: () => null,
 };

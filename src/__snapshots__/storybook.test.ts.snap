@@ -1,11 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Accordion Default 1`] = `
+<div
+  className="sc-bdfBwQ enVKql"
+  id=""
+  onBlur={[Function]}
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <div
+    aria-disabled={false}
+    aria-expanded={false}
+    className="sc-gsTCUz hFBqhS"
+    disabled={false}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    Accordion title
+    <img
+      alt="chevron icon"
+      className="sc-dlfnbm lhIKrG"
+      src="chevron.svg"
+    />
+  </div>
+  <div
+    className="sc-hKgILt dxNlHL"
+  >
+    <div>
+      Accordion content 
+      <img
+        alt="test"
+        src="test.jpg"
+        style={
+          Object {
+            "width": "200px",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button Full Length 1`] = `
 <button
-  className="sc-bdfBwQ jskgaT"
+  className="sc-eCssSg kjcuDW"
   disabled={false}
   id=""
   onClick={[Function]}
+  style={Object {}}
 >
   Button
 </button>
@@ -13,10 +61,11 @@ exports[`Storyshots Button Full Length 1`] = `
 
 exports[`Storyshots Button Primary 1`] = `
 <button
-  className="sc-bdfBwQ cHEGHR"
+  className="sc-eCssSg tSYqM"
   disabled={false}
   id=""
   onClick={[Function]}
+  style={Object {}}
 >
   Button
 </button>
@@ -24,10 +73,11 @@ exports[`Storyshots Button Primary 1`] = `
 
 exports[`Storyshots Button Secondary 1`] = `
 <button
-  className="sc-bdfBwQ eaMcSU"
+  className="sc-eCssSg giGWyh"
   disabled={false}
   id=""
   onClick={[Function]}
+  style={Object {}}
 >
   Button
 </button>
@@ -35,10 +85,11 @@ exports[`Storyshots Button Secondary 1`] = `
 
 exports[`Storyshots Button Small 1`] = `
 <button
-  className="sc-bdfBwQ eaMcSU"
+  className="sc-eCssSg giGWyh"
   disabled={false}
   id=""
   onClick={[Function]}
+  style={Object {}}
 >
   Button
 </button>
@@ -46,8 +97,9 @@ exports[`Storyshots Button Small 1`] = `
 
 exports[`Storyshots Card Default Card 1`] = `
 <div
-  className="sc-gsTCUz NSVxM"
+  className="sc-jSgupP gHiVhP"
   id=""
+  style={Object {}}
 >
   <div>
     This is Card component
@@ -57,20 +109,21 @@ exports[`Storyshots Card Default Card 1`] = `
 
 exports[`Storyshots Checkbox Default 1`] = `
 <label
-  className="sc-dlfnbm eGQpqY"
+  className="sc-gKsewC estDAR"
   disabled={false}
   id=""
+  style={Object {}}
 >
   <input
     checked={false}
-    className="sc-jSgupP ybBTa"
+    className="sc-pFZIQ ikZDik"
     disabled={false}
     name="Checkbox"
     onChange={[Function]}
     type="checkbox"
   />
   <div
-    className="sc-eCssSg hFUvHw"
+    className="sc-fubCfw euywra"
     disabled={false}
   />
   Checkbox
@@ -79,15 +132,15 @@ exports[`Storyshots Checkbox Default 1`] = `
 
 exports[`Storyshots Dropdown Default 1`] = `
 <div
-  className="sc-gKsewC hDqNhi"
+  className="sc-jrAGrp ccnkRA"
 >
   <div
-    className="sc-iBPRYJ ixqzmC"
+    className="sc-kEjbxe ckRChg"
     disabled={false}
   >
     <select
       aria-label="Select "
-      className="sc-pFZIQ fTwRts"
+      className="sc-crrsfI hgTQgD"
       disabled={false}
       name=""
       onBlur={[Function]}
@@ -98,26 +151,26 @@ exports[`Storyshots Dropdown Default 1`] = `
       value=""
     >
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         hidden={true}
         value=""
       >
         select an option
       </option>
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         value="option 1"
       >
         option 1
       </option>
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         value="option 2"
       >
         option 2
       </option>
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         value="option 3"
       >
         option 3
@@ -129,22 +182,22 @@ exports[`Storyshots Dropdown Default 1`] = `
 
 exports[`Storyshots Dropdown With Label 1`] = `
 <div
-  className="sc-gKsewC hDqNhi"
+  className="sc-jrAGrp ccnkRA"
 >
   <label
-    className="sc-fubCfw duEMxo"
+    className="sc-iqHYGH wYduP"
     disabled={false}
     htmlFor="Example"
   >
     Example
   </label>
   <div
-    className="sc-iBPRYJ ixqzmC"
+    className="sc-kEjbxe ckRChg"
     disabled={false}
   >
     <select
       aria-label="Select Example"
-      className="sc-pFZIQ fTwRts"
+      className="sc-crrsfI hgTQgD"
       disabled={false}
       name="Example"
       onBlur={[Function]}
@@ -155,26 +208,26 @@ exports[`Storyshots Dropdown With Label 1`] = `
       value=""
     >
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         hidden={true}
         value=""
       >
         select an option
       </option>
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         value="option 1"
       >
         option 1
       </option>
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         value="option 2"
       >
         option 2
       </option>
       <option
-        className="sc-jrAGrp bGGrQb"
+        className="sc-dQppl bsMIta"
         value="option 3"
       >
         option 3
@@ -188,7 +241,7 @@ exports[`Storyshots Emoji Default 1`] = `
 <div
   aria-hidden="false"
   aria-label="smiley"
-  className="sc-kEjbxe lnVXgX"
+  className="sc-bqyKva eWviMC"
   role="img"
 >
   😃
@@ -231,10 +284,11 @@ exports[`Storyshots Example/Header Logged In 1`] = `
     </div>
     <div>
       <button
-        className="sc-bdfBwQ eaMcSU"
+        className="sc-eCssSg giGWyh"
         disabled={false}
         id=""
         onClick={[Function]}
+        style={Object {}}
       >
         Log out
       </button>
@@ -279,18 +333,20 @@ exports[`Storyshots Example/Header Logged Out 1`] = `
     </div>
     <div>
       <button
-        className="sc-bdfBwQ eaMcSU"
+        className="sc-eCssSg giGWyh"
         disabled={false}
         id=""
         onClick={[Function]}
+        style={Object {}}
       >
         Log in
       </button>
       <button
-        className="sc-bdfBwQ cHEGHR"
+        className="sc-eCssSg tSYqM"
         disabled={false}
         id=""
         onClick={[Function]}
+        style={Object {}}
       >
         Sign up
       </button>
@@ -336,10 +392,11 @@ exports[`Storyshots Example/Page Logged In 1`] = `
       </div>
       <div>
         <button
-          className="sc-bdfBwQ eaMcSU"
+          className="sc-eCssSg giGWyh"
           disabled={false}
           id=""
           onClick={[Function]}
+          style={Object {}}
         >
           Log out
         </button>
@@ -467,18 +524,20 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
       </div>
       <div>
         <button
-          className="sc-bdfBwQ eaMcSU"
+          className="sc-eCssSg giGWyh"
           disabled={false}
           id=""
           onClick={[Function]}
+          style={Object {}}
         >
           Log in
         </button>
         <button
-          className="sc-bdfBwQ cHEGHR"
+          className="sc-eCssSg tSYqM"
           disabled={false}
           id=""
           onClick={[Function]}
+          style={Object {}}
         >
           Sign up
         </button>
@@ -569,14 +628,630 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
 </article>
 `;
 
+exports[`Storyshots Image Clickable 1`] = `
+<div
+  className="sc-kstrdz hFNOsv"
+>
+  <div
+    className="sc-fodVxV evgPqt"
+    data-testid="image-placeholder"
+  />
+  <img
+    alt=""
+    className="sc-hBEYos gxAJla"
+    data-testid="image"
+    id=""
+    loading="lazy"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onLoad={[Function]}
+    role="button"
+    src="test.jpg"
+    style={
+      Object {
+        "width": "300px",
+      }
+    }
+    tabIndex={0}
+  />
+</div>
+`;
+
+exports[`Storyshots Image Default 1`] = `
+<div
+  className="sc-kstrdz hFNOsv"
+>
+  <div
+    className="sc-fodVxV evgPqt"
+    data-testid="image-placeholder"
+  />
+  <img
+    alt=""
+    className="sc-hBEYos bVdjAe"
+    data-testid="image"
+    id=""
+    loading="lazy"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onLoad={[Function]}
+    role="img"
+    src="test.jpg"
+    style={
+      Object {
+        "width": "300px",
+      }
+    }
+    tabIndex={-1}
+  />
+</div>
+`;
+
+exports[`Storyshots Image Zoomable 1`] = `
+<div
+  style={
+    Object {
+      "height": "200px",
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="sc-kstrdz hFNOsv"
+  >
+    <div
+      className="sc-fodVxV evgPqt"
+      data-testid="image-placeholder"
+    />
+    <img
+      alt=""
+      className="sc-hBEYos iqePNo"
+      data-testid="image"
+      id=""
+      loading="lazy"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onLoad={[Function]}
+      role="img"
+      src="test.jpg"
+      style={
+        Object {
+          "width": "300px",
+        }
+      }
+      tabIndex={-1}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input Default 1`] = `
+<div
+  className="sc-fFubgz dXlnAR"
+>
+  
+  <div
+    className="sc-bkzZxe fbHCTq"
+    disabled={false}
+  >
+    <input
+      autoComplete="off"
+      autoFocus={false}
+      className="sc-idOhPF kiyWqe"
+      data-testid="input-field"
+      disabled={false}
+      id=""
+      maxLength={150}
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      style={Object {}}
+      type="text"
+      value="hello"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input With Error 1`] = `
+<div
+  className="sc-fFubgz dXlnAR"
+>
+  
+  <div
+    className="sc-bkzZxe fbHCTq"
+    disabled={false}
+  >
+    <input
+      autoComplete="off"
+      autoFocus={false}
+      className="sc-idOhPF fMbSFs"
+      data-testid="input-field"
+      disabled={false}
+      id=""
+      maxLength={150}
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      style={Object {}}
+      type="text"
+      value="hello"
+    />
+    
+  </div>
+  <p
+    className="sc-dmlrTW gqjlru"
+  >
+    This is an error!
+  </p>
+</div>
+`;
+
+exports[`Storyshots Input With Icon 1`] = `
+<div
+  className="sc-fFubgz dXlnAR"
+>
+  
+  <div
+    className="sc-bkzZxe fbHCTq"
+    disabled={false}
+  >
+    <input
+      autoComplete="off"
+      autoFocus={false}
+      className="sc-idOhPF kiyWqe"
+      data-testid="input-field"
+      disabled={false}
+      id=""
+      maxLength={150}
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      style={Object {}}
+      type="text"
+      value="hello"
+    />
+    <img
+      alt=""
+      className="sc-hHftDr fZVjb"
+      data-testid="input-icon"
+      role=""
+      src="tick.svg"
+      tabIndex={-1}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input With Label 1`] = `
+<div
+  className="sc-fFubgz dXlnAR"
+>
+  <label
+    className="sc-dIUggk jrhDJm"
+    disabled={false}
+    htmlFor=""
+  >
+    Input
+  </label>
+  <div
+    className="sc-bkzZxe fbHCTq"
+    disabled={false}
+  >
+    <input
+      autoComplete="off"
+      autoFocus={false}
+      className="sc-idOhPF kiyWqe"
+      data-testid="input-field"
+      disabled={false}
+      id=""
+      maxLength={150}
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      style={Object {}}
+      type="text"
+      value="hello"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Modal Default 1`] = `
+<div
+  className="sc-kfzAmx fmJzuD"
+  id=""
+  style={Object {}}
+/>
+`;
+
+exports[`Storyshots Search Default 1`] = `
+<div
+  className="sc-fKFyDc gUJrTO"
+>
+  
+  <div
+    className="sc-iwyYcG ktiuNA"
+  >
+    <input
+      className="sc-cxFLnm hZCejo"
+      data-testid="search-field"
+      disabled={false}
+      id=""
+      maxLength={150}
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      style={Object {}}
+      type="search"
+      value=""
+    />
+    <div
+      className="sc-lmoMRL fPICtK"
+    >
+      <img
+        alt="magnifying-glass-icon"
+        className="sc-iJuUWI SCJUF"
+        data-testid="search-icon"
+        onClick={[Function]}
+        src="magnifying-glass.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Search Expansible 1`] = `
+<div
+  className="sc-fKFyDc gUJrTO"
+>
+  
+  <div
+    className="sc-iwyYcG kUHmRY"
+  >
+    <input
+      className="sc-cxFLnm bQnvvr"
+      data-testid="search-field"
+      disabled={false}
+      id=""
+      maxLength={150}
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      style={Object {}}
+      type="search"
+      value=""
+    />
+    <div
+      className="sc-lmoMRL fPICtK"
+    >
+      <img
+        alt="magnifying-glass-icon"
+        className="sc-iJuUWI BlMPp"
+        data-testid="search-icon"
+        onClick={[Function]}
+        src="magnifying-glass.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Search With Label 1`] = `
+<div
+  className="sc-fKFyDc gUJrTO"
+>
+  <label
+    className="sc-bBXqnf diGcNE"
+    disabled={false}
+    htmlFor=""
+  >
+    Search
+  </label>
+  <div
+    className="sc-iwyYcG ktiuNA"
+  >
+    <input
+      className="sc-cxFLnm hZCejo"
+      data-testid="search-field"
+      disabled={false}
+      id=""
+      maxLength={150}
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      style={Object {}}
+      type="search"
+      value=""
+    />
+    <div
+      className="sc-lmoMRL fPICtK"
+    >
+      <img
+        alt="magnifying-glass-icon"
+        className="sc-iJuUWI SCJUF"
+        data-testid="search-icon"
+        onClick={[Function]}
+        src="magnifying-glass.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ShowMore Default 1`] = `
+<div
+  className="sc-giIncl iNVRnK"
+  id=""
+  style={Object {}}
+/>
+`;
+
+exports[`Storyshots Tab Active 1`] = `
+<li
+  aria-selected={true}
+  className="sc-ezrdKe dlxQau"
+  disabled={false}
+  id=""
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="tab"
+  style={Object {}}
+  tabIndex={0}
+>
+  Tab 1
+</li>
+`;
+
+exports[`Storyshots Tab Default 1`] = `
+<li
+  aria-selected={false}
+  className="sc-ezrdKe gzkZmf"
+  disabled={false}
+  id=""
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="tab"
+  style={Object {}}
+  tabIndex={0}
+>
+  Tab 1
+</li>
+`;
+
+exports[`Storyshots Tabs Default 1`] = `
+<div
+  className="sc-bYEvPH fQmerA"
+  id=""
+  style={Object {}}
+>
+  <div
+    className="sc-kLgntA iQIBgy"
+  >
+    <ul
+      aria-label="Select "
+      className="sc-iktFzd dxYNHZ"
+      role="tablist"
+    >
+      <li
+        aria-selected={true}
+        className="sc-ezrdKe dlxQau"
+        disabled={false}
+        id=""
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+        style={Object {}}
+        tabIndex={0}
+      >
+        Tab 1
+      </li>
+      <li
+        aria-selected={false}
+        className="sc-ezrdKe gzkZmf"
+        disabled={false}
+        id=""
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+        style={Object {}}
+        tabIndex={0}
+      >
+        Tab 2
+      </li>
+    </ul>
+  </div>
+  <div
+    aria-labelledby="Tab 1"
+    className="sc-jJEJSO"
+    role="tabpanel"
+  >
+    <div
+      className="sc-hiSbYr ftGRQD"
+    />
+    <div>
+      Tab 1 content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Textarea Default 1`] = `
+<div
+  className="sc-gWHgXt jfhPce"
+>
+  <textarea
+    className="sc-cBNfnY juJrhQ"
+    data-testid="textarea-field"
+    disabled={false}
+    id=""
+    name=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    rows={5}
+    style={Object {}}
+    value="hello"
+  />
+</div>
+`;
+
+exports[`Storyshots Textarea With Error 1`] = `
+<div
+  className="sc-gWHgXt jfhPce"
+>
+  <textarea
+    className="sc-cBNfnY ka-DjTO"
+    data-testid="textarea-field"
+    disabled={false}
+    id=""
+    name=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    rows={5}
+    style={Object {}}
+    value="hello"
+  />
+  <p
+    className="sc-jcVebW jihOAS"
+  >
+    This is an error!
+  </p>
+</div>
+`;
+
+exports[`Storyshots Textarea With Label 1`] = `
+<div
+  className="sc-gWHgXt jfhPce"
+>
+  <label
+    className="sc-citwmv iTCEpu"
+    disabled={false}
+    htmlFor=""
+  >
+    Textarea
+  </label>
+  <textarea
+    className="sc-cBNfnY juJrhQ"
+    data-testid="textarea-field"
+    disabled={false}
+    id=""
+    name=""
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    rows={5}
+    style={Object {}}
+    value="hello"
+  />
+</div>
+`;
+
+exports[`Storyshots Toast Alert 1`] = `
+<div
+  className="sc-bZSQDF ghLeVC"
+  id=""
+  style={Object {}}
+  type="alert"
+>
+  <img
+    alt="alert.svg icon"
+    className="sc-iUuytg ecTAIg"
+    src="alert.svg"
+  />
+  <div
+    className="sc-iBaPrD kOEA-DW"
+    type="alert"
+  >
+    alert toast
+  </div>
+</div>
+`;
+
+exports[`Storyshots Toast Info 1`] = `
+<div
+  className="sc-bZSQDF fwlSUD"
+  id=""
+  style={Object {}}
+  type="info"
+>
+  <img
+    alt="info.svg icon"
+    className="sc-iUuytg ecTAIg"
+    src="info.svg"
+  />
+  <div
+    className="sc-iBaPrD kOEA-DW"
+    type="info"
+  >
+    info toast
+  </div>
+</div>
+`;
+
+exports[`Storyshots Toast Success 1`] = `
+<div
+  className="sc-bZSQDF zTKKH"
+  id=""
+  style={Object {}}
+  type="success"
+>
+  <img
+    alt="success.svg icon"
+    className="sc-iUuytg ecTAIg"
+    src="success.svg"
+  />
+  <div
+    className="sc-iBaPrD kOEA-DW"
+    type="success"
+  >
+    success toast
+  </div>
+</div>
+`;
+
+exports[`Storyshots Toast Warning 1`] = `
+<div
+  className="sc-bZSQDF eWLxil"
+  id=""
+  style={Object {}}
+  type="warning"
+>
+  <img
+    alt="warning.svg icon"
+    className="sc-iUuytg ecTAIg"
+    src="warning.svg"
+  />
+  <div
+    className="sc-iBaPrD kOEA-DW"
+    type="warning"
+  >
+    warning toast
+  </div>
+</div>
+`;
+
 exports[`Storyshots ToggleSwitch Default 1`] = `
 <label
-  className="sc-iqHYGH fMfMxj"
+  className="sc-eggNIi bByaAq"
   disabled={false}
+  style={Object {}}
 >
   <input
     checked={false}
-    className="sc-bqyKva epswXi"
+    className="sc-dOSReg bHWnAQ"
     disabled={false}
     name=""
     onChange={[Function]}
@@ -584,17 +1259,17 @@ exports[`Storyshots ToggleSwitch Default 1`] = `
   />
   <span
     checked={false}
-    className="sc-dQppl fTnEJG"
+    className="sc-jNMdTA dsmTrH"
     data-testid="toggle-slider"
     disabled={false}
     label=""
   >
     <span
-      className="sc-crrsfI eotjWY"
+      className="sc-cTkwdZ fLTiHu"
       disabled={false}
     />
     <span
-      className="sc-crrsfI eotjWY"
+      className="sc-cTkwdZ fLTiHu"
     >
       on
     </span>
@@ -604,12 +1279,13 @@ exports[`Storyshots ToggleSwitch Default 1`] = `
 
 exports[`Storyshots ToggleSwitch With Label 1`] = `
 <label
-  className="sc-iqHYGH fMfMxj"
+  className="sc-eggNIi bByaAq"
   disabled={false}
+  style={Object {}}
 >
   <input
     checked={false}
-    className="sc-bqyKva epswXi"
+    className="sc-dOSReg bHWnAQ"
     disabled={false}
     name="ToggleSwitch"
     onChange={[Function]}
@@ -618,20 +1294,34 @@ exports[`Storyshots ToggleSwitch With Label 1`] = `
   ToggleSwitch
   <span
     checked={false}
-    className="sc-dQppl knaYIg"
+    className="sc-jNMdTA erzGCT"
     data-testid="toggle-slider"
     disabled={false}
     label="ToggleSwitch"
   >
     <span
-      className="sc-crrsfI eotjWY"
+      className="sc-cTkwdZ fLTiHu"
       disabled={false}
     />
     <span
-      className="sc-crrsfI eotjWY"
+      className="sc-cTkwdZ fLTiHu"
     >
       on
     </span>
   </span>
 </label>
+`;
+
+exports[`Storyshots Tooltip Default 1`] = `
+<div
+  className="sc-bBrOnJ bzdtwM"
+  id=""
+  style={
+    Object {
+      "marginLeft": "100px",
+    }
+  }
+>
+  Tooltip
+</div>
 `;

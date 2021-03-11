@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { baseStyles, colors, typography } from '../../styles';
+import { baseStyles, disabledStyles, colors } from '../../styles';
 
 export const StyledButton = styled.button<{
   primary?: boolean;
@@ -14,7 +14,6 @@ export const StyledButton = styled.button<{
   cursor: pointer;
   font-size: 90%;
   min-width: 6.25rem;
-  font-family: ${typography.type.body};
 
   :hover {
     opacity: 0.75;
@@ -23,8 +22,7 @@ export const StyledButton = styled.button<{
   :disabled,
   :hover:disabled,
   :active:disabled {
-    opacity: 0.3;
-    pointer-events: none;
+    ${disabledStyles}
   }
 
   ${({ primary }) =>

@@ -7,3 +7,10 @@ export enum KEYBOARD_KEYS {
   RIGHT_ARROW_KEY = 'ArrowRight',
   DOWN_ARROW_KEY = 'ArrowDown',
 }
+
+export enum TOAST_TYPES {
+  ALERT = 'alert',
+  INFO = 'info',
+  SUCCESS = 'success',
+  WARNING = 'warning',
+}

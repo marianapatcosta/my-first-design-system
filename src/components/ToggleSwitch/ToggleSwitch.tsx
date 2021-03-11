@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, CSSProperties } from 'react';
 import {
   StyledToggleSwitch,
   StyledToggleSwitchLabel,
@@ -15,6 +15,11 @@ export interface ToggleSwitchProps {
    * additional css class
    */
   className?: string;
+  /**
+   * additional style
+   */
+  style?: CSSProperties;
+  /**
   /**
    * ToggleSwitch's label
    */
@@ -47,6 +52,7 @@ export interface ToggleSwitchProps {
 
 export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
   className,
+  style,
   name,
   label,
   leftLabel,
@@ -56,7 +62,7 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
   onChange,
 }) => {
   return (
-    <StyledToggleSwitch className={className} disabled={disabled}>
+    <StyledToggleSwitch className={className} style={style} disabled={disabled}>
       <StyledToggleInput
         type='checkbox'
         name={name || label}
@@ -71,10 +77,10 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
         label={label}
         data-testid='toggle-slider'
       >
-        <StyledToggleSwitchLabel disabled={disabled} >
+        <StyledToggleSwitchLabel disabled={disabled}>
           {checked && leftLabel}
         </StyledToggleSwitchLabel>
-        <StyledToggleSwitchLabel >
+        <StyledToggleSwitchLabel>
           {!checked && rightLabel}
         </StyledToggleSwitchLabel>
       </StyledToggleSwitchSlider>
@@ -83,8 +89,9 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
 };
 
 ToggleSwitch.defaultProps = {
-  className: '',
   id: '',
+  className: '',
+  style: {},
   name: '',
   label: '',
   leftLabel: '',
