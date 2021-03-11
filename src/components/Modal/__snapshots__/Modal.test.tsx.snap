@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ cUiAAY"
+  id=""
+/>
+`;

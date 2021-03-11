@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, CSSProperties } from 'react';
 import { Tick } from '../../assets/icons';
 import {
   StyledCheckbox,
@@ -16,6 +16,10 @@ export interface CheckboxProps {
    * additional css class
    */
   className?: string;
+  /**
+   * additional style
+   */
+  style?: CSSProperties;
   /**
    * Checkbox's label
    */
@@ -65,8 +69,9 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 };
 
 Checkbox.defaultProps = {
-  className: '',
   id: '',
+  className: '',
+  style: {},
   name: '',
   label: '',
   checked: false,

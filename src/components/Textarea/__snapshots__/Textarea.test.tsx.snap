@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ krvrKR"
+>
+  <label
+    class="sc-dlfnbm fSTPRX"
+    for=""
+  >
+    textarea
+  </label>
+  <textarea
+    class="sc-gsTCUz iOpeue"
+    data-testid="textarea-field"
+    id=""
+    name=""
+    placeholder=""
+    rows="5"
+  >
+    Hello
+  </textarea>
+</div>
+`;

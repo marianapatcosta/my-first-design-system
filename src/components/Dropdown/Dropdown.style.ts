@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { baseStyles, colors  } from '../../styles';
+import { baseStyles, disabledStyles, colors } from '../../styles';
 
 export const StyledDropdownContainer = styled.div`
   ${baseStyles}
@@ -34,15 +34,11 @@ export const StyledDropdown = styled.div<{
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
 
-    ${({ isExpanded }) =>
-      isExpanded
-        ? `
-          transform: rotate(225deg);
-        `
-        : ''}
+    ${({ isExpanded }) => isExpanded && `transform: rotate(225deg);`}
 
     ${({ disabled }) =>
-      `  border-bottom-color: ${disabled && colors.disabled};
+      disabled &&
+      ` border-bottom-color: ${disabled && colors.disabled};
         border-right-color: ${disabled && colors.disabled};
         `}
   }
@@ -55,9 +51,7 @@ export const StyledDropdownLabel = styled.label<{ disabled?: boolean }>`
   white-space: nowrap;
   text-overflow: ellipsis;
 
-  ${({ disabled }) =>
-    `   color: ${disabled ? colors.disabled : ''};
-    `}
+  ${({ disabled }) => disabled && `${disabledStyles}`}
 `;
 
 export const StyledDropdownHeader = styled.select`
@@ -83,13 +77,7 @@ export const StyledDropdownHeader = styled.select`
     display: none;
   }
 
-  ${({ disabled }) =>
-    disabled &&
-    `
-    opacity: 0.75;
-    pointer-events: none;
-    cursor: default;
-    `}
+  ${({ disabled }) => disabled && ` ${disabledStyles}`}
 `;
 
 export const StyledDropdownOption = styled.option`

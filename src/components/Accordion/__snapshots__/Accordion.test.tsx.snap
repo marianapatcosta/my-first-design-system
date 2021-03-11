@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ enVKql"
+  id=""
+>
+  <div
+    aria-disabled="false"
+    aria-expanded="false"
+    class="sc-gsTCUz hFBqhS"
+    role="button"
+    tabindex="0"
+  >
+    Accordion title
+    <img
+      alt="chevron icon"
+      class="sc-dlfnbm lhIKrG"
+      src="chevron.svg"
+    />
+  </div>
+  <div
+    class="sc-hKgILt dxNlHL"
+  >
+    Accordion content
+  </div>
+</div>
+`;

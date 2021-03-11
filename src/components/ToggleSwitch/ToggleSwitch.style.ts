@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import { baseStyles, colors } from '../../styles';
+import { baseStyles, disabledStyles, colors } from '../../styles';
 
-export const StyledToggleSwitch = styled.label<{
-  disabled?: boolean;
-}>`
+export const StyledToggleSwitch = styled.label<{ disabled?: boolean }>`
   ${baseStyles}
   display: flex;
   align-items: center;
@@ -16,12 +14,7 @@ export const StyledToggleSwitch = styled.label<{
   overflow: hidden;
   text-overflow: ellipsis;
 
-  ${({ disabled }) =>
-    disabled &&
-    `
-      color: ${colors.disabled};
-      cursor: default;
-    `}
+  ${({ disabled }) => disabled && `${disabledStyles} color: ${colors.disabled}`}
 `;
 
 export const StyledToggleSwitchLabel = styled.span<{ disabled?: boolean }>`
@@ -32,13 +25,7 @@ export const StyledToggleSwitchLabel = styled.span<{ disabled?: boolean }>`
   user-select: none;
   cursor: pointer;
 
-  ${({ disabled }) =>
-    disabled
-      ? `
-      color: ${colors.disabled};
-      cursor: default;
-    `
-      : ''}
+  ${({ disabled }) => disabled && `${disabledStyles}`}
 `;
 
 export const StyledToggleSwitchSlider = styled.span<{
@@ -57,9 +44,9 @@ export const StyledToggleSwitchSlider = styled.span<{
   line-height: 85%;
   position: relative;
   padding: 0.125rem;
+  margin: 0.125rem;
   transition: 0.4s;
   -webkit-transition: 0.4s;
-  margin: 0.125rem;
 
   :hover {
     opacity: 0.75;
@@ -83,36 +70,18 @@ export const StyledToggleSwitchSlider = styled.span<{
     -o-border-radius: 50%;
   }
 
-  ${({ label }) =>
-    label &&
-    `
-  margin-left: 0.5rem;`}
-
-  ${({ disabled }) =>
-    disabled &&
-    `
-      border: 0.063rem solid ${colors.disabled};
-      opacity: 0.3;
-      pointer-events: none;
-      cursor: default;
-
-      :before {
-        background-color: ${colors.disabled};
-        opacity: 0.8;
-      }
-    `}
+  ${({ label }) => label && `margin-left: 0.5rem;`}
 
   ${({ checked }) =>
-    checked
-      ? `
+    checked &&
+    `
       background-color: ${colors.secondary};
 
       :before {
         opacity: 1;
         transform: translateX(1.5rem);
       }
-    `
-      : ''}
+    `}
 `;
 
 export const StyledToggleInput = styled.input`

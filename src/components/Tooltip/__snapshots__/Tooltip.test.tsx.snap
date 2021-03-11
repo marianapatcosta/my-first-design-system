@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ llGMZx"
+  id=""
+>
+  Tooltip
+</div>
+`;

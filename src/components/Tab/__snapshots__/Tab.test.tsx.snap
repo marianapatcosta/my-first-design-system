@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab renders without errors and matches snapshot 1`] = `
+<li
+  aria-selected="false"
+  class="sc-bdfBwQ jQYLcU"
+  id=""
+  role="tab"
+  tabindex="0"
+>
+  Tab 1
+</li>
+`;

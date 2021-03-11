@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ bSfouD"
+>
+  <label
+    class="sc-hKgILt gHTKjQ"
+    for=""
+  >
+    Input
+  </label>
+  <div
+    class="sc-gsTCUz ExCDi"
+  >
+    <input
+      autocomplete="off"
+      class="sc-dlfnbm judfll"
+      data-testid="input-field"
+      id=""
+      maxlength="150"
+      name=""
+      placeholder=""
+      type="text"
+      value="Hello"
+    />
+    
+  </div>
+</div>
+`;

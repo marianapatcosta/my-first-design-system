@@ -18,3 +18,10 @@ export const baseStyles = css`
     outline: none;
   }
 `;
+
+export const disabledStyles = css`
+  opacity: 0.3;
+  pointer-events: none;
+  user-select: none;
+  cursor: default;
+`;

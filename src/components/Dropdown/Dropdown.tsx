@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from 'react';
+import React, { ChangeEvent, CSSProperties, KeyboardEvent, useState } from 'react';
 import { KEYBOARD_KEYS } from '../../constants';
 import {
   StyledDropdown,
@@ -17,6 +17,10 @@ export interface DropdownProps {
    * additional css class
    */
   className?: string;
+    /**
+   * additional style
+   */
+  style?: CSSProperties;
   /**
    * Dropdown's label
    */
@@ -62,7 +66,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
   optionKey,
   onChooseOption,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const handleOptionChange = (event: ChangeEvent<HTMLSelectElement>) => {
     event.stopPropagation();
     onChooseOption(event);
@@ -123,8 +127,9 @@ export const Dropdown: React.FC<DropdownProps> = ({
 };
 
 Dropdown.defaultProps = {
-  className: '',
   id: '',
+  className: '',
+  style: {},
   name: '',
   label: '',
   placeholder: '',

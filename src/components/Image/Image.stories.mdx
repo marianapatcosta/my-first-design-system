@@ -1,0 +1,33 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { Image } from "./Image";
+import Test from '../../assets/images/test.jpg';
+
+<Meta title="Design System|Image" component={Image} />
+
+# Image
+Simple Image component
+
+## Usage
+use image to render images and have a placeholder when the image is not loaded yet 
+'Clickable' image can trigger a click event on click;
+'Zoomable' image applies zoom in/out onclick; must have width defined;
+
+- Default Image:
+  <Story name='Default'>
+    <Image src={Test}/>
+  </Story>
+
+- Clickable Image:
+  <Story name='Clickable'>
+    <Image src={Test} isClickable={true} onClick={() => console.log('clicked!')} />
+  </Story>
+
+- Zoomable Image:
+  <Story name='Zoomable'>
+    <div style={{ width: '300px' , height: '200px' }}>
+      <Image src={Test} isZoomable={true} />
+    </div>
+  </Story>
+
+## Other important notes
+not applicable.

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { StyledEmoji } from './Emoji.style';
 
 export interface EmojiProps {
@@ -10,6 +10,10 @@ export interface EmojiProps {
    * additional css class
    */
   className?: string;
+  /**
+   * additional style
+   */
+  style?: CSSProperties;
   /**
    * element's label'
    */
@@ -33,8 +37,9 @@ export const Emoji: React.FC<EmojiProps> = ({ label, emoji }) => {
 };
 
 Emoji.defaultProps = {
-  className: '',
   id: '',
+  className: '',
+  style: {},
   label: '',
   emoji: null,
 };
