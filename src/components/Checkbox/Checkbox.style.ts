@@ -1,29 +1,28 @@
 import styled from 'styled-components';
-import { baseStyles, disabledStyles, colors } from '../../styles';
+import {
+  baseStyles,
+  disabledStyles,
+  colors,
+  truncateStyles,
+} from '../../styles';
 
 export const StyledCheckbox = styled.label<{ disabled?: boolean }>`
-  ${baseStyles}
+  ${baseStyles};
+  ${truncateStyles};
   display: flex;
   width: 100%;
   font-size: 95%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: ${colors.highlight};
 
   ${({ disabled }) =>
     disabled
-      ? `
-      color: ${colors.disabled};
-    `
-      : ''}
+      && `color: ${colors.disabled};`}
 `;
 
 export const StyledCheckboxToggleTick = styled.img`
   width: 1rem;
   height: 1rem;
-  filter: invert(98%) sepia(26%) saturate(2%) hue-rotate(98deg) brightness(116%)
-    contrast(100%);
+  ${colors.icon};
 `;
 
 export const StyledCheckboxToggle = styled.div<{ disabled?: boolean }>`

@@ -2,14 +2,14 @@
 
 exports[`Dropdown renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ itArps"
+  class="sc-bdfBwQ gmhHJm"
 >
   <div
-    class="sc-gsTCUz edyJcn"
+    class="sc-gsTCUz hLxDNj"
   >
     <select
       aria-label="Select "
-      class="sc-hKgILt gObMHR"
+      class="sc-hKgILt hxRLa-D"
       name=""
     >
       <option

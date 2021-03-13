@@ -2,7 +2,7 @@
 
 exports[`ToggleSwitch renders without errors and matches snapshot 1`] = `
 <label
-  class="sc-bdfBwQ hzwUHJ"
+  class="sc-bdfBwQ LpMpT"
 >
   <input
     class="sc-hKgILt jZJSDB"

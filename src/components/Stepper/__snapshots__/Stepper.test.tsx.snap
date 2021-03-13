@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper should render without errors and matches snapshot 1`] = `
+<div
+  class="sc-eCssSg kPWSdA"
+  data-steps="3"
+  id=""
+>
+  <ul
+    aria-label="progress"
+    class="sc-jSgupP bFkA-dv"
+    role="group"
+  >
+    <progress
+      class="sc-iBPRYJ hsnDam"
+      max="100"
+      value="0"
+    />
+    <li
+      aria-current="step"
+      class="sc-gKsewC iQAMcE"
+    >
+      1
+    </li>
+    <li
+      aria-current="step"
+      class="sc-gKsewC FsmaJ"
+    >
+      2
+    </li>
+    <li
+      aria-current="step"
+      class="sc-gKsewC FsmaJ"
+    >
+      3
+    </li>
+  </ul>
+  <div
+    class="sc-fubCfw kVPOkw"
+  >
+    <div
+      class="sc-pFZIQ fiTKve"
+    >
+      <div
+        class="sc-bdfBwQ kcDtUs"
+        id=""
+      >
+        <p>
+          Step 1 content
+        </p>
+      </div>
+      <div
+        class="sc-bdfBwQ gmDwpK"
+        id=""
+      >
+        <p>
+          Step 2 content
+        </p>
+      </div>
+      <div
+        class="sc-bdfBwQ gmDwpK"
+        id=""
+      >
+        <p>
+          Step 3 content
+        </p>
+      </div>
+    </div>
+    <footer
+      class="sc-jrAGrp bykmwW"
+    >
+      <button
+        class="sc-gsTCUz fOjZNc sc-kEjbxe sc-iqHYGH loVkLi ijhVeU"
+        data-testid="next-button"
+        id=""
+        type="button"
+      >
+        <img
+          alt=""
+          class="sc-hKgILt VuIIP"
+          data-testid="button-icon"
+          label=""
+          src="double-chevron.svg"
+        />
+        
+      </button>
+    </footer>
+  </div>
+</div>
+`;

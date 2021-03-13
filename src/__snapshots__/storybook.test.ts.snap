@@ -2,7 +2,7 @@
 
 exports[`Storyshots Accordion Default 1`] = `
 <div
-  className="sc-bdfBwQ enVKql"
+  className="sc-bdfBwQ cyKrOT"
   id=""
   onBlur={[Function]}
   style={
@@ -24,7 +24,7 @@ exports[`Storyshots Accordion Default 1`] = `
     Accordion title
     <img
       alt="chevron icon"
-      className="sc-dlfnbm lhIKrG"
+      className="sc-dlfnbm crIBv"
       src="chevron.svg"
     />
   </div>
@@ -49,57 +49,173 @@ exports[`Storyshots Accordion Default 1`] = `
 
 exports[`Storyshots Button Full Length 1`] = `
 <button
-  className="sc-eCssSg kjcuDW"
+  className="sc-eCssSg hKGSHc"
   disabled={false}
   id=""
   onClick={[Function]}
+  size="medium"
   style={Object {}}
+  type="button"
 >
-  Button
+  
+  <span
+    className="sc-jSgupP eUZApH"
+  >
+    Full length button
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button Icon 1`] = `
+<button
+  className="sc-eCssSg eGIcsz"
+  disabled={false}
+  id=""
+  onClick={[Function]}
+  size="small"
+  style={Object {}}
+  type="button"
+>
+  <img
+    alt=""
+    className="sc-gKsewC hjbgKA"
+    data-testid="button-icon"
+    label=""
+    src="success.svg"
+  />
+  
+</button>
+`;
+
+exports[`Storyshots Button Large 1`] = `
+<button
+  className="sc-eCssSg kjrsjM"
+  disabled={false}
+  id=""
+  onClick={[Function]}
+  size="large"
+  style={Object {}}
+  type="button"
+>
+  
+  <span
+    className="sc-jSgupP eUZApH"
+  >
+    This is large button
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button Medium 1`] = `
+<button
+  className="sc-eCssSg guAkEj"
+  disabled={false}
+  id=""
+  onClick={[Function]}
+  size="medium"
+  style={Object {}}
+  type="button"
+>
+  
+  <span
+    className="sc-jSgupP eUZApH"
+  >
+    Medium button
+  </span>
 </button>
 `;
 
 exports[`Storyshots Button Primary 1`] = `
 <button
-  className="sc-eCssSg tSYqM"
+  className="sc-eCssSg ejOtqW"
   disabled={false}
   id=""
   onClick={[Function]}
+  size="medium"
   style={Object {}}
+  type="button"
 >
-  Button
+  
+  <span
+    className="sc-jSgupP eUZApH"
+  >
+    Primary button
+  </span>
 </button>
 `;
 
 exports[`Storyshots Button Secondary 1`] = `
 <button
-  className="sc-eCssSg giGWyh"
+  className="sc-eCssSg guAkEj"
   disabled={false}
   id=""
   onClick={[Function]}
+  size="medium"
   style={Object {}}
+  type="button"
 >
-  Button
+  
+  <span
+    className="sc-jSgupP eUZApH"
+  >
+    Seconday button
+  </span>
 </button>
 `;
 
 exports[`Storyshots Button Small 1`] = `
 <button
-  className="sc-eCssSg giGWyh"
+  className="sc-eCssSg krpAmW"
   disabled={false}
   id=""
   onClick={[Function]}
+  size="small"
   style={Object {}}
+  type="button"
 >
-  Button
+  
+  <span
+    className="sc-jSgupP eUZApH"
+  >
+    Small button
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button With Icon 1`] = `
+<button
+  className="sc-eCssSg ejOtqW"
+  disabled={false}
+  id=""
+  onClick={[Function]}
+  size="medium"
+  style={Object {}}
+  type="button"
+>
+  <img
+    alt=""
+    className="sc-gKsewC kcRjzf"
+    data-testid="button-icon"
+    label="icon button"
+    src="success.svg"
+  />
+  <span
+    className="sc-jSgupP eUZApH"
+  >
+    icon button
+  </span>
 </button>
 `;
 
 exports[`Storyshots Card Default Card 1`] = `
 <div
-  className="sc-jSgupP gHiVhP"
+  className="sc-iBPRYJ PuMGI"
   id=""
-  style={Object {}}
+  style={
+    Object {
+      "width": "400px",
+    }
+  }
 >
   <div>
     This is Card component
@@ -109,21 +225,21 @@ exports[`Storyshots Card Default Card 1`] = `
 
 exports[`Storyshots Checkbox Default 1`] = `
 <label
-  className="sc-gKsewC estDAR"
+  className="sc-fubCfw jqBYfx"
   disabled={false}
   id=""
   style={Object {}}
 >
   <input
     checked={false}
-    className="sc-pFZIQ ikZDik"
+    className="sc-kEjbxe eJMstU"
     disabled={false}
     name="Checkbox"
     onChange={[Function]}
     type="checkbox"
   />
   <div
-    className="sc-fubCfw euywra"
+    className="sc-jrAGrp fgjroJ"
     disabled={false}
   />
   Checkbox
@@ -132,15 +248,15 @@ exports[`Storyshots Checkbox Default 1`] = `
 
 exports[`Storyshots Dropdown Default 1`] = `
 <div
-  className="sc-jrAGrp ccnkRA"
+  className="sc-iqHYGH kfEYxo"
 >
   <div
-    className="sc-kEjbxe ckRChg"
+    className="sc-crrsfI fxrNDc"
     disabled={false}
   >
     <select
       aria-label="Select "
-      className="sc-crrsfI hgTQgD"
+      className="sc-bqyKva btabrk"
       disabled={false}
       name=""
       onBlur={[Function]}
@@ -151,26 +267,26 @@ exports[`Storyshots Dropdown Default 1`] = `
       value=""
     >
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         hidden={true}
         value=""
       >
         select an option
       </option>
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         value="option 1"
       >
         option 1
       </option>
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         value="option 2"
       >
         option 2
       </option>
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         value="option 3"
       >
         option 3
@@ -182,22 +298,22 @@ exports[`Storyshots Dropdown Default 1`] = `
 
 exports[`Storyshots Dropdown With Label 1`] = `
 <div
-  className="sc-jrAGrp ccnkRA"
+  className="sc-iqHYGH kfEYxo"
 >
   <label
-    className="sc-iqHYGH wYduP"
+    className="sc-dQppl kIgVWM"
     disabled={false}
     htmlFor="Example"
   >
     Example
   </label>
   <div
-    className="sc-kEjbxe ckRChg"
+    className="sc-crrsfI fxrNDc"
     disabled={false}
   >
     <select
       aria-label="Select Example"
-      className="sc-crrsfI hgTQgD"
+      className="sc-bqyKva btabrk"
       disabled={false}
       name="Example"
       onBlur={[Function]}
@@ -208,26 +324,26 @@ exports[`Storyshots Dropdown With Label 1`] = `
       value=""
     >
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         hidden={true}
         value=""
       >
         select an option
       </option>
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         value="option 1"
       >
         option 1
       </option>
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         value="option 2"
       >
         option 2
       </option>
       <option
-        className="sc-dQppl bsMIta"
+        className="sc-kstrdz eEWbsn"
         value="option 3"
       >
         option 3
@@ -241,7 +357,7 @@ exports[`Storyshots Emoji Default 1`] = `
 <div
   aria-hidden="false"
   aria-label="smiley"
-  className="sc-bqyKva eWviMC"
+  className="sc-hBEYos gGbbuE"
   role="img"
 >
   😃
@@ -284,13 +400,20 @@ exports[`Storyshots Example/Header Logged In 1`] = `
     </div>
     <div>
       <button
-        className="sc-eCssSg giGWyh"
+        className="sc-eCssSg krpAmW"
         disabled={false}
         id=""
         onClick={[Function]}
+        size="small"
         style={Object {}}
+        type="button"
       >
-        Log out
+        
+        <span
+          className="sc-jSgupP eUZApH"
+        >
+          Log out
+        </span>
       </button>
     </div>
   </div>
@@ -333,22 +456,36 @@ exports[`Storyshots Example/Header Logged Out 1`] = `
     </div>
     <div>
       <button
-        className="sc-eCssSg giGWyh"
+        className="sc-eCssSg krpAmW"
         disabled={false}
         id=""
         onClick={[Function]}
+        size="small"
         style={Object {}}
+        type="button"
       >
-        Log in
+        
+        <span
+          className="sc-jSgupP eUZApH"
+        >
+          Log in
+        </span>
       </button>
       <button
-        className="sc-eCssSg tSYqM"
+        className="sc-eCssSg eGIcsz"
         disabled={false}
         id=""
         onClick={[Function]}
+        size="small"
         style={Object {}}
+        type="button"
       >
-        Sign up
+        
+        <span
+          className="sc-jSgupP eUZApH"
+        >
+          Sign up
+        </span>
       </button>
     </div>
   </div>
@@ -392,13 +529,20 @@ exports[`Storyshots Example/Page Logged In 1`] = `
       </div>
       <div>
         <button
-          className="sc-eCssSg giGWyh"
+          className="sc-eCssSg krpAmW"
           disabled={false}
           id=""
           onClick={[Function]}
+          size="small"
           style={Object {}}
+          type="button"
         >
-          Log out
+          
+          <span
+            className="sc-jSgupP eUZApH"
+          >
+            Log out
+          </span>
         </button>
       </div>
     </div>
@@ -524,22 +668,36 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
       </div>
       <div>
         <button
-          className="sc-eCssSg giGWyh"
+          className="sc-eCssSg krpAmW"
           disabled={false}
           id=""
           onClick={[Function]}
+          size="small"
           style={Object {}}
+          type="button"
         >
-          Log in
+          
+          <span
+            className="sc-jSgupP eUZApH"
+          >
+            Log in
+          </span>
         </button>
         <button
-          className="sc-eCssSg tSYqM"
+          className="sc-eCssSg eGIcsz"
           disabled={false}
           id=""
           onClick={[Function]}
+          size="small"
           style={Object {}}
+          type="button"
         >
-          Sign up
+          
+          <span
+            className="sc-jSgupP eUZApH"
+          >
+            Sign up
+          </span>
         </button>
       </div>
     </div>
@@ -630,15 +788,15 @@ exports[`Storyshots Example/Page Logged Out 1`] = `
 
 exports[`Storyshots Image Clickable 1`] = `
 <div
-  className="sc-kstrdz hFNOsv"
+  className="sc-fodVxV bnazkq"
 >
   <div
-    className="sc-fodVxV evgPqt"
+    className="sc-bkzZxe iVjGLE"
     data-testid="image-placeholder"
   />
   <img
     alt=""
-    className="sc-hBEYos gxAJla"
+    className="sc-fFubgz fUVENn"
     data-testid="image"
     id=""
     loading="lazy"
@@ -659,15 +817,15 @@ exports[`Storyshots Image Clickable 1`] = `
 
 exports[`Storyshots Image Default 1`] = `
 <div
-  className="sc-kstrdz hFNOsv"
+  className="sc-fodVxV bnazkq"
 >
   <div
-    className="sc-fodVxV evgPqt"
+    className="sc-bkzZxe iVjGLE"
     data-testid="image-placeholder"
   />
   <img
     alt=""
-    className="sc-hBEYos bVdjAe"
+    className="sc-fFubgz iHZSMX"
     data-testid="image"
     id=""
     loading="lazy"
@@ -696,15 +854,15 @@ exports[`Storyshots Image Zoomable 1`] = `
   }
 >
   <div
-    className="sc-kstrdz hFNOsv"
+    className="sc-fodVxV bnazkq"
   >
     <div
-      className="sc-fodVxV evgPqt"
+      className="sc-bkzZxe iVjGLE"
       data-testid="image-placeholder"
     />
     <img
       alt=""
-      className="sc-hBEYos iqePNo"
+      className="sc-fFubgz kIhrBZ"
       data-testid="image"
       id=""
       loading="lazy"
@@ -726,17 +884,17 @@ exports[`Storyshots Image Zoomable 1`] = `
 
 exports[`Storyshots Input Default 1`] = `
 <div
-  className="sc-fFubgz dXlnAR"
+  className="sc-idOhPF ejEqMl"
 >
   
   <div
-    className="sc-bkzZxe fbHCTq"
+    className="sc-dIUggk ccmXXp"
     disabled={false}
   >
     <input
       autoComplete="off"
       autoFocus={false}
-      className="sc-idOhPF kiyWqe"
+      className="sc-hHftDr huQVCk"
       data-testid="input-field"
       disabled={false}
       id=""
@@ -756,17 +914,17 @@ exports[`Storyshots Input Default 1`] = `
 
 exports[`Storyshots Input With Error 1`] = `
 <div
-  className="sc-fFubgz dXlnAR"
+  className="sc-idOhPF ejEqMl"
 >
   
   <div
-    className="sc-bkzZxe fbHCTq"
+    className="sc-dIUggk ccmXXp"
     disabled={false}
   >
     <input
       autoComplete="off"
       autoFocus={false}
-      className="sc-idOhPF fMbSFs"
+      className="sc-hHftDr gnZhyG"
       data-testid="input-field"
       disabled={false}
       id=""
@@ -782,7 +940,7 @@ exports[`Storyshots Input With Error 1`] = `
     
   </div>
   <p
-    className="sc-dmlrTW gqjlru"
+    className="sc-fKFyDc gnmYYr"
   >
     This is an error!
   </p>
@@ -791,17 +949,17 @@ exports[`Storyshots Input With Error 1`] = `
 
 exports[`Storyshots Input With Icon 1`] = `
 <div
-  className="sc-fFubgz dXlnAR"
+  className="sc-idOhPF ejEqMl"
 >
   
   <div
-    className="sc-bkzZxe fbHCTq"
+    className="sc-dIUggk ccmXXp"
     disabled={false}
   >
     <input
       autoComplete="off"
       autoFocus={false}
-      className="sc-idOhPF kiyWqe"
+      className="sc-hHftDr huQVCk"
       data-testid="input-field"
       disabled={false}
       id=""
@@ -816,10 +974,10 @@ exports[`Storyshots Input With Icon 1`] = `
     />
     <img
       alt=""
-      className="sc-hHftDr fZVjb"
+      className="sc-kfzAmx bhieIY"
       data-testid="input-icon"
       role=""
-      src="tick.svg"
+      src="success.svg"
       tabIndex={-1}
     />
   </div>
@@ -828,23 +986,23 @@ exports[`Storyshots Input With Icon 1`] = `
 
 exports[`Storyshots Input With Label 1`] = `
 <div
-  className="sc-fFubgz dXlnAR"
+  className="sc-idOhPF ejEqMl"
 >
   <label
-    className="sc-dIUggk jrhDJm"
+    className="sc-dmlrTW gzGmaF"
     disabled={false}
     htmlFor=""
   >
     Input
   </label>
   <div
-    className="sc-bkzZxe fbHCTq"
+    className="sc-dIUggk ccmXXp"
     disabled={false}
   >
     <input
       autoComplete="off"
       autoFocus={false}
-      className="sc-idOhPF kiyWqe"
+      className="sc-hHftDr huQVCk"
       data-testid="input-field"
       disabled={false}
       id=""
@@ -862,24 +1020,176 @@ exports[`Storyshots Input With Label 1`] = `
 </div>
 `;
 
+exports[`Storyshots Modal Confirmation 1`] = `
+<div
+  className="sc-bBXqnf irkcij"
+>
+  <div
+    className="sc-iwyYcG bGctip"
+  >
+    <div
+      className="sc-cxFLnm bqxTIq"
+      id=""
+      style={Object {}}
+    >
+      <header
+        className="sc-lmoMRL hvQXhJ"
+      >
+        <h2
+          className="sc-iJuUWI jrVXUd"
+        >
+          Confirmation Modal Header
+        </h2>
+        <button
+          aria-label="close modal"
+          className="sc-eCssSg guAkEj sc-giIncl bdNjyP"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="medium"
+          style={Object {}}
+          type="button"
+        >
+          <img
+            alt=""
+            className="sc-gKsewC hjbgKA"
+            data-testid="button-icon"
+            label=""
+            src="close.svg"
+          />
+          
+        </button>
+      </header>
+      <main>
+        <p
+          className="sc-ezrdKe kudlSF"
+        >
+          Confirmation modal content
+        </p>
+      </main>
+      <footer
+        className="sc-bYEvPH iNWBNL"
+      >
+        <button
+          className="sc-eCssSg krpAmW sc-kLgntA hpuonK"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="small"
+          style={Object {}}
+          type="button"
+        >
+          
+          <span
+            className="sc-jSgupP eUZApH"
+          >
+            confirm
+          </span>
+        </button>
+        <button
+          className="sc-eCssSg krpAmW sc-kLgntA gmLool"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="small"
+          style={Object {}}
+          type="button"
+        >
+          
+          <span
+            className="sc-jSgupP eUZApH"
+          >
+            decline
+          </span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Modal Default 1`] = `
 <div
-  className="sc-kfzAmx fmJzuD"
-  id=""
-  style={Object {}}
-/>
+  className="sc-bBXqnf irkcij"
+>
+  <div
+    className="sc-iwyYcG bGctip"
+  >
+    <div
+      className="sc-cxFLnm bqxTIq"
+      id=""
+      style={Object {}}
+    >
+      <header
+        className="sc-lmoMRL hvQXhJ"
+      >
+        <h2
+          className="sc-iJuUWI jrVXUd"
+        >
+          Modal Header
+        </h2>
+        <button
+          aria-label="close modal"
+          className="sc-eCssSg guAkEj sc-giIncl bdNjyP"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="medium"
+          style={Object {}}
+          type="button"
+        >
+          <img
+            alt=""
+            className="sc-gKsewC hjbgKA"
+            data-testid="button-icon"
+            label=""
+            src="close.svg"
+          />
+          
+        </button>
+      </header>
+      <main>
+        <p
+          className="sc-ezrdKe kudlSF"
+        >
+          Modal content
+        </p>
+      </main>
+      <footer
+        className="sc-bYEvPH iNWBNL"
+      >
+        <button
+          className="sc-eCssSg krpAmW sc-kLgntA hpuonK"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="small"
+          style={Object {}}
+          type="button"
+        >
+          
+          <span
+            className="sc-jSgupP eUZApH"
+          >
+            ok
+          </span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Search Default 1`] = `
 <div
-  className="sc-fKFyDc gUJrTO"
+  className="sc-iktFzd bpHwFf"
 >
   
   <div
-    className="sc-iwyYcG ktiuNA"
+    className="sc-hiSbYr fhUjSh"
   >
     <input
-      className="sc-cxFLnm hZCejo"
+      className="sc-gWHgXt intrkR"
       data-testid="search-field"
       disabled={false}
       id=""
@@ -894,11 +1204,11 @@ exports[`Storyshots Search Default 1`] = `
       value=""
     />
     <div
-      className="sc-lmoMRL fPICtK"
+      className="sc-cBNfnY jFXPFh"
     >
       <img
         alt="magnifying-glass-icon"
-        className="sc-iJuUWI SCJUF"
+        className="sc-citwmv kKjOWW"
         data-testid="search-icon"
         onClick={[Function]}
         src="magnifying-glass.svg"
@@ -910,14 +1220,14 @@ exports[`Storyshots Search Default 1`] = `
 
 exports[`Storyshots Search Expansible 1`] = `
 <div
-  className="sc-fKFyDc gUJrTO"
+  className="sc-iktFzd bpHwFf"
 >
   
   <div
-    className="sc-iwyYcG kUHmRY"
+    className="sc-hiSbYr RlRep"
   >
     <input
-      className="sc-cxFLnm bQnvvr"
+      className="sc-gWHgXt dulLnq"
       data-testid="search-field"
       disabled={false}
       id=""
@@ -932,11 +1242,11 @@ exports[`Storyshots Search Expansible 1`] = `
       value=""
     />
     <div
-      className="sc-lmoMRL fPICtK"
+      className="sc-cBNfnY jFXPFh"
     >
       <img
         alt="magnifying-glass-icon"
-        className="sc-iJuUWI BlMPp"
+        className="sc-citwmv irVemK"
         data-testid="search-icon"
         onClick={[Function]}
         src="magnifying-glass.svg"
@@ -948,20 +1258,20 @@ exports[`Storyshots Search Expansible 1`] = `
 
 exports[`Storyshots Search With Label 1`] = `
 <div
-  className="sc-fKFyDc gUJrTO"
+  className="sc-iktFzd bpHwFf"
 >
   <label
-    className="sc-bBXqnf diGcNE"
+    className="sc-jJEJSO cJBysW"
     disabled={false}
     htmlFor=""
   >
     Search
   </label>
   <div
-    className="sc-iwyYcG ktiuNA"
+    className="sc-hiSbYr fhUjSh"
   >
     <input
-      className="sc-cxFLnm hZCejo"
+      className="sc-gWHgXt intrkR"
       data-testid="search-field"
       disabled={false}
       id=""
@@ -976,11 +1286,11 @@ exports[`Storyshots Search With Label 1`] = `
       value=""
     />
     <div
-      className="sc-lmoMRL fPICtK"
+      className="sc-cBNfnY jFXPFh"
     >
       <img
         alt="magnifying-glass-icon"
-        className="sc-iJuUWI SCJUF"
+        className="sc-citwmv kKjOWW"
         data-testid="search-icon"
         onClick={[Function]}
         src="magnifying-glass.svg"
@@ -990,18 +1300,353 @@ exports[`Storyshots Search With Label 1`] = `
 </div>
 `;
 
-exports[`Storyshots ShowMore Default 1`] = `
+exports[`Storyshots ShowMore With List 1`] = `
 <div
-  className="sc-giIncl iNVRnK"
+  className="sc-jcVebW eeRAOh"
   id=""
   style={Object {}}
-/>
+>
+  <div
+    className="sc-iBaPrD fEVWxS"
+    style={
+      Object {
+        "maxHeight": "5.6rem",
+      }
+    }
+  >
+    <ul>
+      <li>
+        item 1
+      </li>
+      <li>
+        item 2
+      </li>
+      <li>
+        item 3
+      </li>
+      <li>
+        item 4
+      </li>
+      <li>
+        item 5
+      </li>
+      <li>
+        item 6
+      </li>
+    </ul>
+  </div>
+  <a
+    className="sc-bZSQDF khCpsC"
+    data-testid="show-more-link"
+    href=""
+    onClick={[Function]}
+  >
+    show more
+     
+    <img
+      alt="show more icon"
+      className="sc-iUuytg doCOaz"
+      src="double-chevron.svg"
+    />
+  </a>
+</div>
+`;
+
+exports[`Storyshots ShowMore With String 1`] = `
+<div
+  className="sc-jcVebW eeRAOh"
+  id=""
+  style={Object {}}
+>
+  <div
+    className="sc-iBaPrD fEVWxS"
+    style={
+      Object {
+        "maxHeight": "5.6rem",
+      }
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae mollis velit. Vestibulum lacinia nisi vitae lorem sollicitudin, vel ultricies enim suscipit. Etiam vel sodales dolor. Nunc iaculis quis arcu faucibus tincidunt. Maecenas blandit dapibus porttitor. Quisque sed mauris elit. Ut placerat, augue ut blandit ultricies, nunc nulla vehicula mi, in vehicula urna lectus nec nibh. Aenean quis risus imperdiet, bibendum mauris vitae, consequat tortor. Donec aliquam ante vel turpis fringilla facilisis. Integer varius non lacus id ultrices. In eleifend dolor ante, congue placerat elit maximus eget. Duis varius ligula erat, et varius neque euismod ac. In vitae posuere nisl. Sed non justo tortor.
+  Integer risus est, feugiat at ultrices vitae, pretium in est. In vel tristique augue. Nam tempor neque erat, vitae cursus diam eleifend non. Aliquam libero odio, vestibulum at nunc sit amet, suscipit suscipit libero. Nam ac pretium felis, eu convallis libero. Phasellus quis odio sit amet nibh tempor placerat non sed nunc. Aliquam pellentesque efficitur iaculis. Cras eget gravida leo.
+  Ut sed mattis erat. In in nunc eu ligula egestas viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur fermentum sem mauris, semper consequat urna sagittis sed. Maecenas lacinia nulla lorem, quis condimentum orci ultricies quis. Aliquam erat volutpat. Vestibulum volutpat, metus quis malesuada lobortis, quam erat accumsan lectus, nec bibendum leo libero facilisis risus. Nulla sed viverra orci.
+  </div>
+  <a
+    className="sc-bZSQDF khCpsC"
+    data-testid="show-more-link"
+    href=""
+    onClick={[Function]}
+  >
+    show more
+     
+    <img
+      alt="show more icon"
+      className="sc-iUuytg doCOaz"
+      src="double-chevron.svg"
+    />
+  </a>
+</div>
+`;
+
+exports[`Storyshots Step Default 1`] = `
+<div
+  className="sc-eggNIi ljUnnH"
+  id=""
+  style={Object {}}
+>
+  <div>
+    Step 
+  </div>
+</div>
+`;
+
+exports[`Storyshots Stepper Landscape 1`] = `
+<div
+  className="sc-cTkwdZ hFYrLD"
+  data-steps={3}
+  id=""
+  style={
+    Object {
+      "backgroundColor": "gray",
+    }
+  }
+>
+  <ul
+    aria-label="progress"
+    className="sc-jNMdTA bqTjiY"
+    role="group"
+  >
+    <progress
+      className="sc-bBrOnJ fqRdbB"
+      max="100"
+      value={0}
+    />
+    <li
+      aria-current="step"
+      className="sc-dOSReg dbAlWW"
+    >
+      1
+    </li>
+    <li
+      aria-current="step"
+      className="sc-dOSReg gUictP"
+    >
+      2
+    </li>
+    <li
+      aria-current="step"
+      className="sc-dOSReg gUictP"
+    >
+      3
+    </li>
+  </ul>
+  <div
+    className="sc-cOajty jmLzdl"
+  >
+    <div
+      className="sc-AzgDb hqbrqw"
+    >
+      <div
+        className="sc-eggNIi ljUnnH"
+        id=""
+        style={Object {}}
+      >
+        <p
+          style={
+            Object {
+              "margin": "100px auto",
+              "textAlign": "center",
+            }
+          }
+        >
+          Step 1 content
+        </p>
+      </div>
+      <div
+        className="sc-eggNIi fbDEhZ"
+        id=""
+        style={Object {}}
+      >
+        <p
+          style={
+            Object {
+              "margin": "100px auto",
+              "textAlign": "center",
+            }
+          }
+        >
+          Step 2 content
+        </p>
+      </div>
+      <div
+        className="sc-eggNIi fbDEhZ"
+        id=""
+        style={Object {}}
+      >
+        <p
+          style={
+            Object {
+              "margin": "100px auto",
+              "textAlign": "center",
+            }
+          }
+        >
+          Step 3 content
+        </p>
+      </div>
+    </div>
+    <footer
+      className="sc-khAkjo lpksMG"
+    >
+      <button
+        className="sc-eCssSg krpAmW sc-hTZhsR sc-jgHCyG cLIpru dHZwiW"
+        data-testid="next-button"
+        disabled={false}
+        id=""
+        onClick={[Function]}
+        size="small"
+        style={Object {}}
+        type="button"
+      >
+        <img
+          alt=""
+          className="sc-gKsewC hjbgKA"
+          data-testid="button-icon"
+          label=""
+          src="double-chevron.svg"
+        />
+        
+      </button>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Stepper Portrait 1`] = `
+<div
+  className="sc-cTkwdZ gpSyH"
+  data-steps={3}
+  id=""
+  style={
+    Object {
+      "backgroundColor": "gray",
+    }
+  }
+>
+  <ul
+    aria-label="progress"
+    className="sc-jNMdTA hWhVGG"
+    role="group"
+  >
+    <progress
+      className="sc-bBrOnJ dnSymM"
+      max="100"
+      value={0}
+    />
+    <li
+      aria-current="step"
+      className="sc-dOSReg dbAlWW"
+    >
+      1
+    </li>
+    <li
+      aria-current="step"
+      className="sc-dOSReg gUictP"
+    >
+      2
+    </li>
+    <li
+      aria-current="step"
+      className="sc-dOSReg gUictP"
+    >
+      3
+    </li>
+  </ul>
+  <div
+    className="sc-cOajty Kviti"
+  >
+    <div
+      className="sc-AzgDb hqbrqw"
+    >
+      <div
+        className="sc-eggNIi ljUnnH"
+        id=""
+        style={Object {}}
+      >
+        <p
+          style={
+            Object {
+              "margin": "100px auto",
+              "textAlign": "center",
+            }
+          }
+        >
+          Step 1 content
+        </p>
+      </div>
+      <div
+        className="sc-eggNIi fbDEhZ"
+        id=""
+        style={Object {}}
+      >
+        <p
+          style={
+            Object {
+              "margin": "100px auto",
+              "textAlign": "center",
+            }
+          }
+        >
+          Step 2 content
+        </p>
+      </div>
+      <div
+        className="sc-eggNIi fbDEhZ"
+        id=""
+        style={Object {}}
+      >
+        <p
+          style={
+            Object {
+              "margin": "100px auto",
+              "textAlign": "center",
+            }
+          }
+        >
+          Step 3 content
+        </p>
+      </div>
+    </div>
+    <footer
+      className="sc-khAkjo lpksMG"
+    >
+      <button
+        className="sc-eCssSg krpAmW sc-hTZhsR sc-jgHCyG cLIpru dHZwiW"
+        data-testid="next-button"
+        disabled={false}
+        id=""
+        onClick={[Function]}
+        size="small"
+        style={Object {}}
+        type="button"
+      >
+        <img
+          alt=""
+          className="sc-gKsewC hjbgKA"
+          data-testid="button-icon"
+          label=""
+          src="double-chevron.svg"
+        />
+        
+      </button>
+    </footer>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Tab Active 1`] = `
 <li
   aria-selected={true}
-  className="sc-ezrdKe dlxQau"
+  className="sc-gTgzIj iRrzei"
   disabled={false}
   id=""
   onClick={[Function]}
@@ -1017,7 +1662,7 @@ exports[`Storyshots Tab Active 1`] = `
 exports[`Storyshots Tab Default 1`] = `
 <li
   aria-selected={false}
-  className="sc-ezrdKe gzkZmf"
+  className="sc-gTgzIj kQbUvv"
   disabled={false}
   id=""
   onClick={[Function]}
@@ -1032,21 +1677,21 @@ exports[`Storyshots Tab Default 1`] = `
 
 exports[`Storyshots Tabs Default 1`] = `
 <div
-  className="sc-bYEvPH fQmerA"
+  className="sc-laRPJI libXSK"
   id=""
   style={Object {}}
 >
   <div
-    className="sc-kLgntA iQIBgy"
+    className="sc-iNqMTl wxkoa"
   >
     <ul
       aria-label="Select "
-      className="sc-iktFzd dxYNHZ"
+      className="sc-jeGSBP fdlFMO"
       role="tablist"
     >
       <li
         aria-selected={true}
-        className="sc-ezrdKe dlxQau"
+        className="sc-gTgzIj iRrzei"
         disabled={false}
         id=""
         onClick={[Function]}
@@ -1059,7 +1704,7 @@ exports[`Storyshots Tabs Default 1`] = `
       </li>
       <li
         aria-selected={false}
-        className="sc-ezrdKe gzkZmf"
+        className="sc-gTgzIj kQbUvv"
         disabled={false}
         id=""
         onClick={[Function]}
@@ -1074,11 +1719,11 @@ exports[`Storyshots Tabs Default 1`] = `
   </div>
   <div
     aria-labelledby="Tab 1"
-    className="sc-jJEJSO"
+    className="sc-eJMQSu"
     role="tabpanel"
   >
     <div
-      className="sc-hiSbYr ftGRQD"
+      className="sc-nFpLZ QWJJu"
     />
     <div>
       Tab 1 content
@@ -1089,10 +1734,10 @@ exports[`Storyshots Tabs Default 1`] = `
 
 exports[`Storyshots Textarea Default 1`] = `
 <div
-  className="sc-gWHgXt jfhPce"
+  className="sc-higXBA drALza"
 >
   <textarea
-    className="sc-cBNfnY juJrhQ"
+    className="sc-ehSCib laVInk"
     data-testid="textarea-field"
     disabled={false}
     id=""
@@ -1109,10 +1754,10 @@ exports[`Storyshots Textarea Default 1`] = `
 
 exports[`Storyshots Textarea With Error 1`] = `
 <div
-  className="sc-gWHgXt jfhPce"
+  className="sc-higXBA drALza"
 >
   <textarea
-    className="sc-cBNfnY ka-DjTO"
+    className="sc-ehSCib bqNRjW"
     data-testid="textarea-field"
     disabled={false}
     id=""
@@ -1125,7 +1770,7 @@ exports[`Storyshots Textarea With Error 1`] = `
     value="hello"
   />
   <p
-    className="sc-jcVebW jihOAS"
+    className="sc-gGmIRh dQBZkT"
   >
     This is an error!
   </p>
@@ -1134,17 +1779,17 @@ exports[`Storyshots Textarea With Error 1`] = `
 
 exports[`Storyshots Textarea With Label 1`] = `
 <div
-  className="sc-gWHgXt jfhPce"
+  className="sc-higXBA drALza"
 >
   <label
-    className="sc-citwmv iTCEpu"
+    className="sc-lcujXC gexqHL"
     disabled={false}
     htmlFor=""
   >
     Textarea
   </label>
   <textarea
-    className="sc-cBNfnY juJrhQ"
+    className="sc-ehSCib laVInk"
     data-testid="textarea-field"
     disabled={false}
     id=""
@@ -1161,18 +1806,36 @@ exports[`Storyshots Textarea With Label 1`] = `
 
 exports[`Storyshots Toast Alert 1`] = `
 <div
-  className="sc-bZSQDF ghLeVC"
+  className="sc-clsHhM deqtnG"
   id=""
   style={Object {}}
   type="alert"
 >
+  <button
+    className="sc-eCssSg krpAmW sc-fbkhIv cYSqLf"
+    disabled={false}
+    id=""
+    onClick={[Function]}
+    size="small"
+    style={Object {}}
+    type="button"
+  >
+    <img
+      alt=""
+      className="sc-gKsewC hjbgKA"
+      data-testid="button-icon"
+      label=""
+      src="close.svg"
+    />
+    
+  </button>
   <img
     alt="alert.svg icon"
-    className="sc-iUuytg ecTAIg"
+    className="sc-GqfZa fSAEnI"
     src="alert.svg"
   />
   <div
-    className="sc-iBaPrD kOEA-DW"
+    className="sc-fWSCIC jBLjmt"
     type="alert"
   >
     alert toast
@@ -1182,18 +1845,36 @@ exports[`Storyshots Toast Alert 1`] = `
 
 exports[`Storyshots Toast Info 1`] = `
 <div
-  className="sc-bZSQDF fwlSUD"
+  className="sc-clsHhM kmbzaz"
   id=""
   style={Object {}}
   type="info"
 >
+  <button
+    className="sc-eCssSg krpAmW sc-fbkhIv cYSqLf"
+    disabled={false}
+    id=""
+    onClick={[Function]}
+    size="small"
+    style={Object {}}
+    type="button"
+  >
+    <img
+      alt=""
+      className="sc-gKsewC hjbgKA"
+      data-testid="button-icon"
+      label=""
+      src="close.svg"
+    />
+    
+  </button>
   <img
     alt="info.svg icon"
-    className="sc-iUuytg ecTAIg"
+    className="sc-GqfZa fSAEnI"
     src="info.svg"
   />
   <div
-    className="sc-iBaPrD kOEA-DW"
+    className="sc-fWSCIC jBLjmt"
     type="info"
   >
     info toast
@@ -1203,18 +1884,36 @@ exports[`Storyshots Toast Info 1`] = `
 
 exports[`Storyshots Toast Success 1`] = `
 <div
-  className="sc-bZSQDF zTKKH"
+  className="sc-clsHhM hJgXAv"
   id=""
   style={Object {}}
   type="success"
 >
+  <button
+    className="sc-eCssSg krpAmW sc-fbkhIv cYSqLf"
+    disabled={false}
+    id=""
+    onClick={[Function]}
+    size="small"
+    style={Object {}}
+    type="button"
+  >
+    <img
+      alt=""
+      className="sc-gKsewC hjbgKA"
+      data-testid="button-icon"
+      label=""
+      src="close.svg"
+    />
+    
+  </button>
   <img
     alt="success.svg icon"
-    className="sc-iUuytg ecTAIg"
+    className="sc-GqfZa fSAEnI"
     src="success.svg"
   />
   <div
-    className="sc-iBaPrD kOEA-DW"
+    className="sc-fWSCIC jBLjmt"
     type="success"
   >
     success toast
@@ -1224,18 +1923,36 @@ exports[`Storyshots Toast Success 1`] = `
 
 exports[`Storyshots Toast Warning 1`] = `
 <div
-  className="sc-bZSQDF eWLxil"
+  className="sc-clsHhM cXEpBB"
   id=""
   style={Object {}}
   type="warning"
 >
+  <button
+    className="sc-eCssSg krpAmW sc-fbkhIv cYSqLf"
+    disabled={false}
+    id=""
+    onClick={[Function]}
+    size="small"
+    style={Object {}}
+    type="button"
+  >
+    <img
+      alt=""
+      className="sc-gKsewC hjbgKA"
+      data-testid="button-icon"
+      label=""
+      src="close.svg"
+    />
+    
+  </button>
   <img
     alt="warning.svg icon"
-    className="sc-iUuytg ecTAIg"
+    className="sc-GqfZa fSAEnI"
     src="warning.svg"
   />
   <div
-    className="sc-iBaPrD kOEA-DW"
+    className="sc-fWSCIC jBLjmt"
     type="warning"
   >
     warning toast
@@ -1245,13 +1962,13 @@ exports[`Storyshots Toast Warning 1`] = `
 
 exports[`Storyshots ToggleSwitch Default 1`] = `
 <label
-  className="sc-eggNIi bByaAq"
+  className="sc-dwfUOf jsJDtO"
   disabled={false}
   style={Object {}}
 >
   <input
     checked={false}
-    className="sc-dOSReg bHWnAQ"
+    className="sc-aemoO fXHyJh"
     disabled={false}
     name=""
     onChange={[Function]}
@@ -1259,17 +1976,17 @@ exports[`Storyshots ToggleSwitch Default 1`] = `
   />
   <span
     checked={false}
-    className="sc-jNMdTA dsmTrH"
+    className="sc-jHVexB hALwsU"
     data-testid="toggle-slider"
     disabled={false}
     label=""
   >
     <span
-      className="sc-cTkwdZ fLTiHu"
+      className="sc-TmcTc cFalRK"
       disabled={false}
     />
     <span
-      className="sc-cTkwdZ fLTiHu"
+      className="sc-TmcTc cFalRK"
     >
       on
     </span>
@@ -1279,13 +1996,13 @@ exports[`Storyshots ToggleSwitch Default 1`] = `
 
 exports[`Storyshots ToggleSwitch With Label 1`] = `
 <label
-  className="sc-eggNIi bByaAq"
+  className="sc-dwfUOf jsJDtO"
   disabled={false}
   style={Object {}}
 >
   <input
     checked={false}
-    className="sc-dOSReg bHWnAQ"
+    className="sc-aemoO fXHyJh"
     disabled={false}
     name="ToggleSwitch"
     onChange={[Function]}
@@ -1294,17 +2011,17 @@ exports[`Storyshots ToggleSwitch With Label 1`] = `
   ToggleSwitch
   <span
     checked={false}
-    className="sc-jNMdTA erzGCT"
+    className="sc-jHVexB dlVhJc"
     data-testid="toggle-slider"
     disabled={false}
     label="ToggleSwitch"
   >
     <span
-      className="sc-cTkwdZ fLTiHu"
+      className="sc-TmcTc cFalRK"
       disabled={false}
     />
     <span
-      className="sc-cTkwdZ fLTiHu"
+      className="sc-TmcTc cFalRK"
     >
       on
     </span>
@@ -1314,7 +2031,7 @@ exports[`Storyshots ToggleSwitch With Label 1`] = `
 
 exports[`Storyshots Tooltip Default 1`] = `
 <div
-  className="sc-bBrOnJ bzdtwM"
+  className="sc-jONnTn eiLBts"
   id=""
   style={
     Object {

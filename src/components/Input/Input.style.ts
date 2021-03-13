@@ -58,8 +58,7 @@ export const StyledInputIcon = styled.img`
   bottom: 0;
   margin: auto 0;
   right: 0.625rem;
-  filter: invert(98%) sepia(26%) saturate(2%) hue-rotate(98deg) brightness(116%)
-    contrast(100%);
+  ${colors.icon};
 `;
 
 export const StyledInputError = styled.p`

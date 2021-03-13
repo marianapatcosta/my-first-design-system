@@ -1,5 +1,6 @@
 import styled, { keyframes, css } from 'styled-components';
 import { baseStyles, colors } from '../../styles';
+import { hexToRGB } from '../../utils/utils';
 
 const scaleUp = keyframes`
   0% {
@@ -32,7 +33,7 @@ export const StyledImageOverlay = styled.div<{
       position: fixed;
       top: 0;
       left: 0;
-      background-color: ${colors.shadow};
+      background-color: ${hexToRGB(colors.shadow, 0.9)};
       display: flex;
       justify-content: center;
       align-items: center;
@@ -50,6 +51,7 @@ export const StyledImage = styled.img<{
   ${baseStyles}
   width: 100%;
   box-shadow: 0 0.125rem 0.5rem ${colors.shadow};
+  cursor: default;
 
   ${({ isLoaded }) => !isLoaded && `visibility: hidden;`}
 

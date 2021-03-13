@@ -1,6 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { Button, ButtonProps } from './Button';
+import { Success } from '../../assets/icons';
 
 export default {
   title: 'Button',
@@ -9,26 +10,50 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-// Template.bind({}) makes a copy of Template function
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: 'Primary button',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  label: 'Seconday button',
 };
 
 export const FullLength = Template.bind({});
 FullLength.args = {
   isFullLength: true,
-  label: 'Button',
+  label: 'Full length button',
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
-  label: 'Button',
+  label: 'Small button',
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  label: 'Medium button',
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  size: 'large',
+  label: 'This is large button',
+};
+
+export const Icon = Template.bind({});
+Icon.args = {
+  primary: true,
+  icon: Success,
+  size: 'small'
+};
+
+export const WithIcon = Template.bind({});
+WithIcon.args = {
+  primary: true,
+  label: 'icon button',
+  icon: Success,
 };

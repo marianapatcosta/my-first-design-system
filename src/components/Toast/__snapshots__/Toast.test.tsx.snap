@@ -2,17 +2,31 @@
 
 exports[`Toast renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ ilLozv"
+  class="sc-hKgILt cRTYxH"
   id=""
   type="info"
 >
+  <button
+    class="sc-bdfBwQ kNApjs sc-eCssSg hrInoB"
+    id=""
+    type="button"
+  >
+    <img
+      alt=""
+      class="sc-dlfnbm kQHvsZ"
+      data-testid="button-icon"
+      label=""
+      src="close.svg"
+    />
+    
+  </button>
   <img
     alt="info.svg icon"
-    class="sc-gsTCUz zGLeb"
+    class="sc-jSgupP kbWecE"
     src="info.svg"
   />
   <div
-    class="sc-dlfnbm ePtxbt"
+    class="sc-gKsewC eEKOfY"
     type="info"
   >
     info toast

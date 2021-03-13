@@ -1,7 +1,13 @@
-import React, { CSSProperties, useEffect } from 'react';
-import { Alert, Info, Success, Warning } from '../../assets/icons';
+import React, {
+  CSSProperties,
+  MouseEventHandler,
+  useEffect,
+  useState,
+} from 'react';
+import { Alert, Close, Info, Success, Warning } from '../../assets/icons';
 import {
   StyledToast,
+  StyledToastClose,
   StyledToastIcon,
   StyledToastMessage,
 } from './Toast.style';
@@ -49,7 +55,7 @@ export interface ToastProps {
   /**
    * Handles event on Toast autodelete
    */
-  onClear?: (clearObject: string | {}) => void;
+  onClear: () => void;
 }
 
 export const Toast: React.FC<ToastProps> = ({
@@ -60,15 +66,31 @@ export const Toast: React.FC<ToastProps> = ({
   onClear,
   ...props
 }) => {
+  const [willBeDeleted, setWillBeDeleted] = useState<boolean>(false);
+
   useEffect(() => {
-    let timer: number;
-    if (message)
-      timer = setTimeout(() => onClear && onClear({}), autoClearTime);
-    return () => clearTimeout(timer);
+    let autoDeleteTimer: number;
+    let fadeOutTimer: number;
+    if (message) {
+      const fadeOutTime = autoClearTime && autoClearTime - 500;
+      fadeOutTimer = setTimeout(() => setWillBeDeleted(true), fadeOutTime);
+      autoDeleteTimer = setTimeout(() => onClear && onClear(), autoClearTime);
+    }
+    return () => {
+      clearTimeout(fadeOutTimer);
+      clearTimeout(autoDeleteTimer);
+    };
   }, [autoClearTime, message, onClear]);
 
+  onClear as MouseEventHandler<HTMLButtonElement>;
   return (
-    <StyledToast className={className} type={type} {...props}>
+    <StyledToast
+      className={className}
+      type={type}
+      {...props}
+      willBeDeleted={willBeDeleted}
+    >
+      <StyledToastClose icon={Close} size='small' onClick={onClear} />
       <StyledToastIcon
         src={type && toastIcons[type]}
         alt={`${type && toastIcons[type]} icon`}
@@ -84,6 +106,6 @@ Toast.defaultProps = {
   style: {},
   message: '',
   type: 'info',
-  autoClearTime: 2000,
+  autoClearTime: 2500,
   onClear: () => null,
 };

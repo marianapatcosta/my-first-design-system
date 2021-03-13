@@ -2,7 +2,7 @@
 
 exports[`Checkbox renders without errors and matches snapshot 1`] = `
 <label
-  class="sc-bdfBwQ cDBEUr"
+  class="sc-bdfBwQ hUauSm"
   id=""
 >
   <input

@@ -99,8 +99,7 @@ export const StyledSearchIcon = styled.img<{
   height: 1rem;
   top: 0.5rem;
   right: 0.625rem;
-  filter: invert(98%) sepia(26%) saturate(2%) hue-rotate(98deg) brightness(116%)
-    contrast(100%);
+  ${colors.icon};
 
   ${({ isExpandable }) => isExpandable && `cursor: pointer;`}
 

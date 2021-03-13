@@ -57,12 +57,12 @@ function App() {
         onChange={(e) => setValue(e.target.value)}
         onClear={(e) => setValue('')}
       />
-      <Toast
+   {value &&   <Toast
         className='App-link'
         message={value}
         type='success'
         onClear={() => setValue('')}
-      />
+      />}
       <Card style={{ width: '300px'}}>
         <Image
           src={Test}

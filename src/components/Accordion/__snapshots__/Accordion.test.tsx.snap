@@ -2,7 +2,7 @@
 
 exports[`Accordion renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ enVKql"
+  class="sc-bdfBwQ cyKrOT"
   id=""
 >
   <div
@@ -15,7 +15,7 @@ exports[`Accordion renders without errors and matches snapshot 1`] = `
     Accordion title
     <img
       alt="chevron icon"
-      class="sc-dlfnbm lhIKrG"
+      class="sc-dlfnbm crIBv"
       src="chevron.svg"
     />
   </div>

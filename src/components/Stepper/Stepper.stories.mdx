@@ -1,0 +1,43 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Stepper } from './Stepper';
+
+<Meta title="Design System|Stepper" component={Stepper} />
+
+# Stepper
+
+Stepper component
+
+## Usage
+
+Use stepper when makes sense to subdivide some content (e.g. a form) in smaller parts, which
+should be rendered in Step component.
+
+- Landscape Stepper:
+
+  <Story name='Landscape'>
+    <Stepper
+      stepsMetadata={[
+        { content: <p>Step 1 content</p> },
+        { content: <p>Step 2 content</p> },
+        { content: <p>Step 3 content</p> },
+      ]}
+      onSubmit={() => console.log('submitted')}
+    />
+  </Story>
+
+- Portrait Stepper:
+  <Story name='Portrait'>
+    <Stepper
+      orientation='portrait'
+      stepsMetadata={[
+        { content: <p>Step 1 content</p> },
+        { content: <p>Step 2 content</p> },
+        { content: <p>Step 3 content</p> },
+      ]}
+      onSubmit={() => console.log('submitted')}
+    />
+  </Story>
+
+## Other important notes
+
+not applicable.

@@ -1,17 +1,37 @@
-import { Meta } from "@storybook/addon-docs/blocks";
-import { Modal } from "./Modal";
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Modal } from './Modal';
 
-<Meta title="Design System|Modal" component=Modal />
+<Meta title='Design System|Modal' component={Modal} />
 
 # Modal
-
+Modal component
 
 ## Usage
+Use Modal component to advertise the user about some information, error or other
+event (default modal) or to ask to confirm some action (Confirmation modal)
+
 - Default Modal:
   <Story name='Default'>
-    <Modal />
+    <Modal
+      header='Modal Header'
+      content='Modal content'
+      buttonLabel='ok'
+      onClose={() => console.log('closed')}
+    />
   </Story>
 
+- Confirmation Modal:
+  <Story name='Confirmation'>
+    <Modal
+      header='Confirmation Modal Header'
+      content='Confirmation modal content'
+      isConfirmationModal={true}
+      buttonLabel='decline'
+      confirmationButtonLabel='confirm'
+      onClose={() => console.log('cancelled')}
+      onConfirm={() => console.log('confirmed')}
+    />
+  </Story>
 
 ## Other important notes
 not applicable.

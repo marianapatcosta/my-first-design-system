@@ -6,11 +6,16 @@ export enum KEYBOARD_KEYS {
   UP_ARROW_KEY = 'ArrowUp',
   RIGHT_ARROW_KEY = 'ArrowRight',
   DOWN_ARROW_KEY = 'ArrowDown',
-}
+};
 
 export enum TOAST_TYPES {
   ALERT = 'alert',
   INFO = 'info',
   SUCCESS = 'success',
   WARNING = 'warning',
-}
+};
+
+export enum ORIENTATIONS {
+  LANDSCAPE = 'landscape',
+  PORTRAIT = 'portrait',
+};
