@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-bdfBwQ kcDtUs"
+  id=""
+>
+  <div>
+    Step 
+  </div>
+</div>
+`;

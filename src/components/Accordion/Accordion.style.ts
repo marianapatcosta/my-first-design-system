@@ -36,15 +36,14 @@ export const StyledAccordionTitle = styled.div<{
 export const StyledAccordionArrow = styled.img<{ isExpanded?: boolean }>`
   width: 0.5rem;
   margin-left: 0.5rem;
-  transform: rotate(90deg);
-  filter: invert(98%) sepia(26%) saturate(2%) hue-rotate(98deg) brightness(116%)
-    contrast(100%);
+  transform: rotate(0deg);
+  ${colors.icon};
   transition: transform 0.5s ease-in-out;
 
   ${({ isExpanded }) =>
     isExpanded &&
     `border-bottom-left-radius: 0;
-       transform: rotate(270deg);`}
+    transform: rotate(180deg);`}
 `;
 
 export const StyledAccordionContent = styled.div<{ isExpanded?: boolean }>`

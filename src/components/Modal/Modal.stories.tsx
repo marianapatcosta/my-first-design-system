@@ -8,10 +8,23 @@ export default {
   args: {},
 } as Meta;
 
-const Template: Story<ModalProps> = (args) =>
-  <Modal {...args} />;
+const Template: Story<ModalProps> = (args) => <Modal {...args} />;
 
-  export const Default = Template.bind({});
-  Default.args = {
+export const Default = Template.bind({});
+Default.args = {
+  header: 'Modal Header',
+  content: 'Modal content',
+  buttonLabel: 'ok',
+  onClose: () => console.log('closed'),
+};
 
-  };
+export const Confirmation = Template.bind({});
+Confirmation.args = {
+  header: 'Confirmation Modal Header',
+  content: 'Confirmation modal content',
+  isConfirmationModal: true,
+  buttonLabel: 'decline',
+  confirmationButtonLabel: 'confirm',
+  onClose: () => console.log('closed'),
+  onConfirm: () => console.log('confirmed'),
+};

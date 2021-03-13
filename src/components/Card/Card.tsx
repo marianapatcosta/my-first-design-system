@@ -17,7 +17,7 @@ export interface CardProps {
   /**
    * element id
    */
-  children?: ReactNode;
+  children?: string | ReactNode;
 }
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(

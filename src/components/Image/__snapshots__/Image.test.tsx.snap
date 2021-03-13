@@ -10,7 +10,7 @@ exports[`Image renders without errors and matches snapshot 1`] = `
   />
   <img
     alt=""
-    class="sc-gsTCUz jUMYtE"
+    class="sc-gsTCUz dnpVrl"
     data-testid="image"
     id=""
     loading="lazy"

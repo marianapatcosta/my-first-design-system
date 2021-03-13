@@ -1,0 +1,37 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { ShowMore } from './ShowMore';
+
+<Meta title='Design System|ShowMore' component={ShowMore} />
+
+# ShowMore
+
+ShowMore component
+
+## Usage
+
+Use ShowMore to present a truncated text /HTML element list that can be fully displayed if `show more` link is clicked
+
+- ShowMore With string:
+
+  <Story name='WithString'>
+    <ShowMore content='ShowMore content' />
+  </Story>
+
+- ShowMore With list:
+  <Story name='WithList'>
+    <ShowMore
+      content={
+        <ul>
+          {['item 1', 'item 2', 'item 3', 'item 4', 'item 5', 'item 6'].map(
+            (item, index) => (
+              <li key={`example-list-${index}`}>{item}</li>
+            )
+          )}
+        </ul>
+      }
+    />
+  </Story>
+
+## Other important notes
+
+not applicable.

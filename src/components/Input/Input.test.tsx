@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { Input } from './Input';
-import { Tick } from '../../assets/icons';
+import { Tick as Success } from '../../assets/icons';
 
 describe('Input', () => {
   const defaultProps = { label: 'Input', value: 'Hello', onChange: () => null };
@@ -62,18 +62,18 @@ describe('Input', () => {
   describe('Input with icon', () => {
     test('should render icon if icon prop is passed', () => {
       const { getByTestId } = render(
-        <Input {...defaultProps} icon={Tick} />
+        <Input {...defaultProps} icon={Success} />
       );
 
       const icon = getByTestId('input-icon');
       expect(icon).toBeTruthy();
-      expect(icon).toHaveAttribute('src', Tick);
+      expect(icon).toHaveAttribute('src', Success);
     });
 
     test('should handle click events', () => {
       const onIconClickMock = jest.fn();
       const { getByTestId } = render(
-        <Input {...defaultProps} icon={Tick} onIconClick={onIconClickMock} />
+        <Input {...defaultProps} icon={Success} onIconClick={onIconClickMock} />
       );
       const icon = getByTestId('input-icon');
       icon && fireEvent.click(icon);

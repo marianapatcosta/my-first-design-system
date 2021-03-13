@@ -2,9 +2,15 @@
 
 exports[`Button renders without errors and matches snapshot 1`] = `
 <button
-  class="sc-bdfBwQ eUeOhf"
+  class="sc-bdfBwQ dtjGKh"
   id=""
+  type="button"
 >
-  Button
+  
+  <span
+    class="sc-gsTCUz WUuCA"
+  >
+    Button
+  </span>
 </button>
 `;

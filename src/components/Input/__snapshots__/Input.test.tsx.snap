@@ -2,7 +2,7 @@
 
 exports[`Input renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ bSfouD"
+  class="sc-bdfBwQ kVIJuB"
 >
   <label
     class="sc-hKgILt gHTKjQ"
@@ -15,7 +15,7 @@ exports[`Input renders without errors and matches snapshot 1`] = `
   >
     <input
       autocomplete="off"
-      class="sc-dlfnbm judfll"
+      class="sc-dlfnbm cuwVNL"
       data-testid="input-field"
       id=""
       maxlength="150"

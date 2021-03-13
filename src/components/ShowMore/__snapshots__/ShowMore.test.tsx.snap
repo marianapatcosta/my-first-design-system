@@ -2,7 +2,33 @@
 
 exports[`ShowMore renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ cUiAAY"
+  class="sc-bdfBwQ ilKWYK"
   id=""
-/>
+>
+  <div
+    class="sc-hKgILt aMneb"
+    style="max-height: 5.6rem;"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Donec vitae mollis velit. Vestibulum lacinia nisi vitae lorem sollicitudin, vel ultricies enim suscipit. 
+  Etiam vel sodales dolor. Nunc iaculis quis arcu faucibus tincidunt. Maecenas blandit dapibus porttitor. 
+  Quisque sed mauris elit. Ut placerat, augue ut blandit ultricies, nunc nulla vehicula mi, in vehicula urna lectus nec nibh. 
+  Aenean quis risus imperdiet, bibendum mauris vitae, consequat tortor. Donec aliquam ante vel turpis fringilla facilisis. 
+  Integer varius non lacus id ultrices. In eleifend dolor ante, congue placerat elit maximus eget. Duis varius ligula erat, et varius neque euismod
+   ac. In vitae posuere nisl. Sed non justo tortor. Integer risus est, feugiat at ultrices vitae, pretium in est.
+  </div>
+  <a
+    class="sc-gsTCUz aApIO"
+    data-testid="show-more-link"
+    href=""
+  >
+    show more
+     
+    <img
+      alt="show more icon"
+      class="sc-dlfnbm kuaVsD"
+      src="double-chevron.svg"
+    />
+  </a>
+</div>
 `;

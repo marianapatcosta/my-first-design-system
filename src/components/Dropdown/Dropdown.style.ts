@@ -28,8 +28,8 @@ export const StyledDropdown = styled.div<{
     pointer-events: none;
     width: 0.4em;
     height: 0.4em;
-    border-right: 0.2em solid ${colors.highlight};
-    border-bottom: 0.2em solid ${colors.highlight};
+    border-right: 0.125rem solid ${colors.highlight};
+    border-bottom: 0.125rem solid ${colors.highlight};
     transform: rotate(45deg);
     -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
@@ -61,7 +61,6 @@ export const StyledDropdownHeader = styled.select`
   margin: 0;
   width: 100%;
   font-family: inherit;
-  cursor: inherit;
   line-height: inherit;
   ${baseStyles}
   background-color: ${colors.primary};
@@ -77,7 +76,7 @@ export const StyledDropdownHeader = styled.select`
     display: none;
   }
 
-  ${({ disabled }) => disabled && ` ${disabledStyles}`}
+  ${({ disabled }) => disabled && `${disabledStyles}`}
 `;
 
 export const StyledDropdownOption = styled.option`

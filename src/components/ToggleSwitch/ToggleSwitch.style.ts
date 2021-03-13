@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { baseStyles, disabledStyles, colors } from '../../styles';
+import { baseStyles, disabledStyles, truncateStyles, colors } from '../../styles';
 
 export const StyledToggleSwitch = styled.label<{ disabled?: boolean }>`
   ${baseStyles}
@@ -10,9 +10,7 @@ export const StyledToggleSwitch = styled.label<{ disabled?: boolean }>`
   font-size: 95%;
   color: ${colors.highlight};
   font-style: italic;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  ${truncateStyles};
 
   ${({ disabled }) => disabled && `${disabledStyles} color: ${colors.disabled}`}
 `;

@@ -4,7 +4,7 @@ import { typography } from './typography';
 
 export const baseStyles = css`
   font-family: ${typography.type.body};
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.2rem;
 
   margin: 0;
@@ -24,4 +24,10 @@ export const disabledStyles = css`
   pointer-events: none;
   user-select: none;
   cursor: default;
+`;
+
+export const truncateStyles = css`
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;

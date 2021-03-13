@@ -4,12 +4,13 @@ import { Card, CardProps } from './Card';
 
 export default {
   title: 'Card',
-  component: Card
+  component: Card,
+  args: { style: { width: '400px' } },
 } as Meta;
 
 const Template: Story<CardProps> = (args) => <Card {...args} />;
 
 export const DefaultCard = Template.bind({});
 DefaultCard.args = {
-  children: <div>This is Card component</div>
+  children: <div>This is Card component</div>,
 };

@@ -1,8 +1,12 @@
 import React, { CSSProperties, forwardRef, MouseEventHandler } from 'react';
-import { StyledButton } from './Button.style';
+import {
+  StyledButton,
+  StyledButtonLabel,
+  StyledButtonIcon,
+} from './Button.style';
 
 type ButtonType = 'button' | 'submit' | 'reset' | undefined;
-type ButtonSize = 'small' | 'medium' | 'large';
+export type ButtonSize = 'small' | 'medium' | 'large';
 
 export interface ButtonProps {
   /**
@@ -36,11 +40,19 @@ export interface ButtonProps {
   /**
    * Button's label
    */
-  label: string;
+  label?: string;
   /**
    * Is Button disabled?
    */
   disabled?: boolean;
+  /**
+   * Button icon
+   */
+  icon?: string;
+  /**
+   * text to describe the button icon (for accessibility purposes)
+   */
+  iconText?: string;
   /**
    * Click handler
    */
@@ -51,20 +63,18 @@ export interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    { primary, size, isFullLength, label, disabled, type, className, ...props },
-    ref
-  ) => {
+  ({ label, icon, iconText, ...props }, ref) => {
     return (
-      <StyledButton
-        ref={ref}
-        className={className}
-        primary={primary}
-        isFullLength={isFullLength}
-        disabled={disabled}
-        {...props}
-      >
-        {label}
+      <StyledButton ref={ref} {...props}>
+        {icon && (
+          <StyledButtonIcon
+            data-testid='button-icon'
+            src={icon}
+            alt={iconText}
+            label={label}
+          />
+        )}
+        {label && <StyledButtonLabel>{label}</StyledButtonLabel>}
       </StyledButton>
     );
   }
@@ -80,5 +90,7 @@ Button.defaultProps = {
   label: '',
   disabled: false,
   type: 'button',
+  icon: '',
+  iconText: '',
   onClick: () => null,
 };

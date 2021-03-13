@@ -13,3 +13,5 @@ export * from './Toast/Toast';
 export * from './ToggleSwitch/ToggleSwitch';
 export * from './Tooltip/Tooltip';
 export * from './Modal/Modal';
+export * from './Stepper/Stepper';
+export * from './Step/Step';

@@ -2,7 +2,7 @@
 
 exports[`Search renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ bSfouD"
+  class="sc-bdfBwQ kVIJuB"
 >
   <label
     class="sc-gsTCUz ecMFjJ"
@@ -28,7 +28,7 @@ exports[`Search renders without errors and matches snapshot 1`] = `
     >
       <img
         alt="clear-icon"
-        class="sc-jSgupP izDhMj"
+        class="sc-jSgupP kWzYmz"
         data-testid="search-icon"
         src="close.svg"
       />

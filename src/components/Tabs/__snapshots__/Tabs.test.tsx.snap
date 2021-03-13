@@ -2,7 +2,7 @@
 
 exports[`Tabs renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-gsTCUz iAoJMQ"
+  class="sc-gsTCUz jTRLQS"
   id=""
 >
   <div
@@ -15,7 +15,7 @@ exports[`Tabs renders without errors and matches snapshot 1`] = `
     >
       <li
         aria-selected="true"
-        class="sc-bdfBwQ khaniN"
+        class="sc-bdfBwQ bbHXvT"
         id=""
         role="tab"
         tabindex="0"
@@ -24,7 +24,7 @@ exports[`Tabs renders without errors and matches snapshot 1`] = `
       </li>
       <li
         aria-selected="false"
-        class="sc-bdfBwQ jQYLcU"
+        class="sc-bdfBwQ cQWGAO"
         id=""
         role="tab"
         tabindex="0"

@@ -1,3 +1,5 @@
+import { css } from 'styled-components';
+
 export const colors = {
   transparent: 'Transparent',
   darkBlue: '#12217c',
@@ -15,4 +17,12 @@ export const colors = {
   secondary: '#e8dfd5',
   font: '#161616',
   disabled: '#aaaaaa',
+  icon: css`
+    filter: invert(98%) sepia(26%) saturate(2%) hue-rotate(98deg)
+      brightness(116%) contrast(100%);
+  `,
+  iconHighlight: css`
+    filter: invert(23%) sepia(43%) saturate(3232%) hue-rotate(100deg)
+      brightness(92%) contrast(104%);
+  `,
 };

@@ -2,7 +2,63 @@
 
 exports[`Modal renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ cUiAAY"
-  id=""
-/>
+  class="sc-hKgILt dSgvqn"
+>
+  <div
+    class="sc-eCssSg fOkKDZ"
+  >
+    <div
+      class="sc-jSgupP jamSub"
+      id=""
+    >
+      <header
+        class="sc-gKsewC jLbPZa"
+      >
+        <h2
+          class="sc-iBPRYJ bojrUK"
+        >
+          Modal header
+        </h2>
+        <button
+          aria-label="close modal"
+          class="sc-bdfBwQ dtjGKh sc-fubCfw dWdEHO"
+          id=""
+          type="button"
+        >
+          <img
+            alt=""
+            class="sc-dlfnbm kQHvsZ"
+            data-testid="button-icon"
+            label=""
+            src="close.svg"
+          />
+          
+        </button>
+      </header>
+      <main>
+        <p
+          class="sc-pFZIQ jPmREe"
+        >
+          Content header
+        </p>
+      </main>
+      <footer
+        class="sc-jrAGrp jXkypb"
+      >
+        <button
+          class="sc-bdfBwQ kNApjs sc-kEjbxe dzDLLu"
+          id=""
+          type="button"
+        >
+          
+          <span
+            class="sc-gsTCUz WUuCA"
+          >
+            ok
+          </span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
 `;

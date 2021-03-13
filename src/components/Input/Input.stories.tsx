@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { Input, InputProps } from './Input';
-import { Tick } from '../../assets/icons';
+import { Success } from '../../assets/icons';
 
 export default {
   title: 'Input',
@@ -18,7 +18,7 @@ export const WithLabel = Template.bind({});
 WithLabel.args = { label: 'Input' };
 
 export const WithIcon = Template.bind({});
-WithIcon.args = { icon: Tick };
+WithIcon.args = { icon: Success };
 
 export const WithError = Template.bind({});
 WithError.args = { errorMessage: 'This is an error!' };
