@@ -2,15 +2,15 @@
 
 exports[`ToggleSwitch renders without errors and matches snapshot 1`] = `
 <label
-  class="sc-bdfBwQ LpMpT"
+  class="sc-bdfBwQ ealERE"
 >
   <input
-    class="sc-hKgILt jZJSDB"
+    class="sc-hKgILt bfxRRP"
     name=""
     type="checkbox"
   />
   <span
-    class="sc-dlfnbm gaORok"
+    class="sc-dlfnbm dKZkKe"
     data-testid="toggle-slider"
     label=""
   >

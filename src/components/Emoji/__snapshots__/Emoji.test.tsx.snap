@@ -4,7 +4,7 @@ exports[`Emoji renders without errors and matches snapshot 1`] = `
 <div
   aria-hidden="true"
   aria-label=""
-  class="sc-bdfBwQ dXRvoi"
+  class="sc-bdfBwQ bTxJHq"
   role="img"
 >
   😃

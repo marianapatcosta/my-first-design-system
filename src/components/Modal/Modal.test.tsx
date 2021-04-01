@@ -44,7 +44,7 @@ describe('Modal', () => {
     expect(onCloseMock).toBeCalled();
   });
 
-  test('should call on close if click outside of it', () => {
+  test('should call on close if click outside of modal', () => {
     const onCloseMock = jest.fn();
     const { container } = render(
       <Modal {...defaultProps} onClose={onCloseMock} />

@@ -2,16 +2,16 @@
 
 exports[`Textarea renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ fkYEUL"
+  class="sc-bdfBwQ jWcQjL"
 >
   <label
-    class="sc-dlfnbm fSTPRX"
+    class="sc-dlfnbm iSaUXM"
     for=""
   >
     textarea
   </label>
   <textarea
-    class="sc-gsTCUz iOpeue"
+    class="sc-gsTCUz iLUHcy"
     data-testid="textarea-field"
     id=""
     name=""

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { Stepper, StepperProps } from './Stepper';
+import { ORIENTATION } from '../../constants';
 
 export default {
   title: 'Stepper',
@@ -30,7 +31,6 @@ export default {
       },
     ],
     onSubmit: () => console.log('submitted'),
-    style: { backgroundColor: 'gray' },
   },
 } as Meta;
 
@@ -39,5 +39,5 @@ const Template: Story<StepperProps> = (args) => <Stepper {...args} />;
 export const Landscape = Template.bind({});
 Landscape.args = {};
 
-export const Portrait = Template.bind({});
-Portrait.args = { orientation: 'portrait' };
+export const Vertical = Template.bind({});
+Vertical.args = { orientation: ORIENTATION.VERTICAL };

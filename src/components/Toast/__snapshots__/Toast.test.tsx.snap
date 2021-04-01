@@ -2,12 +2,12 @@
 
 exports[`Toast renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-hKgILt cRTYxH"
+  class="sc-hKgILt fTaWEn"
   id=""
   type="info"
 >
   <button
-    class="sc-bdfBwQ kNApjs sc-eCssSg hrInoB"
+    class="sc-bdfBwQ sMlFw sc-eCssSg iMrxuC"
     id=""
     type="button"
   >
@@ -16,20 +16,24 @@ exports[`Toast renders without errors and matches snapshot 1`] = `
       class="sc-dlfnbm kQHvsZ"
       data-testid="button-icon"
       label=""
-      src="close.svg"
+      src="close-white.svg"
     />
     
   </button>
-  <img
-    alt="info.svg icon"
-    class="sc-jSgupP kbWecE"
-    src="info.svg"
-  />
   <div
-    class="sc-gKsewC eEKOfY"
-    type="info"
+    class="sc-iBPRYJ DmnJc"
   >
-    info toast
+    <img
+      alt="info.svg icon"
+      class="sc-jSgupP kBWXkU"
+      src="info.svg"
+    />
+    <div
+      class="sc-gKsewC fhZxet"
+      type="info"
+    >
+      info toast
+    </div>
   </div>
 </div>
 `;

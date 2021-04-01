@@ -7,7 +7,7 @@ export const StyledCard = styled.div`
   border-radius: 0.375rem;
   padding: 1rem;
   overflow: hidden;
-  background-color: ${colors.secondary};
+  background-color: ${colors.primary};
 
   @media (min-width: 768px) {
     padding: 2rem;

@@ -14,15 +14,13 @@ export const StyledCheckbox = styled.label<{ disabled?: boolean }>`
   font-size: 95%;
   color: ${colors.highlight};
 
-  ${({ disabled }) =>
-    disabled
-      && `color: ${colors.disabled};`}
+  ${({ disabled }) => disabled && `color: ${colors.disabled};`}
 `;
 
 export const StyledCheckboxToggleTick = styled.img`
   width: 1rem;
   height: 1rem;
-  ${colors.icon};
+  ${colors.iconHighlight};
 `;
 
 export const StyledCheckboxToggle = styled.div<{ disabled?: boolean }>`
@@ -61,7 +59,7 @@ export const StyledCheckboxInput = styled.input`
   }
 
   // when focus, adds a border to its sibling StyledCheckboxToggle
-  :focus + ${StyledCheckboxToggle} {
+  :focus-visible + ${StyledCheckboxToggle} {
     outline: 0.125rem solid ${colors.highlight};
   }
 

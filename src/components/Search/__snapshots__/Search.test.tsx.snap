@@ -2,19 +2,19 @@
 
 exports[`Search renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ kVIJuB"
+  class="sc-bdfBwQ hraWbH"
 >
   <label
-    class="sc-gsTCUz ecMFjJ"
+    class="sc-gsTCUz kHQInC"
     for=""
   >
     Search
   </label>
   <div
-    class="sc-dlfnbm hoLpfF"
+    class="sc-dlfnbm bgknId"
   >
     <input
-      class="sc-hKgILt dDwLED"
+      class="sc-hKgILt gSVQYD"
       data-testid="search-field"
       id=""
       maxlength="150"
@@ -24,11 +24,11 @@ exports[`Search renders without errors and matches snapshot 1`] = `
       value="Hello"
     />
     <div
-      class="sc-eCssSg cUBvld"
+      class="sc-eCssSg glznXJ"
     >
       <img
         alt="clear-icon"
-        class="sc-jSgupP kWzYmz"
+        class="sc-jSgupP bkYiH"
         data-testid="search-icon"
         src="close.svg"
       />

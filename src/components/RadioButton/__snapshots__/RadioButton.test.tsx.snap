@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton renders without errors and matches snapshot 1`] = `
+<label
+  aria-checked="false"
+  class="sc-bdfBwQ ivjLLh"
+>
+  <input
+    class="sc-dlfnbm bGKYVm"
+    data-testid="radio-button"
+    name=""
+    type="radio"
+    value=""
+  />
+  <span
+    class="sc-gsTCUz jzeJuN"
+  />
+  option 1
+</label>
+`;

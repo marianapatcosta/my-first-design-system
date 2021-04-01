@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { ORIENTATIONS } from '../../constants';
+import { ORIENTATION } from '../../constants';
 import { Stepper } from './Stepper';
 
 describe('Stepper', () => {
@@ -101,12 +101,12 @@ describe('Stepper', () => {
     expect(stepperIndicatorStyle.flexDirection).toBe('');
   });
 
-  test('should have `isPortrait` styles if orientation= portrait', () => {
+  test('should have `isVertical` styles if orientation = vertical', () => {
     const {
       container: { firstChild },
       getByLabelText,
     } = render(
-      <Stepper {...defaultProps} orientation={ORIENTATIONS.PORTRAIT} />
+      <Stepper {...defaultProps} orientation={ORIENTATION.VERTICAL} />
     );
 
     const stepperIndicator = getByLabelText('progress');

@@ -5,6 +5,7 @@ export const StyledInputWrapper = styled.div`
   ${baseStyles}
   margin: 1rem 0;
   width: 100%;
+  max-width: 15rem;
 `;
 
 export const StyledInputField = styled.div<{ disabled?: boolean }>`
@@ -19,7 +20,7 @@ export const StyledInput = styled.input<{ errorMessage?: string }>`
   font-family: ${typography.type.body};
   font-size: 95%;
   width: 100%;
-  border: 0.125rem solid ${colors.transparent};
+  border: 0.0625rem solid ${colors.transparent};
   background-color: ${colors.primary};
   box-shadow: 0 0.063rem 0.25rem ${colors.shadow};
   box-sizing: border-box;
@@ -63,7 +64,6 @@ export const StyledInputIcon = styled.img`
 
 export const StyledInputError = styled.p`
   color: ${colors.red};
-  font-weight: 700;
   font-size: 95%;
   margin-top: 0.3rem;
 `;

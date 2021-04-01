@@ -19,7 +19,7 @@ export const StyledTextarea = styled.textarea<{
   width: 100%;
   width: 100%;
   background-color: ${colors.primary};
-  border: 0.125rem solid ${colors.primary};
+  border: 0.0625rem solid ${colors.primary};
   box-shadow: 0 0.063rem 0.25rem ${colors.shadow};
   box-sizing: border-box;
   padding: 0.3rem 0.625rem;
@@ -39,8 +39,16 @@ export const StyledTextarea = styled.textarea<{
   ${({ errorMessage }) =>
     !!errorMessage &&
     `border-color: ${colors.red};
-  box-shadow: none;
+      box-shadow: none;
   `}
+
+  :focus-visible {
+    outline: 0.125rem solid ${colors.highlight};
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
 `;
 
 export const StyledLabel = styled.label<{ disabled?: boolean }>`
@@ -55,7 +63,6 @@ export const StyledLabel = styled.label<{ disabled?: boolean }>`
 
 export const StyledTextareaError = styled.p`
   color: ${colors.red};
-  font-weight: bold;
-  font-size: 90%;
+  font-size: 95%;
   margin-top: 0.3rem;
 `;

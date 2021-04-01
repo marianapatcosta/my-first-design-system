@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButtonGroup renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-hKgILt hoZpjz"
+  id=""
+  role="radiogroup"
+>
+  <h3
+    class="sc-eCssSg iBHIVn"
+  >
+    radio group
+  </h3>
+  <div
+    class="sc-jSgupP jTPNBf"
+  >
+    <label
+      aria-checked="false"
+      class="sc-bdfBwQ ivjLLh"
+    >
+      <input
+        class="sc-dlfnbm bGKYVm"
+        data-testid="radio-button"
+        name="name 1"
+        type="radio"
+        value="option 1"
+      />
+      <span
+        class="sc-gsTCUz jzeJuN"
+      />
+      option 1
+    </label>
+    <label
+      aria-checked="false"
+      class="sc-bdfBwQ ivjLLh"
+    >
+      <input
+        class="sc-dlfnbm bGKYVm"
+        data-testid="radio-button"
+        name="name 2"
+        type="radio"
+        value="option 2"
+      />
+      <span
+        class="sc-gsTCUz jzeJuN"
+      />
+      option 2
+    </label>
+    <label
+      aria-checked="false"
+      class="sc-bdfBwQ ivjLLh"
+    >
+      <input
+        class="sc-dlfnbm bGKYVm"
+        data-testid="radio-button"
+        name="name 3"
+        type="radio"
+        value="option 3"
+      />
+      <span
+        class="sc-gsTCUz jzeJuN"
+      />
+      option 3
+    </label>
+  </div>
+</div>
+`;

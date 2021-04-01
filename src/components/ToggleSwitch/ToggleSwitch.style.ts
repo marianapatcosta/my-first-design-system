@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-import { baseStyles, disabledStyles, truncateStyles, colors } from '../../styles';
+import {
+  baseStyles,
+  disabledStyles,
+  truncateStyles,
+  colors,
+} from '../../styles';
 
 export const StyledToggleSwitch = styled.label<{ disabled?: boolean }>`
   ${baseStyles}
@@ -51,7 +56,7 @@ export const StyledToggleSwitchSlider = styled.span<{
   }
 
   :before {
-    background-color: ${colors.primary};
+    background-color: ${colors.highlight};
     opacity: 0.5;
     border-radius: 50%;
     content: '';
@@ -86,8 +91,9 @@ export const StyledToggleInput = styled.input`
   position: absolute;
   opacity: 0;
   z-index: 1;
-  // when focus, adds a border to its sibling StyledCheckboxToggle
-  :focus + ${StyledToggleSwitchSlider} {
+
+  // when focus, adds a border to its sibling StyledToggleSwitchSlider
+  :focus-visible + ${StyledToggleSwitchSlider} {
     outline: 0.125rem solid ${colors.highlight};
   }
 

@@ -2,7 +2,7 @@
 
 exports[`Card renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ ezAuSS"
+  class="sc-bdfBwQ bPztDC"
   id=""
 />
 `;

@@ -88,9 +88,14 @@ export const Image: React.FC<ImageProps> = ({
     document.documentElement.style.overflow = 'scroll';
   }, [isZoomedIn]);
 
-  return (
-    <StyledImageOverlay isZoomable={isZoomable} isZoomedIn={isZoomedIn} >
-      {!isLoaded && <StyledImagePlaceholder data-testid='image-placeholder' className={placeholderClass} />}
+  return isZoomable ? (
+    <StyledImageOverlay isZoomedIn={isZoomedIn}>
+      {!isLoaded && (
+        <StyledImagePlaceholder
+          data-testid='image-placeholder'
+          className={placeholderClass}
+        />
+      )}
       <StyledImage
         data-testid='image'
         role={isClickable ? 'button' : 'img'}
@@ -107,6 +112,30 @@ export const Image: React.FC<ImageProps> = ({
         {...props}
       />
     </StyledImageOverlay>
+  ) : (
+    <>
+      {!isLoaded && (
+        <StyledImagePlaceholder
+          data-testid='image-placeholder'
+          className={placeholderClass}
+        />
+      )}
+      <StyledImage
+        data-testid='image'
+        role={isClickable ? 'button' : 'img'}
+        tabIndex={isClickable ? 0 : -1}
+        isClickable={isClickable}
+        isLoaded={isLoaded}
+        isZoomedIn={isZoomedIn}
+        isZoomable={isZoomable}
+        wasImageClicked={wasImageClicked}
+        loading='lazy'
+        onClick={handleImageClick}
+        onKeyDown={handleImageClick}
+        onLoad={() => setIsLoaded(true)}
+        {...props}
+      />
+    </>
   );
 };
 

@@ -61,7 +61,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         onChange={onChange}
       />
       <StyledCheckboxToggle disabled={disabled}>
-        {checked && <StyledCheckboxToggleTick alt='checkbox tick' src={Tick} />}
+        {checked && <StyledCheckboxToggleTick alt='checkbox-tick' src={Tick} />}
       </StyledCheckboxToggle>
       {label}
     </StyledCheckbox>

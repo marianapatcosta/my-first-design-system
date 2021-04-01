@@ -2,11 +2,11 @@
 
 exports[`Tabs renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-gsTCUz jTRLQS"
+  class="sc-gsTCUz bGRYEi"
   id=""
 >
   <div
-    class="sc-dlfnbm HXBti"
+    class="sc-dlfnbm cHVBSC"
   >
     <ul
       aria-label="Select "
@@ -15,7 +15,7 @@ exports[`Tabs renders without errors and matches snapshot 1`] = `
     >
       <li
         aria-selected="true"
-        class="sc-bdfBwQ bbHXvT"
+        class="sc-bdfBwQ csIuzl"
         id=""
         role="tab"
         tabindex="0"
@@ -24,7 +24,7 @@ exports[`Tabs renders without errors and matches snapshot 1`] = `
       </li>
       <li
         aria-selected="false"
-        class="sc-bdfBwQ cQWGAO"
+        class="sc-bdfBwQ dElXjk"
         id=""
         role="tab"
         tabindex="0"
@@ -39,7 +39,7 @@ exports[`Tabs renders without errors and matches snapshot 1`] = `
     role="tabpanel"
   >
     <div
-      class="sc-jSgupP jaxZJz"
+      class="sc-jSgupP wnDln"
     />
     <div>
       Tab 1 content

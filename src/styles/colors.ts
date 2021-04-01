@@ -12,17 +12,17 @@ export const colors = {
   yellow: '#f5d252',
   grey: '#808080',
   shadow: '#000000',
-  highlight: '#008000',
-  primary: '#b1be9c',
-  secondary: '#e8dfd5',
-  font: '#161616',
+  highlight: '#212529',
+  primary: '#F8F9FA',
+  secondary: '#ADB5BD',
+  font: '#212529',
   disabled: '#aaaaaa',
   icon: css`
-    filter: invert(98%) sepia(26%) saturate(2%) hue-rotate(98deg)
-      brightness(116%) contrast(100%);
+    filter: invert(12%) sepia(16%) saturate(421%) hue-rotate(169deg)
+      brightness(92%) contrast(93%);
   `,
   iconHighlight: css`
-    filter: invert(23%) sepia(43%) saturate(3232%) hue-rotate(100deg)
-      brightness(92%) contrast(104%);
+    filter: invert(100%) sepia(28%) saturate(1271%) hue-rotate(179deg)
+      brightness(103%) contrast(96%);
   `,
 };

@@ -2,7 +2,7 @@
 
 exports[`Stepper should render without errors and matches snapshot 1`] = `
 <div
-  class="sc-eCssSg kPWSdA"
+  class="sc-eCssSg fBTenm"
   data-steps="3"
   id=""
 >
@@ -12,25 +12,25 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
     role="group"
   >
     <progress
-      class="sc-iBPRYJ hsnDam"
+      class="sc-iBPRYJ ffMDfi"
       max="100"
       value="0"
     />
     <li
       aria-current="step"
-      class="sc-gKsewC iQAMcE"
+      class="sc-gKsewC eXitxk"
     >
       1
     </li>
     <li
       aria-current="step"
-      class="sc-gKsewC FsmaJ"
+      class="sc-gKsewC jEGmWz"
     >
       2
     </li>
     <li
       aria-current="step"
-      class="sc-gKsewC FsmaJ"
+      class="sc-gKsewC jEGmWz"
     >
       3
     </li>
@@ -42,7 +42,7 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
       class="sc-pFZIQ fiTKve"
     >
       <div
-        class="sc-bdfBwQ kcDtUs"
+        class="sc-bdfBwQ kvQjrA"
         id=""
       >
         <p>
@@ -50,7 +50,7 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
         </p>
       </div>
       <div
-        class="sc-bdfBwQ gmDwpK"
+        class="sc-bdfBwQ iXaJye"
         id=""
       >
         <p>
@@ -58,7 +58,7 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
         </p>
       </div>
       <div
-        class="sc-bdfBwQ gmDwpK"
+        class="sc-bdfBwQ iXaJye"
         id=""
       >
         <p>
@@ -70,7 +70,7 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
       class="sc-jrAGrp bykmwW"
     >
       <button
-        class="sc-gsTCUz fOjZNc sc-kEjbxe sc-iqHYGH loVkLi ijhVeU"
+        class="sc-gsTCUz kaYvCA sc-kEjbxe sc-iqHYGH jYhrIr ijhVeU"
         data-testid="next-button"
         id=""
         type="button"
