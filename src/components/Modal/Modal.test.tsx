@@ -53,11 +53,6 @@ describe('Modal', () => {
     expect(onCloseMock).toBeCalled();
   });
 
-  test('should return null on click if onClose prop is not passed', () => {
-    const result = Modal.defaultProps?.onClose && Modal.defaultProps.onClose();
-    expect(result).toBeNull();
-  });
-
   describe('Confirmation Modal', () => {
     test('should display confirmation button', () => {
       const { getByText } = render(
@@ -84,12 +79,6 @@ describe('Modal', () => {
       button && fireEvent.click(button);
 
       expect(onConfirmMock).toBeCalled();
-    });
-
-    test('should return null on click if onClick prop is not passed', () => {
-      const result =
-        Modal.defaultProps?.onConfirm && Modal.defaultProps.onConfirm();
-      expect(result).toBeNull();
     });
   });
 });

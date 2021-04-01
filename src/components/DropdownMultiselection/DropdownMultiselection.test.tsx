@@ -44,13 +44,6 @@ describe('DropdownMultiselection', () => {
     getByText('option 1');
   });
 
-  test('should return null on option click if onOptionClick prop is not passed', () => {
-    const result =
-      DropdownMultiselection.defaultProps?.onOptionClick &&
-      DropdownMultiselection.defaultProps.onOptionClick();
-    expect(result).toBeNull();
-  });
-
   test('should handle click events and simulate selection', async () => {
     const onOptionClickMock = jest.fn();
     const { getByText, getByLabelText } = render(

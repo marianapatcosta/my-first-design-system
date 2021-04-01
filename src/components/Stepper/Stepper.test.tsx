@@ -80,12 +80,6 @@ describe('Stepper', () => {
     expect(onSubmitMock).toBeCalled();
   });
 
-  test('should return null if `onSubmit` prop is not passed', () => {
-    const result =
-      Stepper.defaultProps?.onSubmit && Stepper.defaultProps.onSubmit();
-    expect(result).toBeNull();
-  });
-
   test('should have default styles if orientation= landscape', () => {
     const {
       container: { firstChild },
@@ -97,7 +91,7 @@ describe('Stepper', () => {
       firstChild && window.getComputedStyle(firstChild as Element);
     const stepperIndicatorStyle = window.getComputedStyle(stepperIndicator);
 
-    stepperStyle && expect(stepperStyle.flexDirection).toBe('column');
+    expect(stepperStyle?.flexDirection).toBe('column');
     expect(stepperIndicatorStyle.flexDirection).toBe('');
   });
 

@@ -23,6 +23,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Launches the test runner in the interactive watch mode and shows tets coverage report.
 
+### `yarn storybook`
+
+Runs storybook design system
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
 ### `yarn run build`
 
 Builds the app for production to the `build` folder.\

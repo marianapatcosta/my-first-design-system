@@ -33,17 +33,6 @@ describe('Input', () => {
     expect(onBlurMock).toBeCalled();
   });
 
-  test('should return null on change if onChange prop is not passed', () => {
-    const result =
-      Input.defaultProps?.onChange && Input.defaultProps.onChange();
-    expect(result).toBeNull();
-  });
-
-  test('should return null on blur if onChange prop is not passed', () => {
-    const result = Input.defaultProps?.onBlur && Input.defaultProps.onBlur();
-    expect(result).toBeNull();
-  });
-
   describe('Disabled Input', () => {
     test('should not handle change events', () => {
       const onChangeMock = jest.fn();

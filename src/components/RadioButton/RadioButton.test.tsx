@@ -6,6 +6,7 @@ describe('RadioButton', () => {
   const defaultProps = {
     label: 'option 1',
     checked: false,
+    value: '',
     onChange: () => null,
   };
   test('renders without errors and matches snapshot', () => {

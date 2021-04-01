@@ -30,12 +30,6 @@ describe('Upload', () => {
     expect(onUploadMock).toBeCalled();
   });
 
-  test('should return null on click if onUpload prop is not passed', () => {
-    const result =
-      Upload.defaultProps?.onUpload && Upload.defaultProps.onUpload();
-    expect(result).toBeNull();
-  });
-
   test('should display images to preview if `hasPreview`prop is passed', () => {
     const { getByAltText } = render(
       <Upload
@@ -92,12 +86,5 @@ describe('Upload', () => {
     const fileToPreviewButton = getByLabelText('remove uploaded file 0');
     fireEvent.click(fileToPreviewButton);
     expect(onDeleteMock).toBeCalled();
-  });
-
-  test('should return null on delete button click if `onDeletePreview` prop is not passed', () => {
-    const result =
-      Upload.defaultProps?.onDeletePreview &&
-      Upload.defaultProps.onDeletePreview();
-    expect(result).toBeNull();
   });
 });

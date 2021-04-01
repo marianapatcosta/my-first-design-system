@@ -34,11 +34,6 @@ describe('Tab', () => {
       getByText('Tab 1');
     });
 
-    test('should return null on click if onClick prop is not passed', () => {
-      const result = Tab.defaultProps?.onClick && Tab.defaultProps.onClick();
-      expect(result).toBeNull();
-    });
-
     test('should be disabled', () => {
       const {
         container: { firstChild },

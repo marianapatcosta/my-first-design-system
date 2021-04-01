@@ -28,26 +28,14 @@ describe('Search', () => {
     expect(input.value).toBe('bye');
   });
 
-  test('should return null on change if onChange prop is not passed', () => {
-    const result =
-      Search.defaultProps?.onChange && Search.defaultProps.onChange();
-    expect(result).toBeNull();
-  });
-
-  test('should return null on close icon click if onClear prop is not passed', () => {
-    const result =
-      Search.defaultProps?.onClear && Search.defaultProps.onClear();
-    expect(result).toBeNull();
-  });
-
   test('should display magnifying glass icon when no value is inserted in search field', () => {
     const { getByAltText } = render(<Search {...defaultProps} value='' />);
 
     const magnifyingGlassIcon = getByAltText('magnifying-glass-icon');
- //   const clearIcon = getByAltText('clear icon');
+    //   const clearIcon = getByAltText('clear icon');
 
     expect(magnifyingGlassIcon).toBeTruthy();
-  //  expect(clearIcon).toBeFalsy();
+    //  expect(clearIcon).toBeFalsy();
   });
 
   test('should display clear icon when some value is inserted in search field', () => {

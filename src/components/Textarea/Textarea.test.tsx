@@ -3,14 +3,20 @@ import { render, fireEvent } from '@testing-library/react';
 import { Textarea } from './Textarea';
 
 describe('Textarea', () => {
-  const defaultProps = { label: 'textarea', value: 'Hello', onChange: () => null };
-   test('renders without errors and matches snapshot', () => {
-     const { container: { firstChild }  } = render(<Textarea  {...defaultProps}/>); 
+  const defaultProps = {
+    label: 'textarea',
+    value: 'Hello',
+    onChange: () => null,
+  };
+  test('renders without errors and matches snapshot', () => {
+    const {
+      container: { firstChild },
+    } = render(<Textarea {...defaultProps} />);
 
-     expect(firstChild).toMatchSnapshot();
-   });
+    expect(firstChild).toMatchSnapshot();
+  });
 
-   test('should handle change events', () => {
+  test('should handle change events', () => {
     const onChangeMock = jest.fn();
     const { getByTestId } = render(
       <Textarea {...defaultProps} onChange={onChangeMock} />
@@ -28,17 +34,6 @@ describe('Textarea', () => {
     const textarea = getByTestId('textarea-field') as HTMLInputElement;
     fireEvent.blur(textarea);
     expect(onBlurMock).toBeCalled();
-  });
-
-  test('should return null on change if onChange prop is not passed', () => {
-    const result =
-    Textarea.defaultProps?.onChange && Textarea.defaultProps.onChange();
-    expect(result).toBeNull();
-  });
-
-  test('should return null on blur if onChange prop is not passed', () => {
-    const result = Textarea.defaultProps?.onBlur && Textarea.defaultProps.onBlur();
-    expect(result).toBeNull();
   });
 
   describe('Disabled Textarea', () => {
