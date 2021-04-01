@@ -1,4 +1,4 @@
-module.exports = (plop) => {
+export const plop = (plop: any) => {
   plop.setGenerator('component', {
     description: 'Create a component',
     // User input prompts provided as arguments to the template
@@ -9,7 +9,7 @@ module.exports = (plop) => {
         // Variable name for this input
         name: 'name',
         // Prompt to display on command line
-        message: 'What is your component name?'
+        message: 'What is your component name?',
       },
     ],
     actions: [
@@ -24,29 +24,24 @@ module.exports = (plop) => {
       {
         type: 'add',
         path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
-        templateFile:
-          'plop-templates/Component/Component.test.tsx.hbs',
+        templateFile: 'plop-templates/Component/Component.test.tsx.hbs',
       },
       {
         type: 'add',
-        path:
-          'src/components/{{pascalCase name}}/{{pascalCase name}}.style.ts',
-        templateFile:
-          'plop-templates/Component/Component.style.ts.hbs',
+        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.style.ts',
+        templateFile: 'plop-templates/Component/Component.style.ts.hbs',
       },
       {
         type: 'add',
         path:
           'src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-        templateFile:
-          'plop-templates/Component/Component.stories.tsx.hbs',
+        templateFile: 'plop-templates/Component/Component.stories.tsx.hbs',
       },
       {
         type: 'add',
         path:
           'src/components/{{pascalCase name}}/{{pascalCase name}}.stories.mdx',
-        templateFile:
-          'plop-templates/Component/Component.stories.mdx.hbs',
+        templateFile: 'plop-templates/Component/Component.stories.mdx.hbs',
       },
       {
         // Adds an index.js file if it does not already exist
