@@ -1,5 +1,5 @@
 {
-  "name": "my-first-design-system",
+  "name": "my-first-design-system-mpatc",
   "version": "0.2.0",
   "description": "A simple design system using React, Typescript, Styled Components, Storybook, React Testing Library and Jest",
   "main": "index.tsx",
