@@ -2,25 +2,25 @@
 
 exports[`Accordion renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ cyKrOT"
+  class="sc-bdfBwQ jSFOHL"
   id=""
 >
   <div
     aria-disabled="false"
     aria-expanded="false"
-    class="sc-gsTCUz hFBqhS"
+    class="sc-gsTCUz hkoBPB"
     role="button"
     tabindex="0"
   >
     Accordion title
     <img
-      alt="chevron icon"
-      class="sc-dlfnbm crIBv"
+      alt="chevron-icon"
+      class="sc-dlfnbm blaizu"
       src="chevron.svg"
     />
   </div>
   <div
-    class="sc-hKgILt dxNlHL"
+    class="sc-hKgILt dRDRsX"
   >
     Accordion content
   </div>

@@ -1,5 +1,11 @@
-import React, { ChangeEvent, CSSProperties, KeyboardEvent, useState } from 'react';
-import { KEYBOARD_KEYS } from '../../constants';
+import React, {
+  ChangeEvent,
+  CSSProperties,
+  KeyboardEvent,
+  useState,
+} from 'react';
+import { Chevron } from '../../assets/icons';
+import { KEYBOARD_KEY } from '../../constants';
 import {
   StyledDropdown,
   StyledDropdownContainer,
@@ -17,7 +23,7 @@ export interface DropdownProps {
    * additional css class
    */
   className?: string;
-    /**
+  /**
    * additional style
    */
   style?: CSSProperties;
@@ -40,7 +46,7 @@ export interface DropdownProps {
   /**
    * the option that is selected
    */
-  selectedOption: any;
+  selectedOption?: any;
   /**
    * name of the field to be displayed in the list of dropdown's options, when options prop is an array of objects
    */
@@ -74,13 +80,16 @@ export const Dropdown: React.FC<DropdownProps> = ({
 
   const handleKeyEvent = (event: KeyboardEvent<HTMLSelectElement>) => {
     event.stopPropagation();
-    if (event.key === KEYBOARD_KEYS.ESCAPE_KEY) {
+    // keyUp
+    if (event.key === KEYBOARD_KEY.ESCAPE_KEY) {
       return setIsExpanded(false);
     }
-    if (event.key === KEYBOARD_KEYS.ENTER_KEY) {
+    // keyDown
+    if (event.key === KEYBOARD_KEY.ENTER_KEY) {
       return setIsExpanded((prevIsExpanded) => !prevIsExpanded);
     }
-    if (event.key === KEYBOARD_KEYS.SPACE_KEY) {
+    // keyUp
+    if (event.key === KEYBOARD_KEY.SPACE_KEY) {
       return setIsExpanded(true);
     }
   };
@@ -93,6 +102,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
         </StyledDropdownLabel>
       )}
       <StyledDropdown isExpanded={isExpanded} disabled={disabled}>
+        <img src={Chevron} alt='chevron-icon' />
         <StyledDropdownHeader
           aria-label={`Select ${name || label}`}
           name={name || label}
@@ -110,13 +120,14 @@ export const Dropdown: React.FC<DropdownProps> = ({
             </StyledDropdownOption>
           )}
           {options.map((option: any, index: number) => {
-            const optionLabel = optionKey ? option[optionKey] : option;
+            const optionValue = optionKey ? option[optionKey] : option;
             return (
               <StyledDropdownOption
                 key={`dropdown-option-${index + Math.random()}`}
-                value={option}
+                data-testid='select-option'
+                value={optionValue}
               >
-                {optionLabel}
+                {optionValue}
               </StyledDropdownOption>
             );
           })}

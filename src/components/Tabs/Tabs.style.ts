@@ -27,4 +27,5 @@ export const StyledTabsContent = styled.div``;
 
 export const StyledTabsSpacer = styled.div`
   height: 4rem;
+  margin-bottom: 1rem;
 `;

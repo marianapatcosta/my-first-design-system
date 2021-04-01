@@ -2,17 +2,17 @@
 
 exports[`Modal renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-hKgILt dSgvqn"
+  class="sc-hKgILt BfdIb"
 >
   <div
     class="sc-eCssSg fOkKDZ"
   >
     <div
-      class="sc-jSgupP jamSub"
+      class="sc-jSgupP fOdieB"
       id=""
     >
       <header
-        class="sc-gKsewC jLbPZa"
+        class="sc-gKsewC jppDwJ"
       >
         <h2
           class="sc-iBPRYJ bojrUK"
@@ -21,7 +21,7 @@ exports[`Modal renders without errors and matches snapshot 1`] = `
         </h2>
         <button
           aria-label="close modal"
-          class="sc-bdfBwQ dtjGKh sc-fubCfw dWdEHO"
+          class="sc-bdfBwQ iRImph sc-fubCfw IjQKX"
           id=""
           type="button"
         >
@@ -37,7 +37,7 @@ exports[`Modal renders without errors and matches snapshot 1`] = `
       </header>
       <main>
         <p
-          class="sc-pFZIQ jPmREe"
+          class="sc-pFZIQ bkBhtP"
         >
           Content header
         </p>
@@ -46,7 +46,7 @@ exports[`Modal renders without errors and matches snapshot 1`] = `
         class="sc-jrAGrp jXkypb"
       >
         <button
-          class="sc-bdfBwQ kNApjs sc-kEjbxe dzDLLu"
+          class="sc-bdfBwQ sMlFw sc-kEjbxe dzDLLu"
           id=""
           type="button"
         >

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownMultiselection renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-eCssSg CECUs"
+  id=""
+>
+  <div
+    aria-expanded="false"
+    aria-label="Select select an option"
+    class="sc-jSgupP dnWQpk"
+    role="button"
+    tabindex="0"
+  >
+    <div>
+      select an option
+    </div>
+    <img
+      alt="chevron-icon"
+      class="sc-gKsewC eSggAZ"
+      src="chevron.svg"
+    />
+  </div>
+</div>
+`;

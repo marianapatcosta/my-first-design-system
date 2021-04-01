@@ -1,10 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { baseStyles, colors } from '../../styles';
 
 export const StyledTooltip = styled.div`
   ${baseStyles};
-  position: absolute;
-  background-color: ${colors.highlight};
+  background-color: ${colors.secondary};
   opacity: 0.8;
   font-size: 85%;
   padding: 0.3rem;
@@ -31,7 +30,7 @@ export const StyledTooltip = styled.div`
     width: 0;
     margin: 0 auto;
     border: 0.4rem solid ${colors.transparent};
-    border-top-color: ${colors.highlight};
+    border-top-color: ${colors.secondary};
     color: ${colors.primary};
     border-bottom: 0;
     transform: rotate(180deg) scaleX(-1);

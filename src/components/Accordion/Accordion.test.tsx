@@ -21,7 +21,7 @@ describe('Accordion', () => {
     getByText(/title/i);
   });
 
-  test('should show content on click ', () => {
+  test('should show content on click', () => {
     const { getByText } = render(<Accordion {...defaultProps} />);
     const accordionTitle = getByText(/title/i);
     const accordionContent = getByText(/content/i);
@@ -30,18 +30,14 @@ describe('Accordion', () => {
     expect(accordionContent).toBeVisible();
   });
 
-  test('should handle blur events', () => {
-    const {
-      getByText,
-      container: { firstChild },
-    } = render(<Accordion {...defaultProps} />);
-
-    const accordionTitle = getByText(/title/i);
-    const accordionContent = getByText(/content/i);
-    fireEvent.click(accordionTitle);
-    firstChild && fireEvent.blur(firstChild);
-    const style = window.getComputedStyle(accordionContent);
-    expect(style.visibility).toBe('hidden');
+  test('should set isExpanded to false if click outside of accordion', () => {
+    const { getByText, getByAltText } = render(<Accordion {...defaultProps} />);
+    const accordion = getByText(/title/i) as HTMLDivElement;
+    fireEvent.click(accordion);
+    const chevron = getByAltText('chevron-icon') as HTMLImageElement;
+    fireEvent.mouseUp(document);
+    const style = window.getComputedStyle(chevron);
+    expect(style.transform).toBe('');
   });
 
   describe('Disabled Accordion', () => {

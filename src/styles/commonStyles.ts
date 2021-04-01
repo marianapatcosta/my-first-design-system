@@ -10,12 +10,12 @@ export const baseStyles = css`
   margin: 0;
   padding: 0;
 
-  &:focus {
-    outline: 0.125rem solid ${colors.highlight};
+  :focus:not(:focus-visible) {
+    outline: none;
   }
 
-  &:focus:not(:focus-visible) {
-    outline: none;
+  :focus-visible {
+    outline: 0.125rem solid ${colors.highlight};
   }
 `;
 

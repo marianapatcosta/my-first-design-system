@@ -2,37 +2,44 @@
 
 exports[`Dropdown renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-bdfBwQ gmhHJm"
+  class="sc-bdfBwQ cpTpGm"
 >
   <div
-    class="sc-gsTCUz hLxDNj"
+    class="sc-gsTCUz hPmmVS"
   >
+    <img
+      alt="chevron-icon"
+      src="chevron.svg"
+    />
     <select
       aria-label="Select "
-      class="sc-hKgILt hxRLa-D"
+      class="sc-hKgILt Hhlml"
       name=""
     >
       <option
-        class="sc-eCssSg kgbcsp"
+        class="sc-eCssSg iyIaIf"
         hidden=""
         value=""
       >
         select an option
       </option>
       <option
-        class="sc-eCssSg kgbcsp"
+        class="sc-eCssSg iyIaIf"
+        data-testid="select-option"
         value="option 1"
       >
         option 1
       </option>
       <option
-        class="sc-eCssSg kgbcsp"
+        class="sc-eCssSg iyIaIf"
+        data-testid="select-option"
         value="option 2"
       >
         option 2
       </option>
       <option
-        class="sc-eCssSg kgbcsp"
+        class="sc-eCssSg iyIaIf"
+        data-testid="select-option"
         value="option 3"
       >
         option 3

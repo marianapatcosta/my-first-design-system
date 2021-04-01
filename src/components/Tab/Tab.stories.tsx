@@ -9,7 +9,11 @@ export default {
   args: { label: 'Tab 1' },
 } as Meta;
 
-const Template: Story<TabProps> = (args) => <Tab {...args} />;
+const Template: Story<TabProps> = (args) => (
+  <ul style={{ listStyle: 'none' }}>
+    <Tab {...args} />
+  </ul>
+);
 
 export const Default = Template.bind({});
 Default.args = {};

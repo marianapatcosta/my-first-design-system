@@ -38,7 +38,7 @@ export const StyledModalHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.625rem 0.3rem;
+  padding: 0.3rem;
   background: ${colors.primary};
   color: ${colors.secondary};
   border-top-left-radius: 0.5rem;
@@ -68,7 +68,7 @@ export const StyledModalHeaderClose = styled(Button)<{
 `;
 
 export const StyledModalMessage = styled.p`
-  padding: 0.625rem;
+  padding: 1rem;
   text-align: center;
   color: ${colors.highlight};
 `;

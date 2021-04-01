@@ -1,21 +1,92 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 import {
   Button,
   Card,
   Checkbox,
   Dropdown,
+  DropdownMultiselection,
   Image,
   ToggleSwitch,
+  Upload,
 } from './components';
 import { Search } from './components/Search/Search';
 import { Toast } from './components/Toast/Toast';
 import Test from '../src/assets/images/test.jpg';
+import { TOAST_TYPE } from './constants';
+import { RadioButtonGroup } from './components/RadioButtonGroup/RadioButtonGroup';
 
 function App() {
   const [checked, setChecked] = useState(false);
   const [option, setOption] = useState('');
-  const [value, setValue] = useState('hewllo');
+  const [options, setOptions] = useState([{ name: 'option 1', id: 1 }]);
+  const [option3, setOption3] = useState('option 1');
+  const [options2, setOptions2] = useState(['option 1']);
+  const [option2, setOption2] = useState('option 1');
+  const [value, setValue] = useState('hello');
+  const todos = [
+    { name: 'todo1', description: 'desc1' },
+    { name: 'todo2', description: 'desc1' },
+  ];
+  const [gameCardImages, setGameCardImages] = useState([]);
+
+  const testRef = useRef<HTMLDivElement>(null);
+
+  const handleDropdownMultiSelectionClick = (
+    clickedItem: any,
+    selectedItemsCollection: any,
+    setter: any,
+    labelKey: any
+  ) => {
+    const isItemSelected = labelKey
+      ? !!selectedItemsCollection.find(
+          (item: any) => item[labelKey] === clickedItem[labelKey]
+        )
+      : selectedItemsCollection.includes(clickedItem);
+    isItemSelected
+      ? setter((prevCollectionState: any) =>
+          prevCollectionState.filter((item: any) =>
+            labelKey
+              ? item[labelKey] !== clickedItem[labelKey]
+              : item !== clickedItem
+          )
+        )
+      : setter((prevCollectionState: any) => [
+          ...prevCollectionState,
+          clickedItem,
+        ]);
+  };
+
+  const handleDropdownSelectionClick = (option: any, setter: any) =>
+    setter(option);
+
+  const handleFileUpload = (
+    e: any,
+    maxNumberOfFiles: any,
+    validator: any,
+    setter: any
+  ) => {
+    const uploadedFiles = Array.from(e.target.files).slice(0, maxNumberOfFiles);
+
+    uploadedFiles.forEach((file: any) => {
+      const reader = new FileReader();
+      reader.onloadend = () =>
+        setter((prevState: any) =>
+          !!prevState && prevState.length < maxNumberOfFiles
+            ? [...prevState, { name: file.name, src: reader.result }]
+            : [{ name: file.name, src: reader.result }]
+        );
+
+      reader.readAsDataURL(file);
+    });
+  };
+
+  const handleFileDelete = (clickedItemIndex: any, setter: any) => {
+    setter((prevState: any) =>
+      prevState.filter((item: any, index: number) => index !== clickedItemIndex)
+    );
+  };
+
   return (
     <div className='App'>
       <Card>
@@ -45,7 +116,12 @@ function App() {
       />
       <Dropdown
         placeholder='select an option'
-        options={['option 1', 'option 2', 'option 3']}
+        /*  options={['option 1', 'option 2', 'option 3']} */
+        options={[
+          { name: 'option 1', id: 1 },
+          { name: 'option 2', id: 2 },
+        ]}
+        optionKey='name'
         selectedOption={option}
         label='Example'
         onChooseOption={(e: any) => setOption(e.target.value)}
@@ -57,28 +133,110 @@ function App() {
         onChange={(e) => setValue(e.target.value)}
         onClear={(e) => setValue('')}
       />
-   {value &&   <Toast
-        className='App-link'
-        message={value}
-        type='success'
-        onClear={() => setValue('')}
-      />}
-      <Card style={{ width: '300px'}}>
+      {value && (
+        <Toast
+          className='App-link'
+          message={value}
+          type={TOAST_TYPE.SUCCESS}
+          onClear={() => setValue('')}
+        />
+      )}
+      <Card style={{ width: '300px' }}>
         <Image
           src={Test}
-           /*isZoomable={true}*/   isClickable={true}
-          onClick={() => console.log('clicked!')} 
+          /*isZoomable={true}*/ isClickable={true}
+          onClick={() => console.log('clicked!')}
         />
       </Card>
-      <div style={{ width: '300px', marginTop: '20px'}}>
+      <div style={{ width: '300px', marginTop: '20px' }} ref={testRef}>
         <Image
-        style={{transform: 'rotate(90deg)'}}
+          style={{ transform: 'rotate(90deg)' }}
           src={Test}
-          isZoomable={true}  /* isClickable={true}
-          onClick={() => console.log('clicked!')} */ 
+          isZoomable={
+            true
+          } /* isClickable={true}
+          onClick={() => console.log('clicked!')} */
         />
       </div>
-      <div style={{ width: '800px', marginTop: '520px'}}></div>
+      {/*  <Export
+        label='Export'
+        exportOptions={`.csv, .pdf, .jpeg`}
+        elementRef={testRef}
+        csvData={todos}
+        fileName={'my-todos'}
+      />
+           <Export
+        label='Export'
+        exportOptions={`.csv`}
+        elementRef={testRef}
+        csvData={todos}
+        fileName={'my-todos'}
+      /> */}
+
+      <RadioButtonGroup
+        selectedItem={option2}
+        items={[
+          { label: 'option 1', name: 'name 1' },
+          { label: 'option 2', name: 'name 2' },
+          { label: 'option 3', name: 'name 3' },
+        ]}
+        onChange={(e) => e && setOption2(e.target.value)}
+      />
+      <DropdownMultiselection
+        options={[
+          { name: 'option 1', id: 1 },
+          { name: 'option 2', id: 2 },
+          { name: 'option 3', id: 3 },
+          { name: 'option 4', id: 4 },
+        ]}
+        optionKey='name'
+        selectedOptions={options}
+        label='Example'
+        onOptionClick={(option) =>
+          handleDropdownMultiSelectionClick(option, options, setOptions, 'name')
+        }
+      />
+      <DropdownMultiselection
+        options={['option 1', 'option 2', 'option 3']}
+        selectedOptions={options2}
+        label='Example'
+        onOptionClick={(option) =>
+          handleDropdownMultiSelectionClick(option, options2, setOptions2, null)
+        }
+      />
+
+      <DropdownMultiselection
+        options={
+          [
+            'option 1',
+            'option 2',
+            'option 3',
+          ] /* [
+            { name: 'option 1', id: 1 },
+            { name: 'option 2', id: 2 },
+            { name: 'option 3', id: 3 },
+            { name: 'option 4', id: 4 },
+          ] */
+        }
+        isSingleSelection
+        selectedOption={option3}
+        label='single selection'
+        onOptionClick={(option) =>
+          handleDropdownSelectionClick(option, setOption3)
+        }
+      />
+
+      <Upload
+        label='Upload'
+        hasPreview
+        areMultipleFilesAllowed={true}
+        filesToPreview={gameCardImages.map(({ src }) => src)}
+        onUpload={(e) => handleFileUpload(e, 5, '', setGameCardImages)}
+        onDeletePreview={(clickedItemIndex) =>
+          handleFileDelete(clickedItemIndex, setGameCardImages)
+        }
+      />
+      <div style={{ width: '800px', marginTop: '520px' }}></div>
       <button>hello</button>
     </div>
   );

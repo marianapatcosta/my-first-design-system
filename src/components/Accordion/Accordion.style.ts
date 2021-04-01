@@ -20,7 +20,7 @@ export const StyledAccordionTitle = styled.div<{
   padding: 0.4rem 1rem;
   border-radius: 0.2rem;
   box-shadow: 0 0.0625rem 0.3rem ${colors.shadow};
-  color: ${colors.white};
+  color: ${colors.highlight};
   cursor: pointer;
   z-index: 1;
   margin: 0.125rem;
@@ -34,9 +34,8 @@ export const StyledAccordionTitle = styled.div<{
 `;
 
 export const StyledAccordionArrow = styled.img<{ isExpanded?: boolean }>`
-  width: 0.5rem;
+  width: 0.8rem;
   margin-left: 0.5rem;
-  transform: rotate(0deg);
   ${colors.icon};
   transition: transform 0.5s ease-in-out;
 
@@ -54,7 +53,7 @@ export const StyledAccordionContent = styled.div<{ isExpanded?: boolean }>`
   transition: all 0.5s ease-in-out;
   visibility: hidden;
   padding: 0 1rem;
-  
+
   -ms-overflow-style: none;
   scrollbar-width: none;
 
@@ -70,6 +69,5 @@ export const StyledAccordionContent = styled.div<{ isExpanded?: boolean }>`
       height: 100%;  
       max-height: 13rem;
       visibility: visible;
-      box-shadow: 0 0.0625rem 0.3rem ${colors.shadow};
       `}
 `;

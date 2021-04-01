@@ -2,22 +2,22 @@ import styled from 'styled-components';
 import { baseStyles, colors } from '../../styles';
 import { Button } from '../Button/Button';
 
-export const StyledStepper = styled.div<{ isPortrait?: boolean }>`
+export const StyledStepper = styled.div<{ isVertical?: boolean }>`
   ${baseStyles};
   display: flex;
   flex-direction: column;
   width: 95%;
   margin: 2rem auto;
   padding: 1.5rem;
-
-  ${({ isPortrait }) =>
-    isPortrait &&
-    `display: flex;
+  background-color: ${colors.primary}
+    ${({ isVertical }) =>
+      isVertical &&
+      `display: flex;
   flex-direction: row;
-  justify-content: space-between;`}
+  justify-content: space-between;`};
 `;
 
-export const StyledStepperIndicator = styled.ul<{ isPortrait?: boolean }>`
+export const StyledStepperIndicator = styled.ul<{ isVertical?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +25,8 @@ export const StyledStepperIndicator = styled.ul<{ isPortrait?: boolean }>`
   list-style: none;
   background-color: inherit;
 
-  ${({ isPortrait }) =>
-    isPortrait &&
+  ${({ isVertical }) =>
+    isVertical &&
     `  flex-direction: column;
     margin: 2rem;
     margin-bottom: 0;`}
@@ -63,15 +63,15 @@ export const StyledStepperIndicatorItem = styled.li<{ isFilled?: boolean }>`
 `;
 
 export const StyledStepperProgressBar = styled.progress<{
-  isPortrait?: boolean;
+  isVertical?: boolean;
 }>`
   position: absolute;
   left: 0;
   height: 0.125rem;
   width: 100%;
 
-  ${({ isPortrait }) =>
-    isPortrait &&
+  ${({ isVertical }) =>
+    isVertical &&
     `left: revert;
     bottom: 0;
     top: 0;
@@ -104,8 +104,8 @@ export const StyledStepperProgressBar = styled.progress<{
   }
 `;
 
-export const StyledStepperContainer = styled.div<{ isPortrait?: boolean }>`
-  ${({ isPortrait }) => isPortrait && ` width: 100%;`}
+export const StyledStepperContainer = styled.div<{ isVertical?: boolean }>`
+  ${({ isVertical }) => isVertical && ` width: 100%;`}
 `;
 
 export const StyledStepperContent = styled.div<{ isFilled?: boolean }>`
@@ -122,7 +122,7 @@ export const StyledStepperButton = styled(Button).attrs({ size: 'small' })`
   margin-right: auto;
   flex-direction: column;
   img {
-    ${colors.iconHighlight};
+    ${colors.icon};
     padding: 0.15rem;
     transform: rotate(90deg);
   }

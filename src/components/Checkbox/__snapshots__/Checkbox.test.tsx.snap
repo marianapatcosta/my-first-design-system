@@ -2,16 +2,16 @@
 
 exports[`Checkbox renders without errors and matches snapshot 1`] = `
 <label
-  class="sc-bdfBwQ hUauSm"
+  class="sc-bdfBwQ eDHuuV"
   id=""
 >
   <input
-    class="sc-hKgILt fEjjZ"
+    class="sc-hKgILt bcrMEC"
     name="Checkbox"
     type="checkbox"
   />
   <div
-    class="sc-dlfnbm hstcKi"
+    class="sc-dlfnbm bwwqbC"
   />
   Checkbox
 </label>

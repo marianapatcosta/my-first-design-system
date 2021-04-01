@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { RadioButtonGroup } from './RadioButtonGroup';
+import { ORIENTATION } from '../../constants';
+
+<Meta title='Design System|RadioButtonGroup' component={RadioButtonGroup} />
+
+# RadioButtonGroup
+
+RAdio button group components; groups radio button elements
+
+## Usage
+
+Use radio button group component to display a predefine group of options, represented by RadioButton components,
+from which the user should choose only one.
+
+- Default RadioButtonGroup:
+
+  <Story name='Default'>
+    <RadioButtonGroup />
+  </Story>
+
+- Vertical RadioButtonGroup:
+  <Story name='Vertical'>
+    <RadioButtonGroup
+      items={[
+        { label: 'option 1', name: 'name 1' },
+        { label: 'option 2', name: 'name 2' },
+        { label: 'option 3', name: 'name 3' },
+      ]}
+      orientation={ORIENTATION.VERTICAL}
+    />
+  </Story>
+
+## Other important notes
+
+not applicable.

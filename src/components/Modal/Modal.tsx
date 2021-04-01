@@ -90,9 +90,7 @@ export const Modal: React.FC<ModalProps> = ({
     };
     document.addEventListener('click', handleClickOutside);
 
-    return function cleanupListener() {
-      document.removeEventListener('click', handleClickOutside);
-    };
+    return () => document.removeEventListener('click', handleClickOutside);
   }, [modalRef, onClose]);
 
   return (

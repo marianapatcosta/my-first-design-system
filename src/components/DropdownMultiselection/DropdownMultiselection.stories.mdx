@@ -1,0 +1,50 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { DropdownMultiselection } from './DropdownMultiselection';
+
+<Meta
+  title='Design System|DropdownMultiselection'
+  component={DropdownMultiselection}
+/>
+
+# DropdownMultiselection
+
+Simple Dropdown component that allows to select multiple options
+
+## Usage
+
+Use dropdown DropdownMultiselection when there are more than two options available and the user should pick at least one of them.
+The options can be primitives or objects. `optionKey` prop indicates which field should be displayed, in dropdown options and selected
+option when options are of type Object. If only one option should be selected, the props `isSingleSelection`and `selectedOption`
+should be provided; otherwise, if multiple options are allowed, `selectedOptions` prop (an array of selected options) should be provided.
+
+- Default DropdownMultiselection:
+
+      <Story name='Default'>
+      <DropdownMultiselection
+      label='select an option'
+      options={[{name: 'option 1'}, {name:'option 2'}, {name:'option 3'}]},
+      optionKey='name'
+      selectedOptions={[]}
+
+  />
+
+  </Story>
+
+- SingleSelection DropdownMultiselection:
+  <Story name='SingleSelection'>
+    <DropdownMultiselection
+      label='select an option'
+      optionKey='name'
+      options={[
+        { name: 'option 1' },
+        { name: 'option 2' },
+        { name: 'option 3' },
+      ]}
+      isSingleSelection
+      selectedOption={''}
+    />
+  </Story>
+
+## Other important notes
+
+not applicable.

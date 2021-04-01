@@ -3,7 +3,7 @@
 exports[`Tab renders without errors and matches snapshot 1`] = `
 <li
   aria-selected="false"
-  class="sc-bdfBwQ cQWGAO"
+  class="sc-bdfBwQ dElXjk"
   id=""
   role="tab"
   tabindex="0"

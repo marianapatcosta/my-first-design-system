@@ -119,9 +119,10 @@ export const Search: React.FC<SearchProps> = ({
         <StyledSearchIconWrapper>
           <StyledSearchIcon
             data-testid='search-icon'
-            alt={value && isExpanded ? 'clear-icon' : 'magnifying-glass-icon'}
-            src={value && isExpanded ? Close : MagnifyingGlass}
+            alt={!!value && isExpanded ? 'clear-icon' : 'magnifying-glass-icon'}
+            src={!!value && isExpanded ? Close : MagnifyingGlass}
             isExpandable={isExpandable}
+            hasValue={!!value}
             isExpanded={!isExpandable ? true : isExpanded}
             onClick={!value ? toggleIsExpanded : handleClear}
           />

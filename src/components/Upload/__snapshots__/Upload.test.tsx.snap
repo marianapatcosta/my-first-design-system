@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Upload renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-jrAGrp igiFOb"
+>
+  <button
+    class="sc-bdfBwQ iRImph sc-hKgILt AmXCn"
+    id=""
+    type="button"
+  >
+    
+    <span
+      class="sc-gsTCUz WUuCA"
+    >
+      Upload
+    </span>
+  </button>
+  <input
+    accept=""
+    aria-label="File upload"
+    class="sc-eCssSg QNthN"
+    type="file"
+  />
+</div>
+`;

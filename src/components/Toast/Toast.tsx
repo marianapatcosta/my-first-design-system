@@ -4,12 +4,14 @@ import React, {
   useEffect,
   useState,
 } from 'react';
-import { Alert, Close, Info, Success, Warning } from '../../assets/icons';
+import { Alert, CloseWhite, Info, Success, Warning } from '../../assets/icons';
+import { TOAST_TYPE } from '../../constants';
 import {
   StyledToast,
   StyledToastClose,
   StyledToastIcon,
   StyledToastMessage,
+  StyledToastMessageWrapper,
 } from './Toast.style';
 
 const toastIcons: {
@@ -24,7 +26,7 @@ const toastIcons: {
   warning: Warning,
 };
 
-type ToastType = 'alert' | 'info' | 'success' | 'warning';
+type ToastType = TOAST_TYPE;
 
 export interface ToastProps {
   /**
@@ -90,12 +92,14 @@ export const Toast: React.FC<ToastProps> = ({
       {...props}
       willBeDeleted={willBeDeleted}
     >
-      <StyledToastClose icon={Close} size='small' onClick={onClear} />
-      <StyledToastIcon
-        src={type && toastIcons[type]}
-        alt={`${type && toastIcons[type]} icon`}
-      />
-      <StyledToastMessage type={type}>{message}</StyledToastMessage>
+      <StyledToastClose icon={CloseWhite} size='small' onClick={onClear} />
+      <StyledToastMessageWrapper>
+        <StyledToastIcon
+          src={type && toastIcons[type]}
+          alt={`${type && toastIcons[type]} icon`}
+        />
+        <StyledToastMessage type={type}>{message}</StyledToastMessage>
+      </StyledToastMessageWrapper>
     </StyledToast>
   );
 };
@@ -105,7 +109,7 @@ Toast.defaultProps = {
   className: '',
   style: {},
   message: '',
-  type: 'info',
+  type: TOAST_TYPE.INFO,
   autoClearTime: 2500,
   onClear: () => null,
 };

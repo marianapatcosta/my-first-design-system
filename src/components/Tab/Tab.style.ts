@@ -7,6 +7,7 @@ export const StyledTab = styled.li<{ isActive?: boolean; disabled?: boolean }>`
   max-width: 4rem;
   color: ${colors.highlight};
   padding: 0.3rem 0.625rem;
+  text-align: center;
   position: relative;
   user-select: none;
   cursor: pointer;

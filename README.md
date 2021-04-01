@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# My first Design System
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -36,6 +36,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `yarn generate`
 
 Creates files based on plop templates stored in './plop-templates' directory;
+
 - run `yarn generate component <ComponentName>` to generate all the files that compose a new components (<ComponentName>.tsx, <ComponentName>.style.ts, <ComponentName>.test.tsx, <ComponentName>.stories.mdx, <ComponentName>.stories.tsx)
 
 ### `yarn run eject`

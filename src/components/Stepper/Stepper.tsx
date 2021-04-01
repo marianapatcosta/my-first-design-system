@@ -4,7 +4,7 @@ import React, {
   ReactNode,
   useState,
 } from 'react';
-import { ORIENTATIONS } from '../../constants';
+import { ORIENTATION } from '../../constants';
 import { Step } from '../Step/Step';
 import { DoubleChevron } from '../../assets/icons';
 import {
@@ -19,7 +19,7 @@ import {
   StyledStepperButtonRight,
 } from './Stepper.style';
 
-type orientationTypes = ORIENTATIONS.PORTRAIT | ORIENTATIONS.LANDSCAPE;
+type orientationTypes = ORIENTATION;
 
 export interface StepperProps {
   /**
@@ -35,7 +35,7 @@ export interface StepperProps {
    */
   style?: CSSProperties;
   /**
-   * additional style
+   * stepper's orientation
    */
   orientation?: orientationTypes;
   /**
@@ -59,7 +59,7 @@ export const Stepper: React.FC<StepperProps> = ({
 }) => {
   const [activeStepIndex, setActiveStepIndex] = useState<number>(0);
   const progressPerStep = 100 / (stepsMetadata.length - 1);
-  const isPortrait: boolean = orientation === ORIENTATIONS.PORTRAIT;
+  const isVertical: boolean = orientation === ORIENTATION.VERTICAL;
 
   const handleNextStepClick = (): void => {
     if (activeStepIndex === stepsMetadata.length - 1) return;
@@ -76,18 +76,18 @@ export const Stepper: React.FC<StepperProps> = ({
   return (
     <StyledStepper
       data-steps={stepsMetadata.length}
-      isPortrait={isPortrait}
+      isVertical={isVertical}
       {...props}
     >
       <StyledStepperIndicator
         role='group'
         aria-label='progress'
-        isPortrait={isPortrait}
+        isVertical={isVertical}
       >
         <StyledStepperProgressBar
           value={getProgressBarPercentage()}
           max='100'
-          isPortrait={isPortrait}
+          isVertical={isVertical}
         />
         {stepsMetadata.map((step: string | ReactNode, index: number) => (
           <StyledStepperIndicatorItem
@@ -99,7 +99,7 @@ export const Stepper: React.FC<StepperProps> = ({
           </StyledStepperIndicatorItem>
         ))}
       </StyledStepperIndicator>
-      <StyledStepperContainer isPortrait={isPortrait}>
+      <StyledStepperContainer isVertical={isVertical}>
         <StyledStepperContent>
           {stepsMetadata.map(({ content }, index) => (
             <Step
@@ -140,7 +140,7 @@ Stepper.defaultProps = {
   id: '',
   className: '',
   style: {},
-  orientation: ORIENTATIONS.LANDSCAPE,
+  orientation: ORIENTATION.LANDSCAPE,
   stepsMetadata: [],
   onSubmit: () => null,
 };

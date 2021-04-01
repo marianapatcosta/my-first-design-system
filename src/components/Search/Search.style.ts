@@ -5,6 +5,7 @@ export const StyledSearchWrapper = styled.div`
   ${baseStyles}
   margin: 1rem 0;
   width: 100%;
+  max-width: 15rem;
 `;
 
 export const StyledLabel = styled.label<{ disabled?: boolean }>`
@@ -24,7 +25,7 @@ export const StyledSearchContainer = styled.div<{ isExpanded?: boolean }>`
   box-shadow: 0 0.063rem 0.25rem ${colors.shadow};
   width: 100%;
   margin-left: auto;
-background-color: ${colors.primary};
+  background-color: ${colors.primary};
 
   ${({ isExpanded }) => !isExpanded && `width: 2rem !important;`}
 `;
@@ -41,7 +42,7 @@ export const StyledSearch = styled.input<{
   box-sizing: border-box;
   padding: 0.3rem 0.625rem;
   position: relative;
-  display: block; 
+  display: block;
   height: 2rem;
   background-color: ${colors.primary};
 
@@ -87,12 +88,14 @@ export const StyledSearchIconWrapper = styled.div<{
   width: 2rem;
   height: 2rem;
   background-color: ${colors.primary};
-  ${({ isExpandable, isExpanded }) => isExpandable && !isExpanded && `cursor: pointer;`}
+  ${({ isExpandable, isExpanded }) =>
+    isExpandable && !isExpanded && `cursor: pointer;`}
 `;
 
 export const StyledSearchIcon = styled.img<{
   isExpanded?: boolean;
   isExpandable?: boolean;
+  hasValue?: boolean;
 }>`
   position: absolute;
   width: 1rem;
@@ -101,6 +104,7 @@ export const StyledSearchIcon = styled.img<{
   right: 0.625rem;
   ${colors.icon};
 
+  ${({ hasValue }) => hasValue && `cursor: pointer;`}
   ${({ isExpandable }) => isExpandable && `cursor: pointer;`}
 
   ${({ isExpanded }) =>

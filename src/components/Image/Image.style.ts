@@ -7,7 +7,7 @@ const scaleUp = keyframes`
     width: 50vw;
   } 
   100% {
-    width: 100vw;
+    width: 95vw;
   }
 `;
 
@@ -21,13 +21,11 @@ const scaleDown = keyframes`
 `;
 
 export const StyledImageOverlay = styled.div<{
-  isZoomable?: boolean;
   isZoomedIn?: boolean;
 }>`
-  ${({ isZoomable, isZoomedIn }) =>
-    isZoomable &&
-    (isZoomedIn
-      && `
+  ${({ isZoomedIn }) =>
+    isZoomedIn &&
+    `
       height: 100vh;
       width: 100vw;
       position: fixed;
@@ -38,7 +36,7 @@ export const StyledImageOverlay = styled.div<{
       justify-content: center;
       align-items: center;
       z-index: 100;
-    `)}
+    `}
 `;
 
 export const StyledImage = styled.img<{

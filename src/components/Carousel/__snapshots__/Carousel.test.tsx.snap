@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel renders without errors and matches snapshot 1`] = `
+<div
+  class="sc-iBPRYJ bxzCfB"
+  id=""
+  role="listbox"
+>
+  <div
+    class="sc-fubCfw fFQare"
+  >
+    <header
+      class="sc-pFZIQ bIvEnm"
+    >
+      <h2
+        class="sc-jrAGrp iyhaZy"
+      >
+        Image slider
+      </h2>
+    </header>
+    <div
+      class="sc-crrsfI cNTFhl"
+    >
+      <div
+        class="sc-dQppl gHIbYh"
+      >
+        <div
+          class="sc-dlfnbm eUChx"
+          data-testid="image-placeholder"
+        />
+        <img
+          alt="image-test"
+          class="sc-gsTCUz gGjrhV sc-bqyKva dTXmhP"
+          data-testid="image"
+          id=""
+          loading="lazy"
+          role="img"
+          src="test.jpg"
+          tabindex="-1"
+        />
+        <div
+          class="sc-dlfnbm eUChx"
+          data-testid="image-placeholder"
+        />
+        <img
+          alt="image-test1"
+          class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
+          data-testid="image"
+          id=""
+          loading="lazy"
+          role="img"
+          src="test1.jpg"
+          tabindex="-1"
+        />
+        <div
+          class="sc-dlfnbm eUChx"
+          data-testid="image-placeholder"
+        />
+        <img
+          alt="image-test2"
+          class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
+          data-testid="image"
+          id=""
+          loading="lazy"
+          role="img"
+          src="test2.jpg"
+          tabindex="-1"
+        />
+        <div
+          class="sc-dlfnbm eUChx"
+          data-testid="image-placeholder"
+        />
+        <img
+          alt="image-test3"
+          class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
+          data-testid="image"
+          id=""
+          loading="lazy"
+          role="img"
+          src="test3.jpg"
+          tabindex="-1"
+        />
+        <div
+          class="sc-dlfnbm eUChx"
+          data-testid="image-placeholder"
+        />
+        <img
+          alt="image-test4"
+          class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
+          data-testid="image"
+          id=""
+          loading="lazy"
+          role="img"
+          src="test4.jpg"
+          tabindex="-1"
+        />
+        <button
+          aria-label="click to select previous item"
+          class="sc-iqHYGH iRzAOP"
+        >
+          <img
+            alt="left-chevron"
+            src="chevron.svg"
+          />
+        </button>
+        <button
+          aria-label="click to select next item"
+          class="sc-iqHYGH kloFTO"
+        >
+          <img
+            alt="right-chevron"
+            src="chevron.svg"
+          />
+        </button>
+        <span
+          class="sc-kstrdz unuVy"
+        >
+          <button
+            class="sc-hBEYos jIVUEM"
+            data-testid="bar-item-0"
+          />
+          <button
+            class="sc-hBEYos bTMHcU"
+            data-testid="bar-item-1"
+          />
+          <button
+            class="sc-hBEYos bTMHcU"
+            data-testid="bar-item-2"
+          />
+          <button
+            class="sc-hBEYos bTMHcU"
+            data-testid="bar-item-3"
+          />
+          <button
+            class="sc-hBEYos bTMHcU"
+            data-testid="bar-item-4"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

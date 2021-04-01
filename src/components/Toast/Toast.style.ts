@@ -39,13 +39,11 @@ export const StyledToast = styled.div<{
   box-shadow: 0 0.125rem 0.5rem ${colors.shadow};
   width: 85%;
   max-width: 20rem;
-  position: absolute;
-  top: 35%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  position: fixed;
+  top: 4rem;
+  right: 1rem;
   padding: 1rem;
-  z-index: 2;
+  z-index: 30;
   display: flex;
   align-items: flex-start;
   border-radius: 0.2rem;
@@ -78,11 +76,11 @@ export const StyledToastClose = styled(Button)<{
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }>`
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0.5rem;
+  right: 0.5rem;
   border: none;
   img {
-    ${colors.icon};
+    width: 0.7rem;
     transform: rotate(0deg);
     transition: transform 0.3s ease-in-out;
 
@@ -93,13 +91,20 @@ export const StyledToastClose = styled(Button)<{
 `;
 
 export const StyledToastIcon = styled.img`
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
 `;
 
 export const StyledToastMessage = styled.div<{ type?: string }>`
   font-size: 95%;
   color: ${colors.white};
-  font-weight: 700;
+  line-height: 1.5rem;
   padding: 0 1rem;
+`;
+
+export const StyledToastMessageWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
 `;

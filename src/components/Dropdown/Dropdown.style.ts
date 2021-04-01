@@ -18,7 +18,28 @@ export const StyledDropdown = styled.div<{
   width: 100%;
   position: relative;
 
-  :after {
+  img {
+    width: 0.8rem;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 0.6rem;
+    margin: auto 0;
+    z-index: 1;
+    ${colors.icon};
+    -webkit-transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
+
+    ${({ isExpanded }) => isExpanded && `transform: rotate(180deg);`}
+
+    ${({ disabled }) =>
+      disabled &&
+      ` border-bottom-color: ${disabled && colors.disabled};
+      border-right-color: ${disabled && colors.disabled};
+      `}
+  }
+  
+  /* :after {
     position: absolute;
     top: 50%;
     bottom: 50%;
@@ -31,17 +52,11 @@ export const StyledDropdown = styled.div<{
     border-right: 0.125rem solid ${colors.highlight};
     border-bottom: 0.125rem solid ${colors.highlight};
     transform: rotate(45deg);
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
+    -webkit-transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
 
     ${({ isExpanded }) => isExpanded && `transform: rotate(225deg);`}
-
-    ${({ disabled }) =>
-      disabled &&
-      ` border-bottom-color: ${disabled && colors.disabled};
-        border-right-color: ${disabled && colors.disabled};
-        `}
-  }
+  }*/
 `;
 
 export const StyledDropdownLabel = styled.label<{ disabled?: boolean }>`
@@ -71,6 +86,7 @@ export const StyledDropdownHeader = styled.select`
   text-overflow: ellipsis;
   position: relative;
   cursor: pointer;
+ 
 
   ::-ms-expand {
     display: none;
