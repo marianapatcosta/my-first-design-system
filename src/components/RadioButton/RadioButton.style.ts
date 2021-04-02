@@ -16,8 +16,8 @@ export const StyledRadioButton = styled.span<{
   disabled?: boolean;
 }>`
   position: relative;
-  height: 1rem;
-  width: 1rem;
+  height: 0.8rem;
+  width: 0.8rem;
   border: 0.063rem solid ${colors.highlight};
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -25,7 +25,8 @@ export const StyledRadioButton = styled.span<{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 0.625rem;
+  margin-left: 0.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,10 +57,19 @@ export const StyledRadioButton = styled.span<{
 
 export const StyledRadioButtonInput = styled.input`
   position: absolute;
-  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
 
   :checked + ${StyledRadioButton}:after {
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  :focus-visible + ${StyledRadioButton} {
+    outline: 0.125rem solid ${colors.highlight};
+  }
+
+  :focus:not(:focus-visible) + ${StyledRadioButton} {
+    outline: none;
   }
 `;

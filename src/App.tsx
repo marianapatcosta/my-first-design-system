@@ -7,6 +7,7 @@ import {
   Dropdown,
   DropdownMultiselection,
   Image,
+  RadioButton,
   ToggleSwitch,
   Upload,
 } from './components';
@@ -14,7 +15,6 @@ import { Search } from './components/Search/Search';
 import { Toast } from './components/Toast/Toast';
 import Test from '../src/assets/images/test.jpg';
 import { TOAST_TYPE } from './constants';
-import { RadioButtonGroup } from './components/RadioButtonGroup/RadioButtonGroup';
 
 function App() {
   const [checked, setChecked] = useState(false);
@@ -173,15 +173,6 @@ function App() {
         fileName={'my-todos'}
       /> */}
 
-      <RadioButtonGroup
-        selectedItem={option2}
-        items={[
-          { label: 'option 1', name: 'name 1' },
-          { label: 'option 2', name: 'name 2' },
-          { label: 'option 3', name: 'name 3' },
-        ]}
-        onChange={(e) => e && setOption2(e.target.value)}
-      />
       <DropdownMultiselection
         options={[
           { name: 'option 1', id: 1 },
@@ -236,6 +227,22 @@ function App() {
           handleFileDelete(clickedItemIndex, setGameCardImages)
         }
       />
+      <div>
+        {[
+          { label: 'option 1', name: 'name 1' },
+          { label: 'option 2', name: 'name 2' },
+          { label: 'option 3', name: 'name 3' },
+        ].map((item) => (
+          <RadioButton
+            key={`radio-button-${item.label || item}`}
+            checked={item.label === option2}
+            value={item.label}
+            label={item.label}
+            onChange={(e) => e && setOption2(e.target.value)}
+          />
+        ))}
+      </div>
+
       <div style={{ width: '800px', marginTop: '520px' }}></div>
       <button>hello</button>
     </div>

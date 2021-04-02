@@ -13,4 +13,5 @@ const Template: Story<RadioButtonProps> = (args) => <RadioButton {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   label: 'option 1',
+  value: 'option 1',
 };
