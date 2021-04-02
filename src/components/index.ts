@@ -9,7 +9,6 @@ export * from './Image/Image';
 export * from './Input/Input';
 export * from './Modal/Modal';
 export * from './RadioButton/RadioButton';
-export * from './RadioButtonGroup/RadioButtonGroup';
 export * from './Search/Search';
 export * from './Step/Step';
 export * from './Stepper/Stepper';

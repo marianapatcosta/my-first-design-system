@@ -6,14 +6,15 @@ exports[`RadioButton renders without errors and matches snapshot 1`] = `
   class="sc-bdfBwQ ivjLLh"
 >
   <input
-    class="sc-dlfnbm bGKYVm"
+    class="sc-dlfnbm ccvpOj"
     data-testid="radio-button"
     name=""
+    role="radio"
     type="radio"
     value=""
   />
   <span
-    class="sc-gsTCUz jzeJuN"
+    class="sc-gsTCUz uaMDM"
   />
   option 1
 </label>

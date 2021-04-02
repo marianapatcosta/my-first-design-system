@@ -71,11 +71,11 @@ export const Upload: React.FC<UploadProps> = ({
   disabled,
   fileTypes,
   areMultipleFilesAllowed,
-  onUpload,
   className,
   hasPreview,
   imagesToPreview,
   filesToPreview,
+  onUpload,
   onDeletePreview,
   ...props
 }) => {

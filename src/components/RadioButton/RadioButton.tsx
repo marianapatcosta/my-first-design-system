@@ -56,6 +56,7 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
       <StyledRadioButtonInput
         data-testid={id || 'radio-button'}
         type='radio'
+        role='radio'
         checked={checked}
         disabled={disabled}
         {...props}
