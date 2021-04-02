@@ -6,6 +6,9 @@ import Test1 from '../../assets/images/test1.jpg';
 import Test2 from '../../assets/images/test2.jpg';
 import Test3 from '../../assets/images/test3.jpg';
 import Test4 from '../../assets/images/test4.jpg';
+import Test5 from '../../assets/images/test5.jpg';
+import Test6 from '../../assets/images/test6.jpg';
+import Test7 from '../../assets/images/test7.jpg';
 
 <Meta title='Design System|Carousel' component={Carousel} />
 
@@ -26,84 +29,77 @@ if `hasPreviews` prop is true.
     <Carousel
       title='Image slider'
       items={[
-        { src: Test },
-        { src: Test1 },
-        { src: Test2 },
-        { src: Test3 },
-        { src: Test4 },
+        { src: Test, name: 'test' },
+        { src: Test1, name: 'test1' },
+        { src: Test2, name: 'test2' },
+        { src: Test3, name: 'test3' },
+        { src: Test4, name: 'test4' },
       ]}
     />
   </Story>
 
 - Vertical Carousel:
 
-<Story name='Vertical'>
-  <Carousel
-    title='Image slider'
-    orientation={ORIENTATION.VERTICAL}
-    items={[
-      { src: Test },
-      { src: Test1 },
-      { src: Test2 },
-      { src: Test3 },
-      { src: Test4 },
-    ]}
-  />
-</Story>
+  <Story name='Vertical'>
+    <Carousel
+      title='Image slider'
+      orientation={ORIENTATION.VERTICAL}
+      items={[
+        { src: Test5, name: 'test5' },
+        { src: Test6, name: 'test6' },
+        { src: Test7, name: 'test7' },
+      ]}
+    />
+  </Story>
 
 - Carousel WithPreviews:
 
-    <Story name='WithPreviews'>
+  <Story name='WithPreviews'>
     <Carousel
       title='Image slider'
       items={[
-        { src: Test },
-        { src: Test1 },
-        { src: Test2 },
-        { src: Test3 },
-        { src: Test4 },
+        { src: Test, name: 'test' },
+        { src: Test1, name: 'test1' },
+        { src: Test2, name: 'test2' },
+        { src: Test3, name: 'test3' },
+        { src: Test4, name: 'test4' },
       ]}
       hasPreviews={true}
     />
-
-    </Story>
+  </Story>
 
 - Carousel AutomaticView:
 
-    <Story name='AutomaticView'>
+  <Story name='AutomaticView'>
     <Carousel
       title='Image slider'
       items={[
-        { src: Test },
-        { src: Test1 },
-        { src: Test2 },
-        { src: Test3 },
-        { src: Test4 },
+        { src: Test, name: 'test' },
+        { src: Test1, name: 'test1' },
+        { src: Test2, name: 'test2' },
+        { src: Test3, name: 'test3' },
+        { src: Test4, name: 'test4' },
       ]}
       allowAutomaticView={true}
     />
+  </Story>
 
-    </Story>
+  - Carousel Controlled AutomaticView:
 
-- Carousel Controlled AutomaticView:
-
-      <Story name='ControlledAutomaticView'>
-        <Carousel
-          title='Image slider'
-          items={[
-            { src: Test },
-            { src: Test1 },
-            { src: Test2 },
-            { src: Test3 },
-            { src: Test4 },
-          ]}
-          allowAutomaticView={true}
-
-  canControlAutomaticView={true}
-
-        />
-
-      </Story>
+  <Story name='ControlledAutomaticView'>
+    <Carousel
+      title='Image slider'
+      items={[
+        { src: Test, name: 'test' },
+        { src: Test1, name: 'test1' },
+        { src: Test2, name: 'test2' },
+        { src: Test3, name: 'test3' },
+        { src: Test4, name: 'test4' },
+      ]}
+      allowAutomaticView={true}
+      canControlAutomaticView={true}
+    />
+  </Story>
 
 ## Other important notes
 

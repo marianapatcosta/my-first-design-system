@@ -60,6 +60,7 @@ describe('Modal', () => {
           {...defaultProps}
           isConfirmationModal={true}
           confirmationButtonLabel='confirm'
+          onConfirm={() => null}
         />
       );
       getByText(/confirm/i);

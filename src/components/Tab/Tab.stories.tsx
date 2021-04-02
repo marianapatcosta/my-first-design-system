@@ -10,7 +10,7 @@ export default {
 } as Meta;
 
 const Template: Story<TabProps> = (args) => (
-  <ul style={{ listStyle: 'none' }}>
+  <ul style={{ listStyle: 'none' }} role='tablist'>
     <Tab {...args} />
   </ul>
 );

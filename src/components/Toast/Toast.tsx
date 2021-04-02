@@ -92,7 +92,12 @@ export const Toast: React.FC<ToastProps> = ({
       {...props}
       willBeDeleted={willBeDeleted}
     >
-      <StyledToastClose icon={CloseWhite} size='small' onClick={onClear} />
+      <StyledToastClose
+        icon={CloseWhite}
+        aria-label='close toast'
+        size='small'
+        onClick={onClear}
+      />
       <StyledToastMessageWrapper>
         <StyledToastIcon
           src={type && toastIcons[type]}

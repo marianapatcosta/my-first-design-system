@@ -17,6 +17,8 @@ import {
   StyledModalFooterButton,
 } from './Modal.style';
 
+export type ModalSize = 'small' | 'medium' | 'large';
+
 export interface ModalProps {
   /**
    * element id
@@ -30,6 +32,10 @@ export interface ModalProps {
    * additional style
    */
   style?: CSSProperties;
+  /**
+   * How large should the Modal be?
+   */
+  size?: ModalSize;
   /**
    * Modal's header
    */
@@ -68,8 +74,9 @@ export const Modal: React.FC<ModalProps> = ({
   buttonLabel,
   confirmationButtonLabel,
   isConfirmationModal,
+  size,
   onClose,
-  onConfirm: onConfirmation,
+  onConfirm,
   ...props
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
@@ -96,7 +103,7 @@ export const Modal: React.FC<ModalProps> = ({
   return (
     <StyledModal>
       <StyledModalOverlay>
-        <StyledModalContent ref={modalRef} {...props}>
+        <StyledModalContent ref={modalRef} {...props} size={size}>
           <StyledModalHeader>
             <StyledModalHeaderTitle>{header}</StyledModalHeaderTitle>
             <StyledModalHeaderClose
@@ -109,15 +116,13 @@ export const Modal: React.FC<ModalProps> = ({
             <StyledModalMessage>{message}</StyledModalMessage>
           </main>
           <StyledModalFooter>
-            {isConfirmationModal &&
-              confirmationButtonLabel &&
-              onConfirmation && (
-                <StyledModalFooterButton
-                  size='small'
-                  label={confirmationButtonLabel}
-                  onClick={onConfirmation}
-                />
-              )}
+            {isConfirmationModal && confirmationButtonLabel && onConfirm && (
+              <StyledModalFooterButton
+                size='small'
+                label={confirmationButtonLabel}
+                onClick={onConfirm}
+              />
+            )}
             <StyledModalFooterButton
               size='small'
               isConfirmationModal={isConfirmationModal}
@@ -139,8 +144,7 @@ Modal.defaultProps = {
   header: '',
   content: '',
   buttonLabel: '',
+  size: 'medium',
   confirmationButtonLabel: '',
   isConfirmationModal: false,
-  onClose: () => null,
-  onConfirm: () => null,
 };

@@ -15,10 +15,10 @@ exports[`ToggleSwitch renders without errors and matches snapshot 1`] = `
     label=""
   >
     <span
-      class="sc-gsTCUz eFFOmb"
+      class="sc-gsTCUz OalKQ"
     />
     <span
-      class="sc-gsTCUz eFFOmb"
+      class="sc-gsTCUz OalKQ"
     >
       on
     </span>

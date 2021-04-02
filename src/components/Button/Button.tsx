@@ -74,7 +74,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             label={label}
           />
         )}
-        {label && <StyledButtonLabel>{label}</StyledButtonLabel>}
+        {label && (
+          <StyledButtonLabel hasIcon={!!icon}>{label}</StyledButtonLabel>
+        )}
       </StyledButton>
     );
   }
@@ -92,5 +94,4 @@ Button.defaultProps = {
   type: 'button',
   icon: '',
   iconText: '',
-  onClick: () => null,
 };

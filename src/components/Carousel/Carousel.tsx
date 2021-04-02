@@ -160,7 +160,7 @@ export const Carousel: React.FC<CarouselProps> = ({
   };
 
   return (
-    <StyledCarousel {...props} role='listbox'>
+    <StyledCarousel {...props} role='listbox' aria-label='images slider'>
       <StyledCarouselContent>
         <StyledCarouselHeader>
           <StyledCarouselTitle>{title}</StyledCarouselTitle>
@@ -179,6 +179,7 @@ export const Carousel: React.FC<CarouselProps> = ({
           <StyledImageWrapper isVertical={orientation === ORIENTATION.VERTICAL}>
             {items.map((item, index) => (
               <StyledImage
+                role='option'
                 key={`slide-image-${item.name}`}
                 src={item.src}
                 alt={`image-${item.name}`}
@@ -211,6 +212,7 @@ export const Carousel: React.FC<CarouselProps> = ({
               {items.map((item, index) => (
                 <StyledIndicatorBarItem
                   data-testid={`bar-item-${index}`}
+                  aria-label={`click to select item ${index}`}
                   key={`carousel-item-${index * Math.random()}`}
                   isFilled={index <= presentingItemIndex}
                   onClick={() => handleItemClick(index)}

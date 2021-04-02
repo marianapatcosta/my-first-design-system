@@ -20,7 +20,6 @@ export const StyledAccordionTitle = styled.div<{
   padding: 0.4rem 1rem;
   border-radius: 0.2rem;
   box-shadow: 0 0.0625rem 0.3rem ${colors.shadow};
-  color: ${colors.highlight};
   cursor: pointer;
   z-index: 1;
   margin: 0.125rem;

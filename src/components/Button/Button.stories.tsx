@@ -24,7 +24,7 @@ Secondary.args = {
 export const FullLength = Template.bind({});
 FullLength.args = {
   isFullLength: true,
-  label: 'Full length button',
+  label: 'Full-length button',
 };
 
 export const Small = Template.bind({});
@@ -41,14 +41,14 @@ Medium.args = {
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
-  label: 'This is large button',
+  label: 'Large button',
 };
 
 export const Icon = Template.bind({});
 Icon.args = {
   primary: true,
   icon: Success,
-  size: 'small'
+  size: 'small',
 };
 
 export const WithIcon = Template.bind({});

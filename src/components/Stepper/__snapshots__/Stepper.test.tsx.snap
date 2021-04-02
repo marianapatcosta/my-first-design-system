@@ -9,7 +9,7 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
   <ul
     aria-label="progress"
     class="sc-jSgupP bFkA-dv"
-    role="group"
+    role="list"
   >
     <progress
       class="sc-iBPRYJ ffMDfi"
@@ -70,7 +70,8 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
       class="sc-jrAGrp bykmwW"
     >
       <button
-        class="sc-gsTCUz kaYvCA sc-kEjbxe sc-iqHYGH jYhrIr ijhVeU"
+        aria-label="next button"
+        class="sc-gsTCUz jNdNHc sc-kEjbxe sc-iqHYGH jYhrIr ijhVeU"
         data-testid="next-button"
         id=""
         type="button"

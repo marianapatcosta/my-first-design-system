@@ -14,6 +14,7 @@ exports[`Input renders without errors and matches snapshot 1`] = `
     class="sc-gsTCUz ExCDi"
   >
     <input
+      aria-label="Input"
       autocomplete="off"
       class="sc-dlfnbm jrCcpg"
       data-testid="input-field"

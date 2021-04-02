@@ -1,4 +1,4 @@
-import React, { ChangeEvent,  CSSProperties } from 'react';
+import React, { ChangeEvent, CSSProperties } from 'react';
 import {
   StyledTextareaWrapper,
   StyledTextarea,
@@ -63,6 +63,7 @@ export const Textarea: React.FC<TextareaProps> = ({
   label,
   disabled,
   errorMessage,
+  placeholder,
   ...props
 }) => {
   return (
@@ -73,8 +74,10 @@ export const Textarea: React.FC<TextareaProps> = ({
         </StyledLabel>
       )}
       <StyledTextarea
-        data-testid='textarea-field'
         id={id}
+        data-testid='textarea-field'
+        aria-label={!!label ? label : placeholder}
+        placeholder={placeholder}
         errorMessage={errorMessage}
         disabled={disabled}
         {...props}
@@ -96,6 +99,4 @@ Textarea.defaultProps = {
   value: '',
   placeholder: '',
   errorMessage: '',
-  onChange: () => null,
-  onBlur: () => null,
 };

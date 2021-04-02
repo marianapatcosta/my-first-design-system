@@ -10,7 +10,7 @@ export default {
 
 const Template: Story<CardProps> = (args) => <Card {...args} />;
 
-export const DefaultCard = Template.bind({});
-DefaultCard.args = {
+export const Default = Template.bind({});
+Default.args = {
   children: <div>This is Card component</div>,
 };

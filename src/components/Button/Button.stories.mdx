@@ -1,54 +1,68 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 import { Button } from './Button';
+import { Success } from '../../assets/icons';
 
-<Meta title='Design System|Button' component={Button} />
+<Meta
+  title='Design System|Button'
+  component={Button}
+  argTypes={{ onClick: { action: 'clicked' } }}
+/>
 
 # Button
+
 Simple button component
 
 ## Usage
+
 Use button when it is required a click event to trigger a certain functionality
 
 - Primary Button:
+
   <Story name='Primary'>
     <Button label='Button' primary />
   </Story>
 
 - Secondary Button:
+
   <Story name='Secondary'>
     <Button label='Button' />
   </Story>
 
 - FullLength Button:
+
   <Story name='FullLength'>
-    <Button label='full-length button' isFullLength />
+    <Button label='Full-length button' isFullLength />
   </Story>
 
 - Small Button:
+
   <Story name='Small'>
-    <Button label='small button' size='small' />
+    <Button label='Small button' size='small' />
   </Story>
 
 - Medium Button:
+
   <Story name='Medium'>
     <Button label='Medium button' />
   </Story>
 
 - Large Button:
+
   <Story name='Large'>
     <Button label='Large button' size='large' />
   </Story>
 
 - Button Icon:
+
   <Story name='Large'>
-    <Button icon={Icon} />
+    <Button icon={Success} primary />
   </Story>
 
 - Button With icon:
   <Story name='Large'>
-    <Button label='Button' size='large' />
+    <Button label='Button' size='large' icon={Success} primary />
   </Story>
 
-
 ## Other important notes
+
 not applicable.
