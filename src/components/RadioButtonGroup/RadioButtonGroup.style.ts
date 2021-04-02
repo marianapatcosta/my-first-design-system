@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { baseStyles } from '../../styles';
-import { RadioButton } from '../RadioButton/RadioButton';
 
 export const StyledRadioButtonGroup = styled.div`
   ${baseStyles}

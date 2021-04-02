@@ -18,7 +18,7 @@ exports[`ShowMore renders without errors and matches snapshot 1`] = `
    ac. In vitae posuere nisl. Sed non justo tortor. Integer risus est, feugiat at ultrices vitae, pretium in est.
   </div>
   <a
-    class="sc-gsTCUz jdpmhB"
+    class="sc-gsTCUz hRzuBh"
     data-testid="show-more-link"
     href=""
   >
@@ -26,7 +26,7 @@ exports[`ShowMore renders without errors and matches snapshot 1`] = `
      
     <img
       alt="show more icon"
-      class="sc-dlfnbm iqQMi"
+      class="sc-dlfnbm kPXudd"
       src="double-chevron.svg"
     />
   </a>

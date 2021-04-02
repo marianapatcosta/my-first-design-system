@@ -11,7 +11,9 @@ export const StyledShowMoreLink = styled.a<{
 }>`
   text-decoration: none;
   color: ${colors.highlight};
-  margin: 0.5rem 0;
+  font-size: 90%;
+  font-weight: 700;
+  margin: 1rem 0;
   float: right;
   cursor: pointer;
 `;
@@ -19,10 +21,9 @@ export const StyledShowMoreLink = styled.a<{
 export const StyledShowMoreIcon = styled.img<{
   showMore?: boolean;
 }>`
-  ${colors.iconHighlight};
-  transform: rotate(0deg);
+  ${colors.icon};
   transition: transform 0.5s ease-in-out;
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 
   ${({ showMore }) => showMore && `transform: rotate(-180deg);`}
 `;

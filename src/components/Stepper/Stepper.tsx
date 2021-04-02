@@ -80,7 +80,7 @@ export const Stepper: React.FC<StepperProps> = ({
       {...props}
     >
       <StyledStepperIndicator
-        role='group'
+        role='list'
         aria-label='progress'
         isVertical={isVertical}
       >
@@ -113,12 +113,18 @@ export const Stepper: React.FC<StepperProps> = ({
           {activeStepIndex > 0 && (
             <StyledStepperButton
               data-testid='prev-button'
+              aria-label='previous button'
               icon={DoubleChevron}
               onClick={handlePreviousStepClick}
             />
           )}
           <StyledStepperButtonRight
             data-testid='next-button'
+            aria-label={
+              activeStepIndex === stepsMetadata.length - 1
+                ? 'submit button'
+                : 'next button'
+            }
             label={activeStepIndex === stepsMetadata.length - 1 ? 'submit' : ''}
             icon={`${
               activeStepIndex !== stepsMetadata.length - 1 ? DoubleChevron : ''

@@ -14,6 +14,7 @@ exports[`Search renders without errors and matches snapshot 1`] = `
     class="sc-dlfnbm bgknId"
   >
     <input
+      aria-label="Search"
       class="sc-hKgILt gSVQYD"
       data-testid="search-field"
       id=""

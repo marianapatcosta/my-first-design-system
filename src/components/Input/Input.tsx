@@ -113,6 +113,7 @@ export const Input: React.FC<InputProps> = ({
   className,
   label,
   disabled,
+  placeholder,
   errorMessage,
   icon,
   iconText,
@@ -121,7 +122,7 @@ export const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <StyledInputWrapper>
-      {label && (
+      {!!label && (
         <StyledLabel htmlFor={id} disabled={disabled}>
           {label}
         </StyledLabel>
@@ -129,18 +130,20 @@ export const Input: React.FC<InputProps> = ({
       <StyledInputField className={className} disabled={disabled}>
         <StyledInput
           data-testid='input-field'
+          aria-label={!!label ? label : placeholder}
           id={id}
           disabled={disabled}
           errorMessage={errorMessage}
+          placeholder={placeholder}
           {...props}
-        ></StyledInput>
+        />
         {icon && (
           <StyledInputIcon
             data-testid='input-icon'
+            aria-label={!!onIconClick ? 'click me' : 'image'}
             alt={iconText}
             src={icon}
             onClick={onIconClick}
-            role={onIconClick ? 'button' : ''}
             tabIndex={onIconClick ? 0 : -1}
           />
         )}
@@ -166,6 +169,4 @@ Input.defaultProps = {
   errorMessage: '',
   icon: '',
   iconText: '',
-  onChange: () => null,
-  onBlur: () => null,
 };

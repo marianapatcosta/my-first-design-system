@@ -178,5 +178,4 @@ DropdownMultiselection.defaultProps = {
   selectedOptions: [],
   selectedOption: '',
   optionKey: '',
-  onOptionClick: () => null,
 };

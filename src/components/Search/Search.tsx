@@ -107,6 +107,7 @@ export const Search: React.FC<SearchProps> = ({
         <StyledSearch
           data-testid='search-field'
           id={id}
+          aria-label={!!label ? label : placeholder}
           type='search'
           placeholder={isExpanded ? placeholder : ''}
           disabled={disabled}
@@ -143,6 +144,4 @@ Search.defaultProps = {
   disabled: false,
   isExpandable: false,
   value: '',
-  onChange: () => null,
-  onClear: () => null,
 };

@@ -5,13 +5,13 @@ exports[`Upload renders without errors and matches snapshot 1`] = `
   class="sc-jrAGrp igiFOb"
 >
   <button
-    class="sc-bdfBwQ iRImph sc-hKgILt AmXCn"
+    class="sc-bdfBwQ fgPrFZ sc-hKgILt AmXCn"
     id=""
     type="button"
   >
     
     <span
-      class="sc-gsTCUz WUuCA"
+      class="sc-gsTCUz gffxlH"
     >
       Upload
     </span>

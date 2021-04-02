@@ -58,6 +58,7 @@ export const Image: React.FC<ImageProps> = ({
   placeholderClass,
   isClickable,
   isZoomable,
+  className,
   onClick,
   ...props
 }) => {
@@ -93,18 +94,19 @@ export const Image: React.FC<ImageProps> = ({
       {!isLoaded && (
         <StyledImagePlaceholder
           data-testid='image-placeholder'
-          className={placeholderClass}
+          className={placeholderClass || className}
         />
       )}
       <StyledImage
-        data-testid='image'
-        role={isClickable ? 'button' : 'img'}
+        aria-label={`click to ${!isZoomedIn ? 'zoom in' : 'zoom out'}`}
         tabIndex={isClickable ? 0 : -1}
+        data-testid='image'
         isClickable={isClickable}
         isLoaded={isLoaded}
         isZoomedIn={isZoomedIn}
         isZoomable={isZoomable}
         wasImageClicked={wasImageClicked}
+        className={placeholderClass || className}
         loading='lazy'
         onClick={handleImageClick}
         onKeyDown={handleImageClick}
@@ -117,13 +119,14 @@ export const Image: React.FC<ImageProps> = ({
       {!isLoaded && (
         <StyledImagePlaceholder
           data-testid='image-placeholder'
-          className={placeholderClass}
+          className={placeholderClass || className}
         />
       )}
       <StyledImage
         data-testid='image'
-        role={isClickable ? 'button' : 'img'}
+        aria-label={isClickable ? 'click me' : 'image'}
         tabIndex={isClickable ? 0 : -1}
+        className={className}
         isClickable={isClickable}
         isLoaded={isLoaded}
         isZoomedIn={isZoomedIn}

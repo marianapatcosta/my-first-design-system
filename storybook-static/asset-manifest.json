@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.js": "./main.ad8fb64e2ec9ec8acf37.bundle.js",
+    "main.js.map": "./main.ad8fb64e2ec9ec8acf37.bundle.js.map",
+    "runtime~main.js": "./runtime~main.ad8fb64e2ec9ec8acf37.bundle.js",
+    "runtime~main.js.map": "./runtime~main.ad8fb64e2ec9ec8acf37.bundle.js.map",
+    "vendors~main.js": "./vendors~main.ad8fb64e2ec9ec8acf37.bundle.js",
+    "vendors~main.js.map": "./vendors~main.ad8fb64e2ec9ec8acf37.bundle.js.map",
+    "iframe.html": "./iframe.html",
+    "static/media/alert.baab0145.svg": "./static/media/alert.baab0145.svg",
+    "static/media/chevron.7df924ae.svg": "./static/media/chevron.7df924ae.svg",
+    "static/media/close-white.b37c7e62.svg": "./static/media/close-white.b37c7e62.svg",
+    "static/media/close.b4b31404.svg": "./static/media/close.b4b31404.svg",
+    "static/media/code-brackets.2e1112d7.svg": "./static/media/code-brackets.2e1112d7.svg",
+    "static/media/colors.a4bd0486.svg": "./static/media/colors.a4bd0486.svg",
+    "static/media/comments.a3859089.svg": "./static/media/comments.a3859089.svg",
+    "static/media/direction.b770f9af.svg": "./static/media/direction.b770f9af.svg",
+    "static/media/double-chevron.54b9941f.svg": "./static/media/double-chevron.54b9941f.svg",
+    "static/media/flow.edad2ac1.svg": "./static/media/flow.edad2ac1.svg",
+    "static/media/info.654eeee9.svg": "./static/media/info.654eeee9.svg",
+    "static/media/magnifying-glass.75b56cd7.svg": "./static/media/magnifying-glass.75b56cd7.svg",
+    "static/media/plugin.d494b228.svg": "./static/media/plugin.d494b228.svg",
+    "static/media/repo.6d496322.svg": "./static/media/repo.6d496322.svg",
+    "static/media/stackalt.dba9fbb3.svg": "./static/media/stackalt.dba9fbb3.svg",
+    "static/media/success.8ddba663.svg": "./static/media/success.8ddba663.svg",
+    "static/media/test.jpg": "./static/media/test.2af13eb8.jpg",
+    "static/media/test1.jpg": "./static/media/test1.ec3bb9e5.jpg",
+    "static/media/test2.jpg": "./static/media/test2.2a544700.jpg",
+    "static/media/test3.jpg": "./static/media/test3.583fa456.jpg",
+    "static/media/test4.jpg": "./static/media/test4.10122fb5.jpg",
+    "static/media/tick.d47f41d4.svg": "./static/media/tick.d47f41d4.svg",
+    "static/media/warning.24222c77.svg": "./static/media/warning.24222c77.svg",
+    "vendors~main.ad8fb64e2ec9ec8acf37.bundle.js.LICENSE.txt": "./vendors~main.ad8fb64e2ec9ec8acf37.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.ad8fb64e2ec9ec8acf37.bundle.js",
+    "vendors~main.ad8fb64e2ec9ec8acf37.bundle.js",
+    "main.ad8fb64e2ec9ec8acf37.bundle.js"
+  ]
+}

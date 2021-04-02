@@ -8,7 +8,7 @@ exports[`Accordion renders without errors and matches snapshot 1`] = `
   <div
     aria-disabled="false"
     aria-expanded="false"
-    class="sc-gsTCUz hkoBPB"
+    class="sc-gsTCUz gCatPz"
     role="button"
     tabindex="0"
   >

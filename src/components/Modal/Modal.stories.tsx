@@ -18,6 +18,24 @@ Default.args = {
   onClose: () => console.log('closed'),
 };
 
+export const Small = Template.bind({});
+Small.args = {
+  header: 'Modal Header',
+  content: 'Modal content',
+  buttonLabel: 'ok',
+  size: 'small',
+  onClose: () => console.log('closed'),
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  header: 'Modal Header',
+  content: 'Modal content',
+  buttonLabel: 'ok',
+  size: 'large',
+  onClose: () => console.log('closed'),
+};
+
 export const Confirmation = Template.bind({});
 Confirmation.args = {
   header: 'Confirmation Modal Header',

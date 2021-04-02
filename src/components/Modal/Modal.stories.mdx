@@ -4,13 +4,17 @@ import { Modal } from './Modal';
 <Meta title='Design System|Modal' component={Modal} />
 
 # Modal
+
 Modal component
 
 ## Usage
+
 Use Modal component to advertise the user about some information, error or other
-event (default modal) or to ask to confirm some action (Confirmation modal)
+event (default modal) or to ask to confirm some action (Confirmation modal). COnfirmation modal
+requires `isConfirmationModal` and `onConfirm` props
 
 - Default Modal:
+
   <Story name='Default'>
     <Modal
       header='Modal Header'
@@ -20,6 +24,29 @@ event (default modal) or to ask to confirm some action (Confirmation modal)
     />
   </Story>
 
+- Small Modal:
+
+  <Story name='Small'>
+    <Modal
+      header='Modal Header'
+      content='Modal content'
+      buttonLabel='ok'
+      size='small'
+      onClose={() => console.log('closed')}
+    />
+  </Story>
+
+- Large Modal:
+  {' '}
+  <Story name='Large'>
+    <Modal
+      header='Modal Header'
+      content='Modal content'
+      buttonLabel='ok'
+      size='large'
+      onClose={() => console.log('closed')}
+    />
+  </Story>
 - Confirmation Modal:
   <Story name='Confirmation'>
     <Modal
@@ -34,4 +61,5 @@ event (default modal) or to ask to confirm some action (Confirmation modal)
   </Story>
 
 ## Other important notes
+
 not applicable.

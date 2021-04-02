@@ -67,10 +67,7 @@ export const Tabs: React.FC<TabsProps> = ({
           ))}
         </StyledTabsList>
       </StyledTabsListWrapper>
-      <StyledTabsContent
-        role='tabpanel'
-        aria-labelledby={tabsMetadata[activeTabIndex].label}
-      >
+      <StyledTabsContent role='tabpanel'>
         <StyledTabsSpacer />
         {tabsMetadata[activeTabIndex].content}
       </StyledTabsContent>

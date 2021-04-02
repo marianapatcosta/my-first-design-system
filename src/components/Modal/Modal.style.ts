@@ -1,8 +1,21 @@
 import { MouseEventHandler } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { baseStyles, colors } from '../../styles';
 import { hexToRGB } from '../../utils/utils';
 import { Button } from '../Button/Button';
+import { ModalSize } from './Modal';
+
+const sizeStyles = {
+  small: css`
+    width: 20rem;
+  `,
+  medium: css`
+    width: 35rem;
+  `,
+  large: css`
+    width: 50rem;
+  `,
+};
 
 export const StyledModal = styled.div`
   ${baseStyles}
@@ -21,17 +34,15 @@ export const StyledModalOverlay = styled.div`
   z-index: 100;
 `;
 
-export const StyledModalContent = styled.div`
+export const StyledModalContent = styled.div<{ size?: ModalSize }>`
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 50%;
-  background-color: ${colors.secondary};
+  ${({ size }) => size && sizeStyles[size]};
+  background-color: ${colors.primary};
   box-shadow: 0 0.125rem 0.5rem ${colors.shadow};
   border-radius: 0.5rem;
   transform: translate(-50%, -50%);
-  z-index: 10;
-  font-weight: 700;
 `;
 
 export const StyledModalHeader = styled.header`
@@ -39,16 +50,17 @@ export const StyledModalHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0.3rem;
-  background: ${colors.primary};
-  color: ${colors.secondary};
+  background-color: ${colors.secondary};
+  color: ${colors.highlight};
+  z-index: 10;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 `;
 
 export const StyledModalHeaderTitle = styled.h2`
   margin: 0.5rem;
-  font-size: 100%;
   font-weight: 700;
+  font-size: 100%;
 `;
 
 export const StyledModalHeaderClose = styled(Button)<{
@@ -70,7 +82,6 @@ export const StyledModalHeaderClose = styled(Button)<{
 export const StyledModalMessage = styled.p`
   padding: 1rem;
   text-align: center;
-  color: ${colors.highlight};
 `;
 
 export const StyledModalFooter = styled.footer`

@@ -115,7 +115,10 @@ export const StyledImageWrapper = styled.div<{ isVertical?: boolean }>`
   width: 15rem;`}
 `;
 
-export const StyledImage = styled(Image)<{ isSelected?: boolean }>`
+export const StyledImage = styled(Image)<{
+  isSelected?: boolean;
+  role?: string;
+}>`
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;

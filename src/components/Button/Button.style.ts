@@ -32,7 +32,6 @@ export const StyledButton = styled.button<{
 }>`
   ${baseStyles};
   ${({ size }) => size && sizeStyles[size]};
-  line-height: 1rem;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -69,9 +68,14 @@ export const StyledButton = styled.button<{
     `}
 `;
 
-export const StyledButtonLabel = styled.span`
+export const StyledButtonLabel = styled.span<{ hasIcon?: boolean }>`
   ${truncateStyles};
   user-select: none;
+
+  ${({ hasIcon }) =>
+    hasIcon &&
+    `
+  line-height: 1rem;`}
 `;
 
 export const StyledButtonIcon = styled.img<{ label?: string }>`

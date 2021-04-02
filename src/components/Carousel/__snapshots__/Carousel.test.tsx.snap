@@ -2,6 +2,7 @@
 
 exports[`Carousel renders without errors and matches snapshot 1`] = `
 <div
+  aria-label="images slider"
   class="sc-iBPRYJ bxzCfB"
   id=""
   role="listbox"
@@ -25,72 +26,77 @@ exports[`Carousel renders without errors and matches snapshot 1`] = `
         class="sc-dQppl gHIbYh"
       >
         <div
-          class="sc-dlfnbm eUChx"
+          class="sc-dlfnbm eUChx sc-bqyKva dTXmhP"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test"
+          aria-label="image"
           class="sc-gsTCUz gGjrhV sc-bqyKva dTXmhP"
           data-testid="image"
           id=""
           loading="lazy"
-          role="img"
+          role="option"
           src="test.jpg"
           tabindex="-1"
         />
         <div
-          class="sc-dlfnbm eUChx"
+          class="sc-dlfnbm eUChx sc-bqyKva ijzSSL"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test1"
+          aria-label="image"
           class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
           data-testid="image"
           id=""
           loading="lazy"
-          role="img"
+          role="option"
           src="test1.jpg"
           tabindex="-1"
         />
         <div
-          class="sc-dlfnbm eUChx"
+          class="sc-dlfnbm eUChx sc-bqyKva ijzSSL"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test2"
+          aria-label="image"
           class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
           data-testid="image"
           id=""
           loading="lazy"
-          role="img"
+          role="option"
           src="test2.jpg"
           tabindex="-1"
         />
         <div
-          class="sc-dlfnbm eUChx"
+          class="sc-dlfnbm eUChx sc-bqyKva ijzSSL"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test3"
+          aria-label="image"
           class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
           data-testid="image"
           id=""
           loading="lazy"
-          role="img"
+          role="option"
           src="test3.jpg"
           tabindex="-1"
         />
         <div
-          class="sc-dlfnbm eUChx"
+          class="sc-dlfnbm eUChx sc-bqyKva ijzSSL"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test4"
+          aria-label="image"
           class="sc-gsTCUz gGjrhV sc-bqyKva ijzSSL"
           data-testid="image"
           id=""
           loading="lazy"
-          role="img"
+          role="option"
           src="test4.jpg"
           tabindex="-1"
         />
@@ -116,22 +122,27 @@ exports[`Carousel renders without errors and matches snapshot 1`] = `
           class="sc-kstrdz unuVy"
         >
           <button
+            aria-label="click to select item 0"
             class="sc-hBEYos jIVUEM"
             data-testid="bar-item-0"
           />
           <button
+            aria-label="click to select item 1"
             class="sc-hBEYos bTMHcU"
             data-testid="bar-item-1"
           />
           <button
+            aria-label="click to select item 2"
             class="sc-hBEYos bTMHcU"
             data-testid="bar-item-2"
           />
           <button
+            aria-label="click to select item 3"
             class="sc-hBEYos bTMHcU"
             data-testid="bar-item-3"
           />
           <button
+            aria-label="click to select item 4"
             class="sc-hBEYos bTMHcU"
             data-testid="bar-item-4"
           />

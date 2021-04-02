@@ -13,7 +13,7 @@ exports[`Storyshots Accordion Default 1`] = `
   <div
     aria-disabled={false}
     aria-expanded={false}
-    className="sc-gsTCUz hkoBPB"
+    className="sc-gsTCUz gCatPz"
     disabled={false}
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -48,29 +48,27 @@ exports[`Storyshots Accordion Default 1`] = `
 
 exports[`Storyshots Button Full Length 1`] = `
 <button
-  className="sc-eCssSg iZIWfU"
+  className="sc-eCssSg drrTeo"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="medium"
   style={Object {}}
   type="button"
 >
   
   <span
-    className="sc-jSgupP eUZApH"
+    className="sc-jSgupP feLrpU"
   >
-    Full length button
+    Full-length button
   </span>
 </button>
 `;
 
 exports[`Storyshots Button Icon 1`] = `
 <button
-  className="sc-eCssSg cahtqY"
+  className="sc-eCssSg cddogg"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="small"
   style={Object {}}
   type="button"
@@ -88,36 +86,34 @@ exports[`Storyshots Button Icon 1`] = `
 
 exports[`Storyshots Button Large 1`] = `
 <button
-  className="sc-eCssSg jGPgeU"
+  className="sc-eCssSg hivkGc"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="large"
   style={Object {}}
   type="button"
 >
   
   <span
-    className="sc-jSgupP eUZApH"
+    className="sc-jSgupP feLrpU"
   >
-    This is large button
+    Large button
   </span>
 </button>
 `;
 
 exports[`Storyshots Button Medium 1`] = `
 <button
-  className="sc-eCssSg hwlEon"
+  className="sc-eCssSg daaTyP"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="medium"
   style={Object {}}
   type="button"
 >
   
   <span
-    className="sc-jSgupP eUZApH"
+    className="sc-jSgupP feLrpU"
   >
     Medium button
   </span>
@@ -126,17 +122,16 @@ exports[`Storyshots Button Medium 1`] = `
 
 exports[`Storyshots Button Primary 1`] = `
 <button
-  className="sc-eCssSg duZfVh"
+  className="sc-eCssSg hJWGyF"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="medium"
   style={Object {}}
   type="button"
 >
   
   <span
-    className="sc-jSgupP eUZApH"
+    className="sc-jSgupP feLrpU"
   >
     Primary button
   </span>
@@ -145,17 +140,16 @@ exports[`Storyshots Button Primary 1`] = `
 
 exports[`Storyshots Button Secondary 1`] = `
 <button
-  className="sc-eCssSg hwlEon"
+  className="sc-eCssSg daaTyP"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="medium"
   style={Object {}}
   type="button"
 >
   
   <span
-    className="sc-jSgupP eUZApH"
+    className="sc-jSgupP feLrpU"
   >
     Seconday button
   </span>
@@ -164,17 +158,16 @@ exports[`Storyshots Button Secondary 1`] = `
 
 exports[`Storyshots Button Small 1`] = `
 <button
-  className="sc-eCssSg cfawAC"
+  className="sc-eCssSg saKdC"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="small"
   style={Object {}}
   type="button"
 >
   
   <span
-    className="sc-jSgupP eUZApH"
+    className="sc-jSgupP feLrpU"
   >
     Small button
   </span>
@@ -183,10 +176,9 @@ exports[`Storyshots Button Small 1`] = `
 
 exports[`Storyshots Button With Icon 1`] = `
 <button
-  className="sc-eCssSg duZfVh"
+  className="sc-eCssSg hJWGyF"
   disabled={false}
   id=""
-  onClick={[Function]}
   size="medium"
   style={Object {}}
   type="button"
@@ -199,14 +191,14 @@ exports[`Storyshots Button With Icon 1`] = `
     src="success.svg"
   />
   <span
-    className="sc-jSgupP eUZApH"
+    className="sc-jSgupP gdutgU"
   >
     icon button
   </span>
 </button>
 `;
 
-exports[`Storyshots Card Default Card 1`] = `
+exports[`Storyshots Card Default 1`] = `
 <div
   className="sc-iBPRYJ eEgiuE"
   id=""
@@ -224,6 +216,7 @@ exports[`Storyshots Card Default Card 1`] = `
 
 exports[`Storyshots Carousel Automatic View 1`] = `
 <div
+  aria-label="images slider"
   className="sc-bqyKva kMfrLF"
   id=""
   role="listbox"
@@ -248,11 +241,12 @@ exports[`Storyshots Carousel Automatic View 1`] = `
         className="sc-dIUggk esxXfb"
       >
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr gzSnhl"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr gzSnhl"
           data-testid="image"
           id=""
@@ -260,17 +254,18 @@ exports[`Storyshots Carousel Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test1"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -278,17 +273,18 @@ exports[`Storyshots Carousel Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test1.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test2"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -296,17 +292,18 @@ exports[`Storyshots Carousel Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test2.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test3"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -314,17 +311,18 @@ exports[`Storyshots Carousel Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test3.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test4"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -332,7 +330,7 @@ exports[`Storyshots Carousel Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test4.jpg"
           style={Object {}}
           tabIndex={-1}
@@ -363,30 +361,35 @@ exports[`Storyshots Carousel Automatic View 1`] = `
           className="sc-dmlrTW kVmOua"
         >
           <button
+            aria-label="click to select item 0"
             className="sc-kfzAmx cubExl"
             data-testid="bar-item-0"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 1"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-1"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 2"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-2"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 3"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-3"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 4"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-4"
             onClick={[Function]}
@@ -401,6 +404,7 @@ exports[`Storyshots Carousel Automatic View 1`] = `
 
 exports[`Storyshots Carousel Controlled Automatic View 1`] = `
 <div
+  aria-label="images slider"
   className="sc-bqyKva kMfrLF"
   id=""
   role="listbox"
@@ -438,13 +442,13 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
           label=""
         >
           <span
-            className="sc-iqHYGH ekrIrh"
+            className="sc-iqHYGH egOeDC"
             disabled={false}
           >
             off
           </span>
           <span
-            className="sc-iqHYGH ekrIrh"
+            className="sc-iqHYGH egOeDC"
           />
         </span>
       </label>
@@ -456,11 +460,12 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
         className="sc-dIUggk esxXfb"
       >
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr gzSnhl"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr gzSnhl"
           data-testid="image"
           id=""
@@ -468,17 +473,18 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test1"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -486,17 +492,18 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test1.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test2"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -504,17 +511,18 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test2.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test3"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -522,17 +530,18 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test3.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test4"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -540,7 +549,7 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test4.jpg"
           style={Object {}}
           tabIndex={-1}
@@ -571,30 +580,35 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
           className="sc-dmlrTW kVmOua"
         >
           <button
+            aria-label="click to select item 0"
             className="sc-kfzAmx cubExl"
             data-testid="bar-item-0"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 1"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-1"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 2"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-2"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 3"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-3"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 4"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-4"
             onClick={[Function]}
@@ -609,6 +623,7 @@ exports[`Storyshots Carousel Controlled Automatic View 1`] = `
 
 exports[`Storyshots Carousel Default 1`] = `
 <div
+  aria-label="images slider"
   className="sc-bqyKva kMfrLF"
   id=""
   role="listbox"
@@ -633,11 +648,12 @@ exports[`Storyshots Carousel Default 1`] = `
         className="sc-dIUggk esxXfb"
       >
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr gzSnhl"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr gzSnhl"
           data-testid="image"
           id=""
@@ -645,17 +661,18 @@ exports[`Storyshots Carousel Default 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test1"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -663,17 +680,18 @@ exports[`Storyshots Carousel Default 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test1.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test2"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -681,17 +699,18 @@ exports[`Storyshots Carousel Default 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test2.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test3"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -699,17 +718,18 @@ exports[`Storyshots Carousel Default 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test3.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test4"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -717,7 +737,7 @@ exports[`Storyshots Carousel Default 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test4.jpg"
           style={Object {}}
           tabIndex={-1}
@@ -748,30 +768,35 @@ exports[`Storyshots Carousel Default 1`] = `
           className="sc-dmlrTW kVmOua"
         >
           <button
+            aria-label="click to select item 0"
             className="sc-kfzAmx cubExl"
             data-testid="bar-item-0"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 1"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-1"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 2"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-2"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 3"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-3"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 4"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-4"
             onClick={[Function]}
@@ -786,6 +811,7 @@ exports[`Storyshots Carousel Default 1`] = `
 
 exports[`Storyshots Carousel Vertical 1`] = `
 <div
+  aria-label="images slider"
   className="sc-bqyKva kMfrLF"
   id=""
   role="listbox"
@@ -810,11 +836,12 @@ exports[`Storyshots Carousel Vertical 1`] = `
         className="sc-dIUggk iUPiTK"
       >
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr gzSnhl"
           data-testid="image-placeholder"
         />
         <img
-          alt="image-test"
+          alt="image-test5"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr gzSnhl"
           data-testid="image"
           id=""
@@ -822,17 +849,18 @@ exports[`Storyshots Carousel Vertical 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
-          src="test.jpg"
+          role="option"
+          src="test5.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
-          alt="image-test1"
+          alt="image-test6"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -840,17 +868,18 @@ exports[`Storyshots Carousel Vertical 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
-          src="test1.jpg"
+          role="option"
+          src="test6.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
-          alt="image-test2"
+          alt="image-test7"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -858,44 +887,8 @@ exports[`Storyshots Carousel Vertical 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
-          src="test2.jpg"
-          style={Object {}}
-          tabIndex={-1}
-        />
-        <div
-          className="sc-jrAGrp kfNnjS"
-          data-testid="image-placeholder"
-        />
-        <img
-          alt="image-test3"
-          className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
-          data-testid="image"
-          id=""
-          loading="lazy"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          onLoad={[Function]}
-          role="img"
-          src="test3.jpg"
-          style={Object {}}
-          tabIndex={-1}
-        />
-        <div
-          className="sc-jrAGrp kfNnjS"
-          data-testid="image-placeholder"
-        />
-        <img
-          alt="image-test4"
-          className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
-          data-testid="image"
-          id=""
-          loading="lazy"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          onLoad={[Function]}
-          role="img"
-          src="test4.jpg"
+          role="option"
+          src="test7.jpg"
           style={Object {}}
           tabIndex={-1}
         />
@@ -925,32 +918,23 @@ exports[`Storyshots Carousel Vertical 1`] = `
           className="sc-dmlrTW kVmOua"
         >
           <button
+            aria-label="click to select item 0"
             className="sc-kfzAmx cubExl"
             data-testid="bar-item-0"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 1"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-1"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 2"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-2"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          />
-          <button
-            className="sc-kfzAmx fhILVt"
-            data-testid="bar-item-3"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          />
-          <button
-            className="sc-kfzAmx fhILVt"
-            data-testid="bar-item-4"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
@@ -963,6 +947,7 @@ exports[`Storyshots Carousel Vertical 1`] = `
 
 exports[`Storyshots Carousel With Previews 1`] = `
 <div
+  aria-label="images slider"
   className="sc-bqyKva kMfrLF"
   id=""
   role="listbox"
@@ -987,11 +972,12 @@ exports[`Storyshots Carousel With Previews 1`] = `
         className="sc-fKFyDc cBaQbZ"
       >
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-bBXqnf hYuIeJ"
           data-testid="image-placeholder"
         />
         <img
           alt="preview-test3"
+          aria-label="click me"
           className="sc-pFZIQ bQXCuZ sc-bBXqnf hYuIeJ"
           data-testid="image"
           id=""
@@ -1005,11 +991,12 @@ exports[`Storyshots Carousel With Previews 1`] = `
           tabIndex={0}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-bBXqnf hYuIeJ"
           data-testid="image-placeholder"
         />
         <img
           alt="preview-test4"
+          aria-label="click me"
           className="sc-pFZIQ bQXCuZ sc-bBXqnf hYuIeJ"
           data-testid="image"
           id=""
@@ -1027,11 +1014,12 @@ exports[`Storyshots Carousel With Previews 1`] = `
         className="sc-dIUggk esxXfb"
       >
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr gzSnhl"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr gzSnhl"
           data-testid="image"
           id=""
@@ -1039,17 +1027,18 @@ exports[`Storyshots Carousel With Previews 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test1"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -1057,17 +1046,18 @@ exports[`Storyshots Carousel With Previews 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test1.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test2"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -1075,17 +1065,18 @@ exports[`Storyshots Carousel With Previews 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test2.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test3"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -1093,17 +1084,18 @@ exports[`Storyshots Carousel With Previews 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test3.jpg"
           style={Object {}}
           tabIndex={-1}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-hHftDr exyjVR"
           data-testid="image-placeholder"
         />
         <img
           alt="image-test4"
+          aria-label="image"
           className="sc-pFZIQ kQbCxh sc-hHftDr exyjVR"
           data-testid="image"
           id=""
@@ -1111,7 +1103,7 @@ exports[`Storyshots Carousel With Previews 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           onLoad={[Function]}
-          role="img"
+          role="option"
           src="test4.jpg"
           style={Object {}}
           tabIndex={-1}
@@ -1142,30 +1134,35 @@ exports[`Storyshots Carousel With Previews 1`] = `
           className="sc-dmlrTW kVmOua"
         >
           <button
+            aria-label="click to select item 0"
             className="sc-kfzAmx cubExl"
             data-testid="bar-item-0"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 1"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-1"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 2"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-2"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 3"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-3"
             onClick={[Function]}
             onKeyDown={[Function]}
           />
           <button
+            aria-label="click to select item 4"
             className="sc-kfzAmx fhILVt"
             data-testid="bar-item-4"
             onClick={[Function]}
@@ -1177,11 +1174,12 @@ exports[`Storyshots Carousel With Previews 1`] = `
         className="sc-fKFyDc cBaQbZ"
       >
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-bBXqnf hYuIeJ"
           data-testid="image-placeholder"
         />
         <img
           alt="preview-test1"
+          aria-label="click me"
           className="sc-pFZIQ bQXCuZ sc-bBXqnf hYuIeJ"
           data-testid="image"
           id=""
@@ -1195,11 +1193,12 @@ exports[`Storyshots Carousel With Previews 1`] = `
           tabIndex={0}
         />
         <div
-          className="sc-jrAGrp kfNnjS"
+          className="sc-jrAGrp kfNnjS sc-bBXqnf hYuIeJ"
           data-testid="image-placeholder"
         />
         <img
           alt="preview-test2"
+          aria-label="click me"
           className="sc-pFZIQ bQXCuZ sc-bBXqnf hYuIeJ"
           data-testid="image"
           id=""
@@ -1429,428 +1428,6 @@ exports[`Storyshots Emoji Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Example/Header Logged In 1`] = `
-<header>
-  <div
-    className="wrapper"
-  >
-    <div>
-      <svg
-        height="32"
-        viewBox="0 0 32 32"
-        width="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-        >
-          <path
-            d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-            fill="#FFF"
-          />
-          <path
-            d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-            fill="#555AB9"
-          />
-          <path
-            d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-            fill="#91BAF8"
-          />
-        </g>
-      </svg>
-      <h1>
-        Acme
-      </h1>
-    </div>
-    <div>
-      <button
-        className="sc-eCssSg cfawAC"
-        disabled={false}
-        id=""
-        onClick={[Function]}
-        size="small"
-        style={Object {}}
-        type="button"
-      >
-        
-        <span
-          className="sc-jSgupP eUZApH"
-        >
-          Log out
-        </span>
-      </button>
-    </div>
-  </div>
-</header>
-`;
-
-exports[`Storyshots Example/Header Logged Out 1`] = `
-<header>
-  <div
-    className="wrapper"
-  >
-    <div>
-      <svg
-        height="32"
-        viewBox="0 0 32 32"
-        width="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-        >
-          <path
-            d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-            fill="#FFF"
-          />
-          <path
-            d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-            fill="#555AB9"
-          />
-          <path
-            d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-            fill="#91BAF8"
-          />
-        </g>
-      </svg>
-      <h1>
-        Acme
-      </h1>
-    </div>
-    <div>
-      <button
-        className="sc-eCssSg cfawAC"
-        disabled={false}
-        id=""
-        onClick={[Function]}
-        size="small"
-        style={Object {}}
-        type="button"
-      >
-        
-        <span
-          className="sc-jSgupP eUZApH"
-        >
-          Log in
-        </span>
-      </button>
-      <button
-        className="sc-eCssSg cahtqY"
-        disabled={false}
-        id=""
-        onClick={[Function]}
-        size="small"
-        style={Object {}}
-        type="button"
-      >
-        
-        <span
-          className="sc-jSgupP eUZApH"
-        >
-          Sign up
-        </span>
-      </button>
-    </div>
-  </div>
-</header>
-`;
-
-exports[`Storyshots Example/Page Logged In 1`] = `
-<article>
-  <header>
-    <div
-      className="wrapper"
-    >
-      <div>
-        <svg
-          height="32"
-          viewBox="0 0 32 32"
-          width="32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>
-          Acme
-        </h1>
-      </div>
-      <div>
-        <button
-          className="sc-eCssSg cfawAC"
-          disabled={false}
-          id=""
-          onClick={[Function]}
-          size="small"
-          style={Object {}}
-          type="button"
-        >
-          
-          <span
-            className="sc-jSgupP eUZApH"
-          >
-            Log out
-          </span>
-        </button>
-      </div>
-    </div>
-  </header>
-  <section>
-    <h2>
-      Pages in Storybook
-    </h2>
-    <p>
-      We recommend building UIs with a
-       
-      <a
-        href="https://componentdriven.org"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <strong>
-          component-driven
-        </strong>
-      </a>
-       
-      process starting with atomic components and ending with pages.
-    </p>
-    <p>
-      Render pages with mock data. This makes it easy to build and review page states without needing to navigate to them in your app. Here are some handy patterns for managing page data in Storybook:
-    </p>
-    <ul>
-      <li>
-        Use a higher-level connected component. Storybook helps you compose such data from the "args" of child component stories
-      </li>
-      <li>
-        Assemble data in the page component from your services. You can mock these services out using Storybook.
-      </li>
-    </ul>
-    <p>
-      Get a guided tutorial on component-driven development at
-       
-      <a
-        href="https://www.learnstorybook.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Learn Storybook
-      </a>
-      . Read more in the
-       
-      <a
-        href="https://storybook.js.org/docs"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        docs
-      </a>
-      .
-    </p>
-    <div
-      className="tip-wrapper"
-    >
-      <span
-        className="tip"
-      >
-        Tip
-      </span>
-       Adjust the width of the canvas with the
-       
-      <svg
-        height="10"
-        viewBox="0 0 12 12"
-        width="10"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-        >
-          <path
-            d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"
-            fill="#999"
-            id="a"
-          />
-        </g>
-      </svg>
-      Viewports addon in the toolbar
-    </div>
-  </section>
-</article>
-`;
-
-exports[`Storyshots Example/Page Logged Out 1`] = `
-<article>
-  <header>
-    <div
-      className="wrapper"
-    >
-      <div>
-        <svg
-          height="32"
-          viewBox="0 0 32 32"
-          width="32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>
-          Acme
-        </h1>
-      </div>
-      <div>
-        <button
-          className="sc-eCssSg cfawAC"
-          disabled={false}
-          id=""
-          onClick={[Function]}
-          size="small"
-          style={Object {}}
-          type="button"
-        >
-          
-          <span
-            className="sc-jSgupP eUZApH"
-          >
-            Log in
-          </span>
-        </button>
-        <button
-          className="sc-eCssSg cahtqY"
-          disabled={false}
-          id=""
-          onClick={[Function]}
-          size="small"
-          style={Object {}}
-          type="button"
-        >
-          
-          <span
-            className="sc-jSgupP eUZApH"
-          >
-            Sign up
-          </span>
-        </button>
-      </div>
-    </div>
-  </header>
-  <section>
-    <h2>
-      Pages in Storybook
-    </h2>
-    <p>
-      We recommend building UIs with a
-       
-      <a
-        href="https://componentdriven.org"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <strong>
-          component-driven
-        </strong>
-      </a>
-       
-      process starting with atomic components and ending with pages.
-    </p>
-    <p>
-      Render pages with mock data. This makes it easy to build and review page states without needing to navigate to them in your app. Here are some handy patterns for managing page data in Storybook:
-    </p>
-    <ul>
-      <li>
-        Use a higher-level connected component. Storybook helps you compose such data from the "args" of child component stories
-      </li>
-      <li>
-        Assemble data in the page component from your services. You can mock these services out using Storybook.
-      </li>
-    </ul>
-    <p>
-      Get a guided tutorial on component-driven development at
-       
-      <a
-        href="https://www.learnstorybook.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Learn Storybook
-      </a>
-      . Read more in the
-       
-      <a
-        href="https://storybook.js.org/docs"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        docs
-      </a>
-      .
-    </p>
-    <div
-      className="tip-wrapper"
-    >
-      <span
-        className="tip"
-      >
-        Tip
-      </span>
-       Adjust the width of the canvas with the
-       
-      <svg
-        height="10"
-        viewBox="0 0 12 12"
-        width="10"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          fill="none"
-          fillRule="evenodd"
-        >
-          <path
-            d="M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z"
-            fill="#999"
-            id="a"
-          />
-        </g>
-      </svg>
-      Viewports addon in the toolbar
-    </div>
-  </section>
-</article>
-`;
-
 exports[`Storyshots Image Clickable 1`] = `
 Array [
   <div
@@ -1859,6 +1436,7 @@ Array [
   />,
   <img
     alt=""
+    aria-label="click me"
     className="sc-pFZIQ bQXCuZ"
     data-testid="image"
     id=""
@@ -1866,7 +1444,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     onLoad={[Function]}
-    role="button"
     src="test.jpg"
     style={
       Object {
@@ -1886,6 +1463,7 @@ Array [
   />,
   <img
     alt=""
+    aria-label="image"
     className="sc-pFZIQ kQbCxh"
     data-testid="image"
     id=""
@@ -1893,7 +1471,6 @@ Array [
     onClick={[Function]}
     onKeyDown={[Function]}
     onLoad={[Function]}
-    role="img"
     src="test.jpg"
     style={
       Object {
@@ -1923,6 +1500,7 @@ exports[`Storyshots Image Zoomable 1`] = `
     />
     <img
       alt=""
+      aria-label="click to zoom in"
       className="sc-pFZIQ jPrxKL"
       data-testid="image"
       id=""
@@ -1930,7 +1508,6 @@ exports[`Storyshots Image Zoomable 1`] = `
       onClick={[Function]}
       onKeyDown={[Function]}
       onLoad={[Function]}
-      role="img"
       src="test.jpg"
       style={
         Object {
@@ -1947,12 +1524,12 @@ exports[`Storyshots Input Default 1`] = `
 <div
   className="sc-bZSQDF bDUkHv"
 >
-  
   <div
     className="sc-iUuytg iCvKEl"
     disabled={false}
   >
     <input
+      aria-label=""
       autoComplete="off"
       autoFocus={false}
       className="sc-iBaPrD iMMOcP"
@@ -1961,8 +1538,6 @@ exports[`Storyshots Input Default 1`] = `
       id=""
       maxLength={150}
       name=""
-      onBlur={[Function]}
-      onChange={[Function]}
       placeholder=""
       style={Object {}}
       type="text"
@@ -1977,12 +1552,12 @@ exports[`Storyshots Input With Error 1`] = `
 <div
   className="sc-bZSQDF bDUkHv"
 >
-  
   <div
     className="sc-iUuytg iCvKEl"
     disabled={false}
   >
     <input
+      aria-label=""
       autoComplete="off"
       autoFocus={false}
       className="sc-iBaPrD eumgQd"
@@ -1991,8 +1566,6 @@ exports[`Storyshots Input With Error 1`] = `
       id=""
       maxLength={150}
       name=""
-      onBlur={[Function]}
-      onChange={[Function]}
       placeholder=""
       style={Object {}}
       type="text"
@@ -2012,12 +1585,12 @@ exports[`Storyshots Input With Icon 1`] = `
 <div
   className="sc-bZSQDF bDUkHv"
 >
-  
   <div
     className="sc-iUuytg iCvKEl"
     disabled={false}
   >
     <input
+      aria-label=""
       autoComplete="off"
       autoFocus={false}
       className="sc-iBaPrD iMMOcP"
@@ -2026,8 +1599,6 @@ exports[`Storyshots Input With Icon 1`] = `
       id=""
       maxLength={150}
       name=""
-      onBlur={[Function]}
-      onChange={[Function]}
       placeholder=""
       style={Object {}}
       type="text"
@@ -2035,9 +1606,9 @@ exports[`Storyshots Input With Icon 1`] = `
     />
     <img
       alt=""
+      aria-label="image"
       className="sc-cTkwdZ kqDjbn"
       data-testid="input-icon"
-      role=""
       src="success.svg"
       tabIndex={-1}
     />
@@ -2061,6 +1632,7 @@ exports[`Storyshots Input With Label 1`] = `
     disabled={false}
   >
     <input
+      aria-label="Input"
       autoComplete="off"
       autoFocus={false}
       className="sc-iBaPrD iMMOcP"
@@ -2069,8 +1641,6 @@ exports[`Storyshots Input With Label 1`] = `
       id=""
       maxLength={150}
       name=""
-      onBlur={[Function]}
-      onChange={[Function]}
       placeholder=""
       style={Object {}}
       type="text"
@@ -2089,21 +1659,22 @@ exports[`Storyshots Modal Confirmation 1`] = `
     className="sc-bBrOnJ dFMJdq"
   >
     <div
-      className="sc-cOajty bqlfHM"
+      className="sc-cOajty eFYElb"
       id=""
+      size="medium"
       style={Object {}}
     >
       <header
-        className="sc-AzgDb jMdEnB"
+        className="sc-AzgDb hEgHDr"
       >
         <h2
-          className="sc-khAkjo huPIAY"
+          className="sc-khAkjo jnFFFE"
         >
           Confirmation Modal Header
         </h2>
         <button
           aria-label="close modal"
-          className="sc-eCssSg hwlEon sc-hTZhsR ipqzKT"
+          className="sc-eCssSg daaTyP sc-hTZhsR ipqzKT"
           disabled={false}
           id=""
           onClick={[Function]}
@@ -2123,7 +1694,7 @@ exports[`Storyshots Modal Confirmation 1`] = `
       </header>
       <main>
         <p
-          className="sc-jgHCyG iTbjxD"
+          className="sc-jgHCyG hmWaJK"
         >
           Confirmation modal content
         </p>
@@ -2132,7 +1703,7 @@ exports[`Storyshots Modal Confirmation 1`] = `
         className="sc-gTgzIj gXUtWS"
       >
         <button
-          className="sc-eCssSg cfawAC sc-laRPJI cugBGV"
+          className="sc-eCssSg saKdC sc-laRPJI cugBGV"
           disabled={false}
           id=""
           onClick={[Function]}
@@ -2142,13 +1713,13 @@ exports[`Storyshots Modal Confirmation 1`] = `
         >
           
           <span
-            className="sc-jSgupP eUZApH"
+            className="sc-jSgupP feLrpU"
           >
             confirm
           </span>
         </button>
         <button
-          className="sc-eCssSg cfawAC sc-laRPJI fWcGvW"
+          className="sc-eCssSg saKdC sc-laRPJI fWcGvW"
           disabled={false}
           id=""
           onClick={[Function]}
@@ -2158,7 +1729,7 @@ exports[`Storyshots Modal Confirmation 1`] = `
         >
           
           <span
-            className="sc-jSgupP eUZApH"
+            className="sc-jSgupP feLrpU"
           >
             decline
           </span>
@@ -2177,21 +1748,22 @@ exports[`Storyshots Modal Default 1`] = `
     className="sc-bBrOnJ dFMJdq"
   >
     <div
-      className="sc-cOajty bqlfHM"
+      className="sc-cOajty eFYElb"
       id=""
+      size="medium"
       style={Object {}}
     >
       <header
-        className="sc-AzgDb jMdEnB"
+        className="sc-AzgDb hEgHDr"
       >
         <h2
-          className="sc-khAkjo huPIAY"
+          className="sc-khAkjo jnFFFE"
         >
           Modal Header
         </h2>
         <button
           aria-label="close modal"
-          className="sc-eCssSg hwlEon sc-hTZhsR ipqzKT"
+          className="sc-eCssSg daaTyP sc-hTZhsR ipqzKT"
           disabled={false}
           id=""
           onClick={[Function]}
@@ -2211,7 +1783,7 @@ exports[`Storyshots Modal Default 1`] = `
       </header>
       <main>
         <p
-          className="sc-jgHCyG iTbjxD"
+          className="sc-jgHCyG hmWaJK"
         >
           Modal content
         </p>
@@ -2220,7 +1792,7 @@ exports[`Storyshots Modal Default 1`] = `
         className="sc-gTgzIj gXUtWS"
       >
         <button
-          className="sc-eCssSg cfawAC sc-laRPJI cugBGV"
+          className="sc-eCssSg saKdC sc-laRPJI cugBGV"
           disabled={false}
           id=""
           onClick={[Function]}
@@ -2230,7 +1802,153 @@ exports[`Storyshots Modal Default 1`] = `
         >
           
           <span
-            className="sc-jSgupP eUZApH"
+            className="sc-jSgupP feLrpU"
+          >
+            ok
+          </span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Modal Large 1`] = `
+<div
+  className="sc-dOSReg iRCnme"
+>
+  <div
+    className="sc-bBrOnJ dFMJdq"
+  >
+    <div
+      className="sc-cOajty efWWjQ"
+      id=""
+      size="large"
+      style={Object {}}
+    >
+      <header
+        className="sc-AzgDb hEgHDr"
+      >
+        <h2
+          className="sc-khAkjo jnFFFE"
+        >
+          Modal Header
+        </h2>
+        <button
+          aria-label="close modal"
+          className="sc-eCssSg daaTyP sc-hTZhsR ipqzKT"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="medium"
+          style={Object {}}
+          type="button"
+        >
+          <img
+            alt=""
+            className="sc-gKsewC hjbgKA"
+            data-testid="button-icon"
+            label=""
+            src="close.svg"
+          />
+          
+        </button>
+      </header>
+      <main>
+        <p
+          className="sc-jgHCyG hmWaJK"
+        >
+          Modal content
+        </p>
+      </main>
+      <footer
+        className="sc-gTgzIj gXUtWS"
+      >
+        <button
+          className="sc-eCssSg saKdC sc-laRPJI cugBGV"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="small"
+          style={Object {}}
+          type="button"
+        >
+          
+          <span
+            className="sc-jSgupP feLrpU"
+          >
+            ok
+          </span>
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Modal Small 1`] = `
+<div
+  className="sc-dOSReg iRCnme"
+>
+  <div
+    className="sc-bBrOnJ dFMJdq"
+  >
+    <div
+      className="sc-cOajty ksNJWj"
+      id=""
+      size="small"
+      style={Object {}}
+    >
+      <header
+        className="sc-AzgDb hEgHDr"
+      >
+        <h2
+          className="sc-khAkjo jnFFFE"
+        >
+          Modal Header
+        </h2>
+        <button
+          aria-label="close modal"
+          className="sc-eCssSg daaTyP sc-hTZhsR ipqzKT"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="medium"
+          style={Object {}}
+          type="button"
+        >
+          <img
+            alt=""
+            className="sc-gKsewC hjbgKA"
+            data-testid="button-icon"
+            label=""
+            src="close.svg"
+          />
+          
+        </button>
+      </header>
+      <main>
+        <p
+          className="sc-jgHCyG hmWaJK"
+        >
+          Modal content
+        </p>
+      </main>
+      <footer
+        className="sc-gTgzIj gXUtWS"
+      >
+        <button
+          className="sc-eCssSg saKdC sc-laRPJI cugBGV"
+          disabled={false}
+          id=""
+          onClick={[Function]}
+          size="small"
+          style={Object {}}
+          type="button"
+        >
+          
+          <span
+            className="sc-jSgupP feLrpU"
           >
             ok
           </span>
@@ -2438,6 +2156,7 @@ exports[`Storyshots Search Default 1`] = `
     className="sc-clsHhM igOajr"
   >
     <input
+      aria-label="Search"
       className="sc-fbkhIv fjvJIq"
       data-testid="search-field"
       disabled={false}
@@ -2445,7 +2164,6 @@ exports[`Storyshots Search Default 1`] = `
       maxLength={150}
       name=""
       onBlur={[Function]}
-      onChange={[Function]}
       onKeyDown={[Function]}
       placeholder=""
       style={Object {}}
@@ -2476,6 +2194,7 @@ exports[`Storyshots Search Expansible 1`] = `
     className="sc-clsHhM fTzrML"
   >
     <input
+      aria-label="Search"
       className="sc-fbkhIv cvtVZ"
       data-testid="search-field"
       disabled={false}
@@ -2483,7 +2202,6 @@ exports[`Storyshots Search Expansible 1`] = `
       maxLength={150}
       name=""
       onBlur={[Function]}
-      onChange={[Function]}
       onKeyDown={[Function]}
       placeholder=""
       style={Object {}}
@@ -2520,6 +2238,7 @@ exports[`Storyshots Search With Label 1`] = `
     className="sc-clsHhM igOajr"
   >
     <input
+      aria-label="Search"
       className="sc-fbkhIv fjvJIq"
       data-testid="search-field"
       disabled={false}
@@ -2527,7 +2246,6 @@ exports[`Storyshots Search With Label 1`] = `
       maxLength={150}
       name=""
       onBlur={[Function]}
-      onChange={[Function]}
       onKeyDown={[Function]}
       placeholder=""
       style={Object {}}
@@ -2585,7 +2303,7 @@ exports[`Storyshots ShowMore With List 1`] = `
     </ul>
   </div>
   <a
-    className="sc-TmcTc ldWWwU"
+    className="sc-TmcTc fgDSmY"
     data-testid="show-more-link"
     href=""
     onClick={[Function]}
@@ -2594,7 +2312,7 @@ exports[`Storyshots ShowMore With List 1`] = `
      
     <img
       alt="show more icon"
-      className="sc-jHVexB dSbrVO"
+      className="sc-jHVexB hpFBQd"
       src="double-chevron.svg"
     />
   </a>
@@ -2620,7 +2338,7 @@ exports[`Storyshots ShowMore With String 1`] = `
   Ut sed mattis erat. In in nunc eu ligula egestas viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur fermentum sem mauris, semper consequat urna sagittis sed. Maecenas lacinia nulla lorem, quis condimentum orci ultricies quis. Aliquam erat volutpat. Vestibulum volutpat, metus quis malesuada lobortis, quam erat accumsan lectus, nec bibendum leo libero facilisis risus. Nulla sed viverra orci.
   </div>
   <a
-    className="sc-TmcTc ldWWwU"
+    className="sc-TmcTc fgDSmY"
     data-testid="show-more-link"
     href=""
     onClick={[Function]}
@@ -2629,7 +2347,7 @@ exports[`Storyshots ShowMore With String 1`] = `
      
     <img
       alt="show more icon"
-      className="sc-jHVexB dSbrVO"
+      className="sc-jHVexB hpFBQd"
       src="double-chevron.svg"
     />
   </a>
@@ -2658,7 +2376,7 @@ exports[`Storyshots Stepper Landscape 1`] = `
   <ul
     aria-label="progress"
     className="sc-eLgOdN khzXKX"
-    role="group"
+    role="list"
   >
     <progress
       className="sc-kIeTtH fKFLSP"
@@ -2743,7 +2461,8 @@ exports[`Storyshots Stepper Landscape 1`] = `
       className="sc-dacFzL gljwKY"
     >
       <button
-        className="sc-eCssSg cfawAC sc-jUEnpm sc-jQbIHB jXbMLx iRQBZM"
+        aria-label="next button"
+        className="sc-eCssSg saKdC sc-jUEnpm sc-jQbIHB jXbMLx iRQBZM"
         data-testid="next-button"
         disabled={false}
         id=""
@@ -2776,7 +2495,7 @@ exports[`Storyshots Stepper Vertical 1`] = `
   <ul
     aria-label="progress"
     className="sc-eLgOdN hmtaxx"
-    role="group"
+    role="list"
   >
     <progress
       className="sc-kIeTtH dPyHJu"
@@ -2861,7 +2580,8 @@ exports[`Storyshots Stepper Vertical 1`] = `
       className="sc-dacFzL gljwKY"
     >
       <button
-        className="sc-eCssSg cfawAC sc-jUEnpm sc-jQbIHB jXbMLx iRQBZM"
+        aria-label="next button"
+        className="sc-eCssSg saKdC sc-jUEnpm sc-jQbIHB jXbMLx iRQBZM"
         data-testid="next-button"
         disabled={false}
         id=""
@@ -2886,6 +2606,7 @@ exports[`Storyshots Stepper Vertical 1`] = `
 
 exports[`Storyshots Tab Active 1`] = `
 <ul
+  role="tablist"
   style={
     Object {
       "listStyle": "none",
@@ -2910,6 +2631,7 @@ exports[`Storyshots Tab Active 1`] = `
 
 exports[`Storyshots Tab Default 1`] = `
 <ul
+  role="tablist"
   style={
     Object {
       "listStyle": "none",
@@ -2975,7 +2697,6 @@ exports[`Storyshots Tabs Default 1`] = `
     </ul>
   </div>
   <div
-    aria-labelledby="Tab 1"
     className="sc-bXDlPE"
     role="tabpanel"
   >
@@ -2994,13 +2715,12 @@ exports[`Storyshots Textarea Default 1`] = `
   className="sc-ctaXAZ jTKgHu"
 >
   <textarea
-    className="sc-dFJsGO ilhJpt"
+    aria-label=""
+    className="sc-dFJsGO fOcCJZ"
     data-testid="textarea-field"
     disabled={false}
     id=""
     name=""
-    onBlur={[Function]}
-    onChange={[Function]}
     placeholder=""
     rows={5}
     style={Object {}}
@@ -3014,13 +2734,12 @@ exports[`Storyshots Textarea With Error 1`] = `
   className="sc-ctaXAZ jTKgHu"
 >
   <textarea
-    className="sc-dFJsGO hlHcpj"
+    aria-label=""
+    className="sc-dFJsGO drZChj"
     data-testid="textarea-field"
     disabled={false}
     id=""
     name=""
-    onBlur={[Function]}
-    onChange={[Function]}
     placeholder=""
     rows={5}
     style={Object {}}
@@ -3046,13 +2765,12 @@ exports[`Storyshots Textarea With Label 1`] = `
     Textarea
   </label>
   <textarea
-    className="sc-dFJsGO ilhJpt"
+    aria-label="Textarea"
+    className="sc-dFJsGO fOcCJZ"
     data-testid="textarea-field"
     disabled={false}
     id=""
     name=""
-    onBlur={[Function]}
-    onChange={[Function]}
     placeholder=""
     rows={5}
     style={Object {}}
@@ -3069,7 +2787,8 @@ exports[`Storyshots Toast Alert 1`] = `
   type="alert"
 >
   <button
-    className="sc-eCssSg cfawAC sc-fHuLdG dUYRmA"
+    aria-label="close toast"
+    className="sc-eCssSg saKdC sc-fHuLdG dUYRmA"
     disabled={false}
     id=""
     onClick={[Function]}
@@ -3112,7 +2831,8 @@ exports[`Storyshots Toast Info 1`] = `
   type="info"
 >
   <button
-    className="sc-eCssSg cfawAC sc-fHuLdG dUYRmA"
+    aria-label="close toast"
+    className="sc-eCssSg saKdC sc-fHuLdG dUYRmA"
     disabled={false}
     id=""
     onClick={[Function]}
@@ -3155,7 +2875,8 @@ exports[`Storyshots Toast Success 1`] = `
   type="success"
 >
   <button
-    className="sc-eCssSg cfawAC sc-fHuLdG dUYRmA"
+    aria-label="close toast"
+    className="sc-eCssSg saKdC sc-fHuLdG dUYRmA"
     disabled={false}
     id=""
     onClick={[Function]}
@@ -3198,7 +2919,8 @@ exports[`Storyshots Toast Warning 1`] = `
   type="warning"
 >
   <button
-    className="sc-eCssSg cfawAC sc-fHuLdG dUYRmA"
+    aria-label="close toast"
+    className="sc-eCssSg saKdC sc-fHuLdG dUYRmA"
     disabled={false}
     id=""
     onClick={[Function]}
@@ -3255,11 +2977,11 @@ exports[`Storyshots ToggleSwitch Default 1`] = `
     label=""
   >
     <span
-      className="sc-iqHYGH ekrIrh"
+      className="sc-iqHYGH egOeDC"
       disabled={false}
     />
     <span
-      className="sc-iqHYGH ekrIrh"
+      className="sc-iqHYGH egOeDC"
     >
       on
     </span>
@@ -3290,11 +3012,11 @@ exports[`Storyshots ToggleSwitch With Label 1`] = `
     label="ToggleSwitch"
   >
     <span
-      className="sc-iqHYGH ekrIrh"
+      className="sc-iqHYGH egOeDC"
       disabled={false}
     />
     <span
-      className="sc-iqHYGH ekrIrh"
+      className="sc-iqHYGH egOeDC"
     >
       on
     </span>
@@ -3321,7 +3043,7 @@ exports[`Storyshots Upload Default 1`] = `
   className="sc-jGVbCA ilYyKM"
 >
   <button
-    className="sc-eCssSg hwlEon sc-tYoTV bvXDe"
+    className="sc-eCssSg daaTyP sc-tYoTV bvXDe"
     disabled={false}
     id=""
     onClick={[Function]}
@@ -3331,7 +3053,7 @@ exports[`Storyshots Upload Default 1`] = `
   >
     
     <span
-      className="sc-jSgupP eUZApH"
+      className="sc-jSgupP feLrpU"
     >
       Upload
     </span>

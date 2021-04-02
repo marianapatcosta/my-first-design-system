@@ -11,7 +11,8 @@ exports[`Textarea renders without errors and matches snapshot 1`] = `
     textarea
   </label>
   <textarea
-    class="sc-gsTCUz iLUHcy"
+    aria-label="textarea"
+    class="sc-gsTCUz ggVQyq"
     data-testid="textarea-field"
     id=""
     name=""

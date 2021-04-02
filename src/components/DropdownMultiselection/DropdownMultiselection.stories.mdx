@@ -19,19 +19,7 @@ should be provided; otherwise, if multiple options are allowed, `selectedOptions
 
 - Default DropdownMultiselection:
 
-      <Story name='Default'>
-      <DropdownMultiselection
-      label='select an option'
-      options={[{name: 'option 1'}, {name:'option 2'}, {name:'option 3'}]},
-      optionKey='name'
-      selectedOptions={[]}
-
-  />
-
-  </Story>
-
-- SingleSelection DropdownMultiselection:
-  <Story name='SingleSelection'>
+  <Story name='Default'>
     <DropdownMultiselection
       label='select an option'
       optionKey='name'
@@ -40,10 +28,24 @@ should be provided; otherwise, if multiple options are allowed, `selectedOptions
         { name: 'option 2' },
         { name: 'option 3' },
       ]}
-      isSingleSelection
-      selectedOption={''}
+      selectedOptions={[]}
     />
   </Story>
+
+  - SingleSelection DropdownMultiselection:
+    <Story name='SingleSelection'>
+      <DropdownMultiselection
+        label='select an option'
+        optionKey='name'
+        options={[
+          { name: 'option 1' },
+          { name: 'option 2' },
+          { name: 'option 3' },
+        ]}
+        isSingleSelection
+        selectedOption={''}
+      />
+    </Story>
 
 ## Other important notes
 
