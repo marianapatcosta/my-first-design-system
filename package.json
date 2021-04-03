@@ -1,7 +1,24 @@
 {
   "name": "@marianapatcosta/my-first-design-system",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "A simple design system using React, Typescript, Styled Components, Storybook, React Testing Library and Jest",
+  "main": "./lib/main.js",
+  "module": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "files": [
+    "lib"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianapatcosta/my-first-design-system.git"
+  },
+  "author": "Mariana Costa",
+  "license": "ISC",
+  "homepage": "https://github.com/marianapatcosta/my-first-design-system#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
