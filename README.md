@@ -1,6 +1,6 @@
 # My first Design System
 
-A simple design system with susing React, Typescript, Styled Components, Storybook, React Testing Library and Jest. This Design system contains the following components:
+A simple design system using React, Typescript, Styled Components, Storybook, React Testing Library and Jest. This Design system contains the following components:
 
 - Accordion
 - Button
@@ -26,7 +26,7 @@ A simple design system with susing React, Typescript, Styled Components, Storybo
 - Tooltip
 - Upload
 
-Each component and corresponding docs can be visualize in [design system storybook](https://6067056cb7d3a2002163b262-rodxdkhaoc.chromatic.com/) and [design system chromatic]()
+Each component and corresponding docs can be visualize in [design system storybook](https://6067056cb7d3a2002163b262-rodxdkhaoc.chromatic.com/) and [design system chromatic](https://www.chromatic.com/library?appId=6067056cb7d3a2002163b262&branch=master&groupPrefix=Design+System)
 
 ## Available Scripts
 
