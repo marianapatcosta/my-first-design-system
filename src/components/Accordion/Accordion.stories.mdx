@@ -1,30 +1,47 @@
-import { Meta } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
 import { Accordion } from './Accordion';
 import Test from '../../assets/images/test.jpg';
 
-<Meta title='Design System|Accordion' component={Accordion} />
+<Meta title="Design System/Accordion" component={Accordion} />
 
 # Accordion
+<br/><br/> 
 
-Accordion component
-
-## Usage
+### Displays a title and a content when expanded
 
 Use the Accordion when you need to show a title and the content should only be visible on demand,
 by clicking on the component. Both title and content can be string or another components/ HTML elements
 
-- Default Accordion:
-  <Story name='Default'>
+<Preview withToolbar>
+  <Story name="Standard">
     <Accordion
-      title='Accordion Title'
-      content={
-        <div>
-          Accordion content <img style={{ width: '200px' }} src={Test} />
-        </div>
-      }
+      title="Accordion title"
+        content={
+          <div>
+            <div>Accordion content</div> <img src={Test} style={{ width: "200px" }} />
+          </div>
+        }
     />
   </Story>
+</Preview>
 
-## Other important notes
+<ArgsTable of={Accordion} />
 
-not applicable.
+### Playground
+
+Experiment with Accordion Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Accordion {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+   title: "Accordion title",
+    content: (
+      <div>
+        <div>Accordion content</div>  <img style={{ width: "200px" }} src={Test} alt="test" />
+      </div>
+    ),
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 

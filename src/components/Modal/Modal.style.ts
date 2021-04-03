@@ -17,11 +17,8 @@ const sizeStyles = {
   `,
 };
 
-export const StyledModal = styled.div`
-  ${baseStyles}
-`;
-
 export const StyledModalOverlay = styled.div`
+  ${baseStyles}
   height: 100vh;
   width: 100vw;
   position: fixed;

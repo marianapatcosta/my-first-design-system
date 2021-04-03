@@ -144,4 +144,6 @@ Search.defaultProps = {
   disabled: false,
   isExpandable: false,
   value: '',
+  onChange: () => null,
+  onClear: () => null,
 };

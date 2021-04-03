@@ -2,63 +2,59 @@
 
 exports[`Modal renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-hKgILt BfdIb"
+  class="sc-hKgILt fxcgbq"
 >
   <div
-    class="sc-eCssSg fOkKDZ"
+    class="sc-eCssSg csSjiv"
+    id=""
   >
-    <div
-      class="sc-jSgupP bdjpym"
-      id=""
+    <header
+      class="sc-jSgupP jGwFzW"
     >
-      <header
-        class="sc-gKsewC bYARuX"
+      <h2
+        class="sc-gKsewC bzTBPu"
       >
-        <h2
-          class="sc-iBPRYJ NsZlG"
-        >
-          Modal header
-        </h2>
-        <button
-          aria-label="close modal"
-          class="sc-bdfBwQ fgPrFZ sc-fubCfw IjQKX"
-          id=""
-          type="button"
-        >
-          <img
-            alt=""
-            class="sc-dlfnbm kQHvsZ"
-            data-testid="button-icon"
-            label=""
-            src="close.svg"
-          />
-          
-        </button>
-      </header>
-      <main>
-        <p
-          class="sc-pFZIQ ehPVFW"
-        >
-          Content header
-        </p>
-      </main>
-      <footer
-        class="sc-jrAGrp jXkypb"
+        Modal header
+      </h2>
+      <button
+        aria-label="close modal"
+        class="sc-bdfBwQ fgPrFZ sc-iBPRYJ GQnYG"
+        id=""
+        type="button"
       >
-        <button
-          class="sc-bdfBwQ gCYgcM sc-kEjbxe dzDLLu"
-          id=""
-          type="button"
+        <img
+          alt=""
+          class="sc-dlfnbm kQHvsZ"
+          data-testid="button-icon"
+          label=""
+          src="close.svg"
+        />
+        
+      </button>
+    </header>
+    <main>
+      <p
+        class="sc-fubCfw fakmmR"
+      >
+        Content
+      </p>
+    </main>
+    <footer
+      class="sc-pFZIQ ecpCCv"
+    >
+      <button
+        class="sc-bdfBwQ gCYgcM sc-jrAGrp jdvazB"
+        id=""
+        type="button"
+      >
+        
+        <span
+          class="sc-gsTCUz gffxlH"
         >
-          
-          <span
-            class="sc-gsTCUz gffxlH"
-          >
-            ok
-          </span>
-        </button>
-      </footer>
-    </div>
+          ok
+        </span>
+      </button>
+    </footer>
   </div>
 </div>
 `;

@@ -5,7 +5,7 @@ import { Modal } from './Modal';
 describe('Modal', () => {
   const defaultProps = {
     header: 'Modal header',
-    content: 'Content header',
+    message: 'Content',
     buttonLabel: 'ok',
     onClose: () => null,
   };

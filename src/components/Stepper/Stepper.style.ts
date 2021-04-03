@@ -6,10 +6,11 @@ export const StyledStepper = styled.div<{ isVertical?: boolean }>`
   ${baseStyles};
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: auto;
   margin: 2rem auto;
   padding: 1.5rem;
-  background-color: ${colors.primary}
+  background-color: ${colors.primary};
+
     ${({ isVertical }) =>
       isVertical &&
       `display: flex;
@@ -29,7 +30,8 @@ export const StyledStepperIndicator = styled.ul<{ isVertical?: boolean }>`
     isVertical &&
     `  flex-direction: column;
     margin: 2rem;
-    margin-bottom: 0;`}
+    margin-bottom: 0;
+    `}
 `;
 
 export const StyledStepperIndicatorItem = styled.li<{ isFilled?: boolean }>`
@@ -80,7 +82,7 @@ export const StyledStepperProgressBar = styled.progress<{
     transform: rotate(90deg);`}
 
   &::-webkit-progress-bar {
-    background-color: ${colors.disabled};
+    background-color: ${colors.white};
   }
 
   &::-webkit-progress-value {

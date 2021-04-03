@@ -2,7 +2,7 @@
 
 exports[`Toast renders without errors and matches snapshot 1`] = `
 <div
-  class="sc-hKgILt fTaWEn"
+  class="sc-hKgILt eKnoHb"
   id=""
   type="info"
 >

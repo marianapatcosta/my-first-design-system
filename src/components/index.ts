@@ -1,3 +1,4 @@
+export * from './Accordion/Accordion';
 export * from './Button/Button';
 export * from './Card/Card';
 export * from './Carousel/Carousel';
@@ -10,6 +11,7 @@ export * from './Input/Input';
 export * from './Modal/Modal';
 export * from './RadioButton/RadioButton';
 export * from './Search/Search';
+export * from './ShowMore/ShowMore';
 export * from './Step/Step';
 export * from './Stepper/Stepper';
 export * from './Tab/Tab';

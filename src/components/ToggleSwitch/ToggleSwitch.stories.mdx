@@ -1,30 +1,36 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import { ToggleSwitch } from './ToggleSwitch';
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
+import { ToggleSwitch } from "./ToggleSwitch";
 
-<Meta title="Design System|ToggleSwitch" component={ToggleSwitch} />
+<Meta title="Design System/ToggleSwitch" component={ToggleSwitch} />
 
 # ToggleSwitch
-Simple ToggleSwitch component, which mimics the checkbox behavior but with different styling
+<br/><br/> 
 
-## Usage
-Use ToggleSwitch when the value alternates between two values
+### Allows to alternate between two values
 
-- Default ToggleSwitch:
-  <Story name='Default'>
-    <ToggleSwitch checked={false}
-      leftLabel='off' 
-      rightLabel='on' 
-    />
+Use ToggleSwitch when the value alternates between two values; mimics checkbox behavior but has different styling
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <ToggleSwitch checked={false} leftLabel="off" rightLabel="on" label="ToggleSwitch"/>
   </Story>
+</Preview>
 
-- ToggleSwitch With Label:
-  <Story name='WithLabel'>
-    <ToggleSwitch checked={false}
-      leftLabel='off' 
-      rightLabel='on' 
-      label='ToggleSwitch' 
-    />
+<ArgsTable of={ToggleSwitch} />
+
+### Playground
+
+Experiment with ToggleSwitch Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <ToggleSwitch {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+    checked: false, 
+    leftLabel: 'off', 
+    rightLabel: 'on',
+    label: 'ToggleSwitch'
+    }}>
+    {Template.bind({})}
   </Story>
-
-## Other important notes
-not applicable.
+</Canvas> 

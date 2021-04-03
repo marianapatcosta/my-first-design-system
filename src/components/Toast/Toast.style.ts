@@ -36,7 +36,7 @@ export const StyledToast = styled.div<{
   willBeDeleted?: boolean;
 }>`
  ${baseStyles}
-  box-shadow: 0 0.125rem 0.5rem ${colors.shadow};
+  box-shadow: 0 0.0625rem 0.2rem ${colors.disabled};
   width: 85%;
   max-width: 20rem;
   position: fixed;

@@ -1,52 +1,70 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import { DropdownMultiselection } from './DropdownMultiselection';
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
+import { DropdownMultiselection } from "./DropdownMultiselection";
 
 <Meta
-  title='Design System|DropdownMultiselection'
+  title="Design System/DropdownMultiselection"
   component={DropdownMultiselection}
 />
 
 # DropdownMultiselection
+<br/><br/> 
 
-Simple Dropdown component that allows to select multiple options
-
-## Usage
+### Displays different options to select
 
 Use dropdown DropdownMultiselection when there are more than two options available and the user should pick at least one of them.
 The options can be primitives or objects. `optionKey` prop indicates which field should be displayed, in dropdown options and selected
 option when options are of type Object. If only one option should be selected, the props `isSingleSelection`and `selectedOption`
 should be provided; otherwise, if multiple options are allowed, `selectedOptions` prop (an array of selected options) should be provided.
 
-- Default DropdownMultiselection:
-
-  <Story name='Default'>
+<Preview>
+  <Story name="Standard">
     <DropdownMultiselection
-      label='select an option'
-      optionKey='name'
+      placeholder="select an option"
+      optionKey="name"
       options={[
-        { name: 'option 1' },
-        { name: 'option 2' },
-        { name: 'option 3' },
+        { name: "option 1" },
+        { name: "option 2" },
+        { name: "option 3" },
       ]}
       selectedOptions={[]}
     />
   </Story>
+</Preview>
 
-  - SingleSelection DropdownMultiselection:
-    <Story name='SingleSelection'>
-      <DropdownMultiselection
-        label='select an option'
-        optionKey='name'
-        options={[
-          { name: 'option 1' },
-          { name: 'option 2' },
-          { name: 'option 3' },
-        ]}
-        isSingleSelection
-        selectedOption={''}
-      />
-    </Story>
+<ArgsTable of={DropdownMultiselection} />
 
-## Other important notes
 
-not applicable.
+#### SingleSelection:
+
+<Story name="SingleSelection">
+  <DropdownMultiselection
+    placeholder="select an option"
+    optionKey="name"
+    options={[
+      { name: "option 1" },
+      { name: "option 2" },
+      { name: "option 3" },
+    ]}
+    isSingleSelection
+    selectedOption={""}
+  />
+</Story>
+
+
+### Playground
+
+Experiment with DropdownMultiselection Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <DropdownMultiselection {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+      options: [{ name: 'option 1' }, { name: 'option 2' }, { name: 'option 3' }],
+    optionKey: 'name',
+    label: 'select an option',
+     selectedOptions: [],
+      selectedOptions: [] 
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 

@@ -1,65 +1,94 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import { Modal } from './Modal';
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
+import { styled } from '@storybook/theming';
+import { Modal } from "./Modal";
 
-<Meta title='Design System|Modal' component={Modal} />
+export const StyledDiv = styled.div`
+  & div {
+    position: relative;
+    max-height: 20rem;
+    margin: 1.5rem;
+  }
+`
+
+<Meta title="Design System/Modal" component={Modal} />
 
 # Modal
+<br/><br/> 
 
-Modal component
-
-## Usage
+### Displays a message or is used to confirm/cancel an action
 
 Use Modal component to advertise the user about some information, error or other
 event (default modal) or to ask to confirm some action (Confirmation modal). COnfirmation modal
 requires `isConfirmationModal` and `onConfirm` props
 
-- Default Modal:
-
-  <Story name='Default'>
+<Preview withToolbar>
+  <Story name="Standard">
+  <StyledDiv>
     <Modal
-      header='Modal Header'
-      content='Modal content'
-      buttonLabel='ok'
-      onClose={() => console.log('closed')}
+      header="Modal Header"
+      content="Modal content"
+      buttonLabel="ok"
     />
+    </StyledDiv>
+  </Story>
+</Preview>
+
+<ArgsTable of={Modal} />
+
+### Small Modal:
+
+  <Story name="Small">
+    <StyledDiv>
+      <Modal
+        header="Modal Header"
+        content="Modal content"
+        buttonLabel="ok"
+        size="small"
+      />
+    </StyledDiv>
   </Story>
 
-- Small Modal:
+### Large Modal:
 
-  <Story name='Small'>
-    <Modal
-      header='Modal Header'
-      content='Modal content'
-      buttonLabel='ok'
-      size='small'
-      onClose={() => console.log('closed')}
-    />
+  <Story name="Large">
+    <StyledDiv>
+      <Modal
+        header="Modal Header"
+        content="Modal content"
+        buttonLabel="ok"
+        size="large"
+      />
+    </StyledDiv>
   </Story>
 
-- Large Modal:
-  {' '}
-  <Story name='Large'>
-    <Modal
-      header='Modal Header'
-      content='Modal content'
-      buttonLabel='ok'
-      size='large'
-      onClose={() => console.log('closed')}
-    />
-  </Story>
-- Confirmation Modal:
-  <Story name='Confirmation'>
-    <Modal
-      header='Confirmation Modal Header'
-      content='Confirmation modal content'
-      isConfirmationModal={true}
-      buttonLabel='decline'
-      confirmationButtonLabel='confirm'
-      onClose={() => console.log('cancelled')}
-      onConfirm={() => console.log('confirmed')}
-    />
+### Confirmation Modal:
+  <Story name="Confirmation">
+    <StyledDiv>
+      <Modal
+        header="Confirmation Modal Header"
+        content="Confirmation modal content"
+        isConfirmationModal={true}
+        buttonLabel="decline"
+        confirmationButtonLabel="confirm"
+      />
+    </StyledDiv>
   </Story>
 
-## Other important notes
+### Playground
 
-not applicable.
+Experiment with Modal Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) =>  <Modal {...args} /> 
+
+<Canvas>
+  <Story name="Controls" args={{
+    header: 'Modal Header',
+    content: 'Modal content',
+    buttonLabel: 'ok',
+    style:{position: 'relative'}
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 
+
+

@@ -31,9 +31,9 @@ export interface DropdownMultiselectionProps {
    */
   style?: CSSProperties;
   /**
-   * Dropdown's label
+   * Dropdown's displaying text when no option is selected or if multiple options can be selected
    */
-  label?: string;
+  placeholder?: string;
   /**
    * Is Dropdown disabled?
    */
@@ -65,7 +65,7 @@ export interface DropdownMultiselectionProps {
 }
 
 export const DropdownMultiselection: React.FC<DropdownMultiselectionProps> = ({
-  label,
+  placeholder,
   options,
   optionKey,
   disabled,
@@ -126,8 +126,8 @@ export const DropdownMultiselection: React.FC<DropdownMultiselectionProps> = ({
     }
   };
 
-  const getLabel = () => {
-    if (!isSingleSelection) return label;
+  const getPlaceholder = () => {
+    if (!isSingleSelection) return placeholder;
     return optionKey ? selectedOption[optionKey] : selectedOption;
   };
 
@@ -137,12 +137,12 @@ export const DropdownMultiselection: React.FC<DropdownMultiselectionProps> = ({
         disabled={disabled}
         role='button'
         tabIndex={disabled ? -1 : 0}
-        aria-label={`Select ${label}`}
+        aria-label={`Select ${placeholder}`}
         aria-expanded={isExpanded}
         onClick={toggleDropdownExpansion}
         onKeyDown={handleKeyEvent}
       >
-        <div>{getLabel() || label}</div>
+        <div>{getPlaceholder() || placeholder}</div>
         <StyledDropdownMultiselectionArrow
           isExpanded={isExpanded}
           alt='chevron-icon'
@@ -171,7 +171,7 @@ DropdownMultiselection.defaultProps = {
   id: '',
   className: '',
   style: {},
-  label: '',
+  placeholder: '',
   disabled: false,
   isSingleSelection: false,
   options: [],

@@ -7,7 +7,7 @@ describe('DropdownMultiselection', () => {
     options: [{ name: 'option 1' }, { name: 'option 2' }, { name: 'option 3' }],
     selectedOptions: [],
     optionKey: 'name',
-    label: 'select an option',
+    placeholder: 'select an option',
     onOptionClick: () => null,
   };
 
@@ -19,18 +19,18 @@ describe('DropdownMultiselection', () => {
     expect(firstChild).toMatchSnapshot();
   });
 
-  test('should display label if label prop is passed', () => {
+  test('should display placeholder if placeholder prop is passed', () => {
     const { container } = render(
-      <DropdownMultiselection {...defaultProps} label='Dropdown' />
+      <DropdownMultiselection {...defaultProps} placeholder='Dropdown' />
     );
     getByText(container, 'Dropdown');
   });
 
-  test('should display the field of `optionKey` as option element label, if objects are passed in `options array', () => {
+  test('should display the field of `optionKey` as option element placeholder, if objects are passed in `options array', () => {
     const { getByText, getByLabelText } = render(
       <DropdownMultiselection
         {...defaultProps}
-        label='Dropdown'
+        placeholder='Dropdown'
         options={[
           { label: 'option 1' },
           { label: 'option 2' },

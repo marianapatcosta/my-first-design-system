@@ -2,7 +2,7 @@
 
 exports[`Stepper should render without errors and matches snapshot 1`] = `
 <div
-  class="sc-eCssSg fBTenm"
+  class="sc-eCssSg gxDJwF"
   data-steps="3"
   id=""
 >
@@ -12,7 +12,7 @@ exports[`Stepper should render without errors and matches snapshot 1`] = `
     role="list"
   >
     <progress
-      class="sc-iBPRYJ ffMDfi"
+      class="sc-iBPRYJ hodLuC"
       max="100"
       value="0"
     />
