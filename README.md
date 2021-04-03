@@ -1,6 +1,6 @@
 # My first Design System
 
-A simple design system with susing React, Typescript, Styled Components, Storybook, React Testing Library and Jest. This Design system contains the following components:
+A simple design system using React, Typescript, Styled Components, Storybook, React Testing Library and Jest. This Design system contains the following components:
 
 - Accordion
 - Button
