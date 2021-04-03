@@ -1,0 +1,20 @@
+export declare const colors: {
+    transparent: string;
+    darkBlue: string;
+    blue: string;
+    orange: string;
+    white: string;
+    black: string;
+    red: string;
+    green: string;
+    yellow: string;
+    grey: string;
+    shadow: string;
+    highlight: string;
+    primary: string;
+    secondary: string;
+    font: string;
+    disabled: string;
+    icon: import("styled-components").FlattenSimpleInterpolation;
+    iconHighlight: import("styled-components").FlattenSimpleInterpolation;
+};

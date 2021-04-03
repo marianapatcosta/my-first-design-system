@@ -26,7 +26,7 @@ A simple design system with susing React, Typescript, Styled Components, Storybo
 - Tooltip
 - Upload
 
-Each component and its docs can be visualize in [design system docs](https://6067056cb7d3a2002163b262-iowacissnm.chromatic.com/)
+Each component and corresponding docs can be visualize in [design system storybook](https://6067056cb7d3a2002163b262-rodxdkhaoc.chromatic.com/) and [design system chromatic]()
 
 ## Available Scripts
 
@@ -49,12 +49,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Launches the test runner in the interactive watch mode and shows tets coverage report.
 
-### `yarn storybook`
-
-Runs storybook design system
-Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
-
-### `yarn run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -63,6 +58,19 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn storybook`
+
+Runs storybook design system
+Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+
+### `yarn buildstorybook`
+
+Builds static files folder to be deployed.
+
+### `yarn chromatic`
+
+Deploys storybooks static files to chromatic
 
 ### `yarn generate`
 
