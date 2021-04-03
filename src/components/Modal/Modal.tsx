@@ -6,7 +6,6 @@ import React, {
 } from 'react';
 import { Close } from '../../assets/icons';
 import {
-  StyledModal,
   StyledModalOverlay,
   StyledModalContent,
   StyledModalHeader,
@@ -43,7 +42,7 @@ export interface ModalProps {
   /**
    * Modal's message content
    */
-  content: string;
+  message: string;
   /**
    * Label to display in Modal's button
    */
@@ -59,9 +58,7 @@ export interface ModalProps {
   /**
    * Click handler to call on close ou on cancel (if isConfirmationModal = true)
    */
-  onClose: MouseEventHandler<
-    HTMLButtonElement
-  > /* | ((event: MouseEvent) => void) */;
+  onClose: MouseEventHandler<HTMLButtonElement> /* | ((event: MouseEvent) => void) */;
   /**
    * Click handler to call on confirmation, if isConfirmationModal = true
    */
@@ -70,7 +67,7 @@ export interface ModalProps {
 
 export const Modal: React.FC<ModalProps> = ({
   header,
-  content: message,
+  message,
   buttonLabel,
   confirmationButtonLabel,
   isConfirmationModal,
@@ -101,39 +98,37 @@ export const Modal: React.FC<ModalProps> = ({
   }, [modalRef, onClose]);
 
   return (
-    <StyledModal>
-      <StyledModalOverlay>
-        <StyledModalContent ref={modalRef} {...props} size={size}>
-          <StyledModalHeader>
-            <StyledModalHeaderTitle>{header}</StyledModalHeaderTitle>
-            <StyledModalHeaderClose
-              aria-label='close modal'
-              icon={Close}
-              onClick={onClose}
-            />
-          </StyledModalHeader>
-          <main>
-            <StyledModalMessage>{message}</StyledModalMessage>
-          </main>
-          <StyledModalFooter>
-            {isConfirmationModal && confirmationButtonLabel && onConfirm && (
-              <StyledModalFooterButton
-                size='small'
-                label={confirmationButtonLabel}
-                onClick={onConfirm}
-              />
-            )}
+    <StyledModalOverlay>
+      <StyledModalContent ref={modalRef} {...props} size={size}>
+        <StyledModalHeader>
+          <StyledModalHeaderTitle>{header}</StyledModalHeaderTitle>
+          <StyledModalHeaderClose
+            aria-label='close modal'
+            icon={Close}
+            onClick={onClose}
+          />
+        </StyledModalHeader>
+        <main>
+          <StyledModalMessage>{message}</StyledModalMessage>
+        </main>
+        <StyledModalFooter>
+          {isConfirmationModal && confirmationButtonLabel && onConfirm && (
             <StyledModalFooterButton
               size='small'
-              isConfirmationModal={isConfirmationModal}
-              ref={modalButtonRef}
-              label={buttonLabel}
-              onClick={onClose}
+              label={confirmationButtonLabel}
+              onClick={onConfirm}
             />
-          </StyledModalFooter>
-        </StyledModalContent>
-      </StyledModalOverlay>
-    </StyledModal>
+          )}
+          <StyledModalFooterButton
+            size='small'
+            isConfirmationModal={isConfirmationModal}
+            ref={modalButtonRef}
+            label={buttonLabel}
+            onClick={onClose}
+          />
+        </StyledModalFooter>
+      </StyledModalContent>
+    </StyledModalOverlay>
   );
 };
 
@@ -142,9 +137,11 @@ Modal.defaultProps = {
   className: '',
   style: {},
   header: '',
-  content: '',
+  message: '',
   buttonLabel: '',
   size: 'medium',
   confirmationButtonLabel: '',
   isConfirmationModal: false,
+  onClose: () => null,
+  onConfirm: () => null,
 };

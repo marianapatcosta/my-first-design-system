@@ -1,25 +1,45 @@
-import { Meta } from "@storybook/addon-docs/blocks";
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
 import { Textarea } from "./Textarea";
 
-<Meta title="Design System|Textarea" component={Textarea} />
+<Meta title="Design System/Textarea" component={Textarea} />
 
 # Textarea
-use textarea when it is supposed that the user provides multi-line written information
+<br/><br/> 
 
-- Default Textarea:
-  <Story name='Default'>
-    <Textarea value='hello' />
+### Displays a customized Textarea field, to insert large amount of data
+
+Use textarea when the data inserted by the user may require multi-line written information
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Textarea value="hello" />
+    />
+  </Story>
+</Preview>
+
+<ArgsTable of={Textarea} />
+
+### Textarea with Label:
+
+  <Story name="WithIcon">
+    <Textarea value="hello" label="Input" />
   </Story>
 
-- Textarea with Label:
-  <Story name='WithIcon'>
-    <Textarea value='hello' label='Input' />
+### Textarea with Error:
+  <Story name="WithError">
+    <Textarea value="hello" errorMessage="This is an error!" />
   </Story>
 
-- Textarea with Error:
-  <Story name='WithError'>
-    <Textarea value='hello' errorMessage='This is an error!' />
-  </Story>
+### Playground
 
-## Other important notes
-not applicable.
+Experiment with Textarea Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Textarea {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+  value: 'hello'
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 

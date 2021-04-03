@@ -1,18 +1,34 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import { Step } from './Step';
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
+import { Step } from "./Step";
 
-<Meta title='Design System|Step' component={Step} />
+<Meta title="Design System/Step" component={Step} />
 
 # Step
-Step component
+<br/><br/> 
 
-## Usage
-Use step component as children of Stepper; used to show a part of Stepper's content, divided in smaller parts.
+### Displays a part of content that integrates a Stepper component
 
-- Default Step:
-  <Story name='Default'>
-    <Step />
+Use step component as children of Stepper component; used to show a part of Stepper's content, divided in smaller parts.
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Step isActive={true} content={<div>Step </div> }/>
   </Story>
+</Preview>
 
-## Other important notes
-not applicable.
+<ArgsTable of={Step} />
+
+### Playground
+
+Experiment with Step Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Step {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+   content: <div>Step </div>,
+   isActive: true 
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 

@@ -1,19 +1,34 @@
-import { Meta } from "@storybook/addon-docs/blocks";
-import { Emoji } from "./Emoji";
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
+import { Emoji } from './Emoji';
 
-<Meta title="Design System|Emoji" component={Emoji} />
+<Meta title='Design System/Emoji' component={Emoji} />
 
 # Emoji
-Emoji component that avoid ESLint errors existing when using emoji by only 'copy and paste'
+<br/><br/> 
 
-## Usage
-Use emoji to display an emoji
+### Displays and emoji
 
-- Default Emoji:
-  <Story name='Default'>
-    <Emoji emoji='😃' label= 'smiley'/>
+Use Emoji component to avoid ESLint errors existing when using emoji by only 'copy and paste'
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <Emoji emoji='😃' label='smiley' />
   </Story>
+</Preview>
 
+<ArgsTable of={Emoji} />
 
-## Other important notes
-not applicable.
+### Playground
+
+Experiment with Emoji Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Emoji {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+    emoji: '😃',
+    label: 'smiley',
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 

@@ -7,6 +7,7 @@ export const StyledAccordion = styled.div`
   flex-direction: column;
   overflow: hidden;
   max-height: 15rem;
+  max-width: 15rem;
 `;
 
 export const StyledAccordionTitle = styled.div<{

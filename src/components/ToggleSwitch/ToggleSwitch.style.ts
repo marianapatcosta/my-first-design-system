@@ -27,7 +27,7 @@ export const StyledToggleSwitchLabel = styled.span<{ disabled?: boolean }>`
   white-space: nowrap;
   user-select: none;
   cursor: pointer;
-  font-size: 95%;
+  font-size: 90%;
   font-weight: 700;
 
   ${({ disabled }) => disabled && `${disabledStyles}`}

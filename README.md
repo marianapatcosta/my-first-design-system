@@ -1,6 +1,32 @@
 # My first Design System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple design system with susing React, Typescript, Styled Components, Storybook, React Testing Library and Jest. This Design system contains the following components:
+
+- Accordion
+- Button
+- Card
+- Carousel
+- Checkbox
+- Dropdown
+- DropdownMultiselection
+- Emoji
+- Image
+- Input
+- Modal
+- RadioButton
+- Search
+- ShowMore
+- Step
+- Stepper
+- Tab
+- Tabs
+- Textarea
+- Toast
+- ToggleSwitch
+- Tooltip
+- Upload
+
+Each component and its docs can be visualize in [design system docs](https://6067056cb7d3a2002163b262-iowacissnm.chromatic.com/)
 
 ## Available Scripts
 

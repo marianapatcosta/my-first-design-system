@@ -1,23 +1,45 @@
-import { Meta } from "@storybook/addon-docs/blocks";
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
 import { Tab } from "./Tab";
 
-<Meta title="Design System|Tab" component={Tab} />
+<Meta title="Design System/Tab" component={Tab} />
 
 # Tab
-Tab component to show a certain content that will be rendered when the tab is active
+<br/><br/> 
 
-## Usage
-Tab should be used as child of 'Tabs' component and its content is only rendered when the tab is active
+### Displays a content integrated in a Tabs component.
 
-- Default Tab:
-  <Story name='Default'>
-    <Tab label='Tab 1'/>
+Use Tab as child of 'Tabs' component; each Tab's content will only be visible when the tab is active
+
+<Preview withToolbar>
+  <Story name="Standard">
+    <ul style={{ listStyle: 'none' }} role='tablist'>
+      <Tab label="Tab 1" />
+    </ul>)
+  </Story>
+</Preview>
+
+<ArgsTable of={Tab} />
+
+### Active Tab:
+  <Story name="Active">
+   <ul style={{ listStyle: 'none' }} role='tablist'>
+    <Tab label="Tab 1" isActive={true} />
+  </ul>)
   </Story>
 
-- Active Tab:
-  <Story name='Active'>
-    <Tab label='Tab 1' isActive={true}/>
-  </Story>
+### Playground
 
-## Other important notes
-not applicable.
+Experiment with Tab Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => (
+  <ul style={{ listStyle: 'none' }} role='tablist'>
+    <Tab {...args} />
+  </ul>)
+
+<Canvas>
+  <Story name="Controls" args={{  
+    label: 'Tab 1' 
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 

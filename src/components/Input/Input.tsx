@@ -169,4 +169,5 @@ Input.defaultProps = {
   errorMessage: '',
   icon: '',
   iconText: '',
+  onChange: () => null,
 };

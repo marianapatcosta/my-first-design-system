@@ -94,4 +94,5 @@ Button.defaultProps = {
   type: 'button',
   icon: '',
   iconText: '',
+  onClick: () => null
 };

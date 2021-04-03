@@ -1,43 +1,78 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import { Stepper } from './Stepper';
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
+import { Stepper } from "./Stepper";
 
-<Meta title="Design System|Stepper" component={Stepper} />
+<Meta title="Design System/Stepper" component={Stepper} />
 
 # Stepper
+<br/><br/> 
 
-Stepper component
-
-## Usage
+### Displays the content subdivided in parts displayed in Step component
 
 Use stepper when makes sense to subdivide some content (e.g. a form) in smaller parts, which
-should be rendered in Step component.
+should be rendered in Step component. Validations before enable next step can be added, by passing a 
+value or a function in `isValid` field of `stepsrMetadata` prop.
 
-- Landscape Stepper:
-
-  <Story name='Landscape'>
-    <Stepper
+<Preview withToolbar>
+  <Story name="Standard">
+   <Stepper
       stepsMetadata={[
-        { content: <p>Step 1 content</p> },
-        { content: <p>Step 2 content</p> },
-        { content: <p>Step 3 content</p> },
+        { content: <p>Step 1 content</p>, isValid: true },
+        { content: <p>Step 2 content</p>, isValid: true },
+        { content: <p>Step 3 content</p>, isValid: true},
       ]}
-      onSubmit={() => console.log('submitted')}
-    />
+      buttonLabel='finish'
+      />
   </Story>
+</Preview>
 
-- Vertical Stepper:
-  <Story name='Vertical'>
-    <Stepper
-      orientation='vertical'
-      stepsMetadata={[
-        { content: <p>Step 1 content</p> },
-        { content: <p>Step 2 content</p> },
-        { content: <p>Step 3 content</p> },
-      ]}
-      onSubmit={() => console.log('submitted')}
-    />
+<ArgsTable of={Stepper} />
+
+### Vertical Stepper:
+<Story name="Vertical">
+  <Stepper
+    orientation="vertical"
+    stepsMetadata={[
+      { content: <p>Step 1 content</p>, isValid: true },
+      { content: <p>Step 2 content</p>, isValid: true },
+      { content: <p>Step 3 content</p>, isValid: true},
+    ]}
+  />
+</Story>
+
+
+### Playground
+
+Experiment with Stepper Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Stepper {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+    stepsMetadata: [
+      {
+        content: (
+          <p style={{ textAlign: 'center', margin: '100px auto' }}>
+            Step 1 content
+          </p>
+        ),
+        isValid: true
+      },
+      {
+        content: (
+          <p style={{ textAlign: 'center', margin: '100px auto' }}>
+            Step 2 content
+          </p>
+        ),
+      },
+      {
+        content: (
+          <p style={{ textAlign: 'center', margin: '100px auto' }}>
+            Step 3 content
+          </p>
+        ),
+      },
+    ],
+  }}>
+    {Template.bind({})}
   </Story>
-
-## Other important notes
-
-not applicable.
+</Canvas> 

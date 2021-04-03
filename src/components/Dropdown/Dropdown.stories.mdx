@@ -1,38 +1,49 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import { Dropdown } from './Dropdown';
+import {
+  Meta,
+  Story,
+  ArgsTable,
+  Canvas,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import { Dropdown } from "./Dropdown";
 
-<Meta title='Design System|Dropdown' component={Dropdown} />
+<Meta title="Design System/Dropdown" component={Dropdown} />
 
 # Dropdown
+<br /><br />
 
-Simple Dropdown component based on HTML select element
-
-## Usage
+### Displays different options only one of them can be selected
 
 Use dropdown when there are more than two options available and the user should pick one of them.
 The options can be primitives or objects. optionKey prop indicates which field should be displayed
 in dropdown options and selected option when options are of type Object
 
-- Default Dropdown:
-
-  <Story name='Default'>
+<Preview withToolbar>
+  <Story name="Standard">
     <Dropdown
-      placeholder='select an option'
-      options={['option 1', 'option 2', 'option 3']}
-      selectedOption={null}
+      placeholder="select an option"
+      options={["option 1", "option 2", "option 3"]}
+      selectedOption={""}
+      label="Example"
     />
   </Story>
+</Preview>
 
-- Dropdown With label:
-  <Story name='WithLabel'>
-    <Dropdown
-      placeholder='select an option'
-      options={['option 1', 'option 2', 'option 3']}
-      selectedOption={null}
-      label='Example'
-    />
+<ArgsTable of={Dropdown} />
+
+### Playground
+
+Experiment with Dropdown Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Dropdown {...args} />;
+
+<Canvas>
+  <Story name="Controls" args={{
+    options: ["option 1", "option 2", "option 3"],
+    selectedOption: "",
+    placeholder: "select an option",
+    label: "Dropdown"
+  }}>
+    {Template.bind({})}
   </Story>
-
-## Other important notes
-
-not applicable.
+</Canvas>

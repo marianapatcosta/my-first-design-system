@@ -39,6 +39,10 @@ export interface StepperProps {
    */
   orientation?: orientationTypes;
   /**
+   * label of stepper's button in the last step
+   */
+  buttonLabel?: string;
+  /**
    * Array of objects defining the metadata for each stepper's steps
    */
   stepsMetadata: Array<{
@@ -54,6 +58,7 @@ export interface StepperProps {
 export const Stepper: React.FC<StepperProps> = ({
   orientation,
   stepsMetadata,
+  buttonLabel,
   onSubmit,
   ...props
 }) => {
@@ -73,6 +78,7 @@ export const Stepper: React.FC<StepperProps> = ({
 
   const getProgressBarPercentage = (): number =>
     activeStepIndex * progressPerStep;
+    
   return (
     <StyledStepper
       data-steps={stepsMetadata.length}
@@ -122,10 +128,10 @@ export const Stepper: React.FC<StepperProps> = ({
             data-testid='next-button'
             aria-label={
               activeStepIndex === stepsMetadata.length - 1
-                ? 'submit button'
+                ? `${buttonLabel} button`
                 : 'next button'
             }
-            label={activeStepIndex === stepsMetadata.length - 1 ? 'submit' : ''}
+            label={activeStepIndex === stepsMetadata.length - 1 ? buttonLabel : ''}
             icon={`${
               activeStepIndex !== stepsMetadata.length - 1 ? DoubleChevron : ''
             }`}
@@ -148,5 +154,6 @@ Stepper.defaultProps = {
   style: {},
   orientation: ORIENTATION.LANDSCAPE,
   stepsMetadata: [],
+  buttonLabel: 'submit',
   onSubmit: () => null,
 };

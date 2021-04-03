@@ -1,33 +1,55 @@
-import { Meta } from "@storybook/addon-docs/blocks";
+import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
 import { Image } from "./Image";
-import Test from '../../assets/images/test.jpg';
+import Test from "../../assets/images/test.jpg";
 
-<Meta title="Design System|Image" component={Image} />
+<Meta title="Design System/Image" component={Image} />
 
 # Image
-Simple Image component
+<br/><br/> 
 
-## Usage
-use image to render images and have a placeholder when the image is not loaded yet 
+### Display an image file
+
+Use image to render images and have a placeholder when the image is not loaded yet
 'Clickable' image can trigger a click event on click;
 'Zoomable' image applies zoom in/out onclick; must have width defined;
 
-- Default Image:
-  <Story name='Default'>
-    <Image src={Test}/>
+<Preview withToolbar>
+  <Story name="Standard">
+    <Image src={Test} />
+  </Story>
+</Preview>
+
+<ArgsTable of={Image} />
+
+### Clickable Image
+
+  <Story name="Clickable">
+    <Image
+      src={Test}
+      isClickable={true}
+      onClick={() => console.log("clicked!")}
+    />
   </Story>
 
-- Clickable Image:
-  <Story name='Clickable'>
-    <Image src={Test} isClickable={true} onClick={() => console.log('clicked!')} />
-  </Story>
-
-- Zoomable Image:
-  <Story name='Zoomable'>
-    <div style={{ width: '300px' , height: '200px' }}>
+### Zoomable Image
+  <Story name="Zoomable">
+    <div style={{ width: "300px", height: "200px" }}>
       <Image src={Test} isZoomable={true} />
     </div>
   </Story>
 
-## Other important notes
-not applicable.
+<br/><br/> 
+
+### Playground
+
+Experiment with Image Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Image {...args} />
+
+<Canvas>
+  <Story name="Controls" args={{
+   src: Test, style: { width: '300px' }
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas> 

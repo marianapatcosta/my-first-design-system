@@ -182,7 +182,7 @@ function App() {
         ]}
         optionKey='name'
         selectedOptions={options}
-        label='Example'
+        placeholder='Example'
         onOptionClick={(option) =>
           handleDropdownMultiSelectionClick(option, options, setOptions, 'name')
         }
@@ -190,7 +190,7 @@ function App() {
       <DropdownMultiselection
         options={['option 1', 'option 2', 'option 3']}
         selectedOptions={options2}
-        label='Example'
+        placeholder='Example'
         onOptionClick={(option) =>
           handleDropdownMultiSelectionClick(option, options2, setOptions2, null)
         }
@@ -211,7 +211,7 @@ function App() {
         }
         isSingleSelection
         selectedOption={option3}
-        label='single selection'
+        placeholder='single selection'
         onOptionClick={(option) =>
           handleDropdownSelectionClick(option, setOption3)
         }
