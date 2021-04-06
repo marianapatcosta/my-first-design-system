@@ -1,7 +1,14 @@
 import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
 import { Stepper } from "./Stepper";
 
-<Meta title="Design System/Stepper" component={Stepper} />
+<Meta title="Design System/Stepper" component={Stepper} argTypes={{
+    orientation: {
+      control: {
+        type: 'radio',
+        options: ['landscape', 'vertical']
+      }
+    }
+  }}/>
 
 # Stepper
 <br/><br/> 

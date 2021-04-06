@@ -20,7 +20,7 @@ export const StyledCheckbox = styled.label<{ disabled?: boolean }>`
 export const StyledCheckboxToggleTick = styled.img`
   width: 1rem;
   height: 1rem;
-  ${colors.iconHighlight};
+  filter: ${colors.iconHighlight};
 `;
 
 export const StyledCheckboxToggle = styled.div<{ disabled?: boolean }>`

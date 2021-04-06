@@ -7,6 +7,7 @@ import {
   Dropdown,
   DropdownMultiselection,
   Image,
+  Input,
   RadioButton,
   ToggleSwitch,
   Upload,
@@ -195,6 +196,7 @@ function App() {
           handleDropdownMultiSelectionClick(option, options2, setOptions2, null)
         }
       />
+      <Input value={value} onChange={(e) => setValue(e.target.value)} />
 
       <DropdownMultiselection
         options={

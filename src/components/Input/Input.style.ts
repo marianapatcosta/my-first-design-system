@@ -59,7 +59,7 @@ export const StyledInputIcon = styled.img`
   bottom: 0;
   margin: auto 0;
   right: 0.625rem;
-  ${colors.icon};
+  filter: ${colors.icon};
 `;
 
 export const StyledInputError = styled.p`

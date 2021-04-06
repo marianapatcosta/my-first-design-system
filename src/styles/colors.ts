@@ -18,11 +18,11 @@ export const colors = {
   font: '#212529',
   disabled: '#aaaaaa',
   icon: css`
-    filter: invert(12%) sepia(16%) saturate(421%) hue-rotate(169deg)
+    invert(12%) sepia(16%) saturate(421%) hue-rotate(169deg)
       brightness(92%) contrast(93%);
   `,
   iconHighlight: css`
-    filter: invert(100%) sepia(28%) saturate(1271%) hue-rotate(179deg)
+    invert(100%) sepia(28%) saturate(1271%) hue-rotate(179deg)
       brightness(103%) contrast(96%);
   `,
 };

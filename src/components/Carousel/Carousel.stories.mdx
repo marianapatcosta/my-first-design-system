@@ -1,19 +1,38 @@
-import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
-import { Carousel } from "./Carousel";
-import { ORIENTATION } from "../../constants";
-import Test from "../../assets/images/test.jpg";
-import Test1 from "../../assets/images/test1.jpg";
-import Test2 from "../../assets/images/test2.jpg";
-import Test3 from "../../assets/images/test3.jpg";
-import Test4 from "../../assets/images/test4.jpg";
-import Test5 from "../../assets/images/test5.jpg";
-import Test6 from "../../assets/images/test6.jpg";
-import Test7 from "../../assets/images/test7.jpg";
+import {
+  Meta,
+  Story,
+  ArgsTable,
+  Canvas,
+  Preview,
+} from '@storybook/addon-docs/blocks';
+import { Carousel } from './Carousel';
+import { ORIENTATION } from '../../constants';
+import Test from '../../assets/images/test.jpg';
+import Test1 from '../../assets/images/test1.jpg';
+import Test2 from '../../assets/images/test2.jpg';
+import Test3 from '../../assets/images/test3.jpg';
+import Test4 from '../../assets/images/test4.jpg';
+import Test5 from '../../assets/images/test5.jpg';
+import Test6 from '../../assets/images/test6.jpg';
+import Test7 from '../../assets/images/test7.jpg';
 
-<Meta title="Design System/Carousel" component={Carousel} />
+<Meta
+  title='Design System/Carousel'
+  component={Carousel}
+  argTypes={{
+    orientation: {
+      control: {
+        type: 'radio',
+        options: ['landscape', 'vertical'],
+      },
+    },
+  }}
+/>
 
 # Carousel
-<br/><br/> 
+
+<br />
+<br />{' '}
 
 ### Displays several images, one at a time.
 
@@ -23,15 +42,15 @@ dynamically changed after a customizable time interval. It may also show preview
 if `hasPreviews` prop is true.
 
 <Preview withToolbar>
-  <Story name="Standard">
-   <Carousel
-      title="Image slider"
+  <Story name='Standard'>
+    <Carousel
+      title='Image slider'
       items={[
-        { src: Test, name: "test" },
-        { src: Test1, name: "test1" },
-        { src: Test2, name: "test2" },
-        { src: Test3, name: "test3" },
-        { src: Test4, name: "test4" },
+        { src: Test, name: 'test' },
+        { src: Test1, name: 'test1' },
+        { src: Test2, name: 'test2' },
+        { src: Test3, name: 'test3' },
+        { src: Test4, name: 'test4' },
       ]}
     />
   </Story>
@@ -41,85 +60,95 @@ if `hasPreviews` prop is true.
 
 ### Vertical Carousel
 
-  <Story name="Vertical">
-    <Carousel
-      title="Image slider"
-      orientation={ORIENTATION.VERTICAL}
-      items={[
-        { src: Test5, name: "test5" },
-        { src: Test6, name: "test6" },
-        { src: Test7, name: "test7" },
-      ]}
-    />
-  </Story>
+{' '}
+
+<Story name='Vertical'>
+  <Carousel
+    title='Image slider'
+    orientation={ORIENTATION.VERTICAL}
+    items={[
+      { src: Test5, name: 'test5' },
+      { src: Test6, name: 'test6' },
+      { src: Test7, name: 'test7' },
+    ]}
+  />
+</Story>
 
 ### Carousel WithPreviews
 
-  <Story name="WithPreviews">
-    <Carousel
-      title="Image slider"
-      items={[
-        { src: Test, name: "test" },
-        { src: Test1, name: "test1" },
-        { src: Test2, name: "test2" },
-        { src: Test3, name: "test3" },
-        { src: Test4, name: "test4" },
-      ]}
-      hasPreviews={true}
-    />
-  </Story>
+{' '}
 
-### Carousel AutomaticView
-
-  <Story name="AutomaticView">
-    <Carousel
-      title="Image slider"
-      items={[
-        { src: Test, name: "test" },
-        { src: Test1, name: "test1" },
-        { src: Test2, name: "test2" },
-        { src: Test3, name: "test3" },
-        { src: Test4, name: "test4" },
-      ]}
-      allowAutomaticView={true}
-    />
-  </Story>
-
-### Carousel Controlled AutomaticView
-
-  <Story name="ControlledAutomaticView">
-    <Carousel
-      title="Image slider"
-      items={[
-        { src: Test, name: "test" },
-        { src: Test1, name: "test1" },
-        { src: Test2, name: "test2" },
-        { src: Test3, name: "test3" },
-        { src: Test4, name: "test4" },
-      ]}
-      allowAutomaticView={true}
-      canControlAutomaticView={true}
-    />
-  </Story>
-
-### Playground
-
-Experiment with Carousel Component with the Controls addon in the Canvas tab.
-
-export const Template = (args) => <Carousel {...args} />
-
-<Canvas>
-  <Story name="Controls" args={{
-   title: 'Image slider',
-    items: [
+<Story name='WithPreviews'>
+  <Carousel
+    title='Image slider'
+    items={[
       { src: Test, name: 'test' },
       { src: Test1, name: 'test1' },
       { src: Test2, name: 'test2' },
       { src: Test3, name: 'test3' },
       { src: Test4, name: 'test4' },
-    ],
-  }}>
+    ]}
+    hasPreviews={true}
+  />
+</Story>
+
+### Carousel AutomaticView
+
+{' '}
+
+<Story name='AutomaticView'>
+  <Carousel
+    title='Image slider'
+    items={[
+      { src: Test, name: 'test' },
+      { src: Test1, name: 'test1' },
+      { src: Test2, name: 'test2' },
+      { src: Test3, name: 'test3' },
+      { src: Test4, name: 'test4' },
+    ]}
+    allowAutomaticView={true}
+  />
+</Story>
+
+### Carousel Controlled AutomaticView
+
+{' '}
+
+<Story name='ControlledAutomaticView'>
+  <Carousel
+    title='Image slider'
+    items={[
+      { src: Test, name: 'test' },
+      { src: Test1, name: 'test1' },
+      { src: Test2, name: 'test2' },
+      { src: Test3, name: 'test3' },
+      { src: Test4, name: 'test4' },
+    ]}
+    allowAutomaticView={true}
+    canControlAutomaticView={true}
+  />
+</Story>
+
+### Playground
+
+Experiment with Carousel Component with the Controls addon in the Canvas tab.
+
+export const Template = (args) => <Carousel {...args} />;
+
+<Canvas>
+  <Story
+    name='Controls'
+    args={{
+      title: 'Image slider',
+      items: [
+        { src: Test, name: 'test' },
+        { src: Test1, name: 'test1' },
+        { src: Test2, name: 'test2' },
+        { src: Test3, name: 'test3' },
+        { src: Test4, name: 'test4' },
+      ],
+    }}
+  >
     {Template.bind({})}
   </Story>
-</Canvas> 
-
+</Canvas>

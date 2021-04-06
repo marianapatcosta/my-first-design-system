@@ -66,7 +66,7 @@ export const StyledModalHeaderClose = styled(Button)<{
 }>`
   border: none;
   img {
-    ${colors.icon};
+    filter: ${colors.icon};
     transform: rotate(0deg);
     transition: transform 0.3s ease-in-out;
 

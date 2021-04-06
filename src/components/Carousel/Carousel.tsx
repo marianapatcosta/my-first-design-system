@@ -161,19 +161,19 @@ export const Carousel: React.FC<CarouselProps> = ({
 
   return (
     <StyledCarousel {...props} role='listbox' aria-label='images slider'>
+      <StyledCarouselHeader isVertical={orientation === ORIENTATION.VERTICAL}>
+        <StyledCarouselTitle>{title}</StyledCarouselTitle>
+        {allowAutomaticView && canControlAutomaticView && (
+          <StyledCarouselToggle
+            data-testid='carousel-toggle'
+            leftLabel='off'
+            rightLabel='on'
+            checked={isAutomaticView}
+            onChange={toggleAutomaticView}
+          />
+        )}
+      </StyledCarouselHeader>
       <StyledCarouselContent>
-        <StyledCarouselHeader>
-          <StyledCarouselTitle>{title}</StyledCarouselTitle>
-          {allowAutomaticView && canControlAutomaticView && (
-            <StyledCarouselToggle
-              data-testid='carousel-toggle'
-              leftLabel='off'
-              rightLabel='on'
-              checked={isAutomaticView}
-              onChange={toggleAutomaticView}
-            />
-          )}
-        </StyledCarouselHeader>
         <StyledCarouselSelected>
           {hasPreviews && renderPreviews(PREVIEWS_POSITION.BEFORE)}
           <StyledImageWrapper isVertical={orientation === ORIENTATION.VERTICAL}>

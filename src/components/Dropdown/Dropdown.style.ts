@@ -26,7 +26,7 @@ export const StyledDropdown = styled.div<{
     right: 0.6rem;
     margin: auto 0;
     z-index: 1;
-    ${colors.icon};
+    filter: ${colors.icon};
     -webkit-transition: transform 0.5s linear;
     transition: transform 0.5s linear;
 
@@ -38,7 +38,7 @@ export const StyledDropdown = styled.div<{
       border-right-color: ${disabled && colors.disabled};
       `}
   }
-  
+
   /* :after {
     position: absolute;
     top: 50%;
@@ -86,7 +86,6 @@ export const StyledDropdownHeader = styled.select`
   text-overflow: ellipsis;
   position: relative;
   cursor: pointer;
- 
 
   ::-ms-expand {
     display: none;

@@ -19,10 +19,12 @@
     "isolatedModules": true,
     "declaration": true,
     "jsx": "react-jsx",
+    "noEmit": true
   },
   "include": [
-    "src"
-, "plopfile.ts"  ],
+    "src",
+    "plopfile.ts"
+  ],
   "exclude": [
     "src/**/*.stories.@(mdx,tsx)"
   ]

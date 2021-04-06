@@ -8,8 +8,8 @@ export const StyledCarousel = styled.div`
   ${baseStyles}
   margin-top: 0.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 `;
 
 export const StyledCarouselContent = styled.div`
@@ -20,13 +20,15 @@ export const StyledCarouselContent = styled.div`
   justify-content: space-around;
 `;
 
-export const StyledCarouselHeader = styled.header`
+export const StyledCarouselHeader = styled.header<{ isVertical?: boolean }>`
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
   height: 1.25;
   line-height: 1.25;
-  width: 100%;
+  width: 21.25rem;
+
+  ${({ isVertical }) => isVertical && `width: 15rem;`}
 `;
 
 export const StyledCarouselTitle = styled.h2`
@@ -41,20 +43,14 @@ export const StyledCarouselToggle = styled(ToggleSwitch)`
 `;
 
 export const StyledChevron = styled.button<{ isLeftChevron?: boolean }>`
-  border: none;
   background: none;
   width: 1.5rem;
   height: 1.5rem;
   position: absolute;
   border: 0.063rem solid ${colors.transparent};
-  border-radius: 50%;
   top: 50%;
   bottom: 50%;
   margin: auto 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   cursor: pointer;
 
   img {

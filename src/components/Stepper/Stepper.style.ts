@@ -11,9 +11,9 @@ export const StyledStepper = styled.div<{ isVertical?: boolean }>`
   padding: 1.5rem;
   background-color: ${colors.primary};
 
-    ${({ isVertical }) =>
-      isVertical &&
-      `display: flex;
+  ${({ isVertical }) =>
+    isVertical &&
+    `display: flex;
   flex-direction: row;
   justify-content: space-between;`};
 `;
@@ -124,7 +124,7 @@ export const StyledStepperButton = styled(Button).attrs({ size: 'small' })`
   margin-right: auto;
   flex-direction: column;
   img {
-    ${colors.icon};
+    filter: ${colors.icon};
     padding: 0.15rem;
     transform: rotate(90deg);
   }

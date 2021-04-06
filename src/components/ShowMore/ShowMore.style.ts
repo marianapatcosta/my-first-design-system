@@ -21,7 +21,7 @@ export const StyledShowMoreLink = styled.a<{
 export const StyledShowMoreIcon = styled.img<{
   showMore?: boolean;
 }>`
-  ${colors.icon};
+  filter: ${colors.icon};
   transition: transform 0.5s ease-in-out;
   margin-left: 0.3rem;
 
