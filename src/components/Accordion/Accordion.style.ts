@@ -36,7 +36,7 @@ export const StyledAccordionTitle = styled.div<{
 export const StyledAccordionArrow = styled.img<{ isExpanded?: boolean }>`
   width: 0.8rem;
   margin-left: 0.5rem;
-  ${colors.icon};
+  filter: ${colors.icon};
   transition: transform 0.5s ease-in-out;
 
   ${({ isExpanded }) =>

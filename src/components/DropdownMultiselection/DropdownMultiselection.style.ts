@@ -40,7 +40,7 @@ export const StyledDropdownMultiselectionArrow = styled.img<{
   isExpanded?: boolean;
 }>`
   width: 0.8rem;
-  ${colors.icon};
+  filter: ${colors.icon};
   transition: transform 0.5s ease-in-out;
 
   ${({ isExpanded }) =>

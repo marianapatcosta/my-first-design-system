@@ -102,7 +102,7 @@ export const StyledSearchIcon = styled.img<{
   height: 1rem;
   top: 0.5rem;
   right: 0.625rem;
-  ${colors.icon};
+  filter: ${colors.icon};
 
   ${({ hasValue }) => hasValue && `cursor: pointer;`}
   ${({ isExpandable }) => isExpandable && `cursor: pointer;`}

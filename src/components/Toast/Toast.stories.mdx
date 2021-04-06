@@ -1,7 +1,14 @@
 import { Meta, Story, ArgsTable, Canvas, Preview } from '@storybook/addon-docs/blocks';
 import { Toast } from "./Toast";
 
-<Meta title="Design System/Toast" component={Toast} />
+<Meta title="Design System/Toast" component={Toast} argTypes={{
+    type: {
+      control: {
+        type: 'radio',
+        options: ['info', 'alert', 'warning', 'success']
+      }
+    }
+  }}/>
 
 # Toast
 <br/><br/> 

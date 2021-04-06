@@ -1,6 +1,6 @@
 # My first Design System
 
-A simple design system with susing React, Typescript, Styled Components, Storybook, React Testing Library and Jest. This Design system contains the following components:
+A simple design system using React, Typescript, Styled Components, Storybook, React Testing Library and Jest. This Design system contains the following components:
 
 - Accordion
 - Button
@@ -26,7 +26,7 @@ A simple design system with susing React, Typescript, Styled Components, Storybo
 - Tooltip
 - Upload
 
-Each component and corresponding docs can be visualize in [design system storybook](https://6067056cb7d3a2002163b262-rodxdkhaoc.chromatic.com/) and [design system chromatic]()
+Each component and corresponding docs can be visualize in [design system storybook](https://6067056cb7d3a2002163b262-bxzqdvxuoj.chromatic.com/) and [design system chromatic](https://www.chromatic.com/library?appId=6067056cb7d3a2002163b262)
 
 ## Available Scripts
 
@@ -72,24 +72,3 @@ Builds static files folder to be deployed.
 
 Deploys storybooks static files to chromatic
 
-### `yarn generate`
-
-Creates files based on plop templates stored in './plop-templates' directory;
-
-- run `yarn generate component <ComponentName>` to generate all the files that compose a new components (<ComponentName>.tsx, <ComponentName>.style.ts, <ComponentName>.test.tsx, <ComponentName>.stories.mdx, <ComponentName>.stories.tsx)
-
-### `yarn run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
