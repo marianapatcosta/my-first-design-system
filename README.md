@@ -28,6 +28,9 @@ A simple design system using React, Typescript, Styled Components, Storybook, Re
 
 Each component and corresponding docs can be visualize in [design system storybook](https://6067056cb7d3a2002163b262-bxzqdvxuoj.chromatic.com/) and [design system chromatic](https://www.chromatic.com/library?appId=6067056cb7d3a2002163b262)
 
+![my-design-system-overview](https://user-images.githubusercontent.com/43031902/124004152-a5ea8580-d9cf-11eb-89ad-62edf2a03b67.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
