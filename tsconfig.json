@@ -1,14 +1,10 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,14 +14,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "declaration": true,
-    "jsx": "react-jsx",
-    "noEmit": true
+    "jsx": "react",
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "include": [
-    "src",
-    "plopfile.ts"
-  ],
-  "exclude": [
-    "src/**/*.stories.@(mdx,tsx)"
-  ]
+  "include": ["src"],
+  "exclude": ["dist", "node_modules", "src/**/*.stories.@(mdx,tsx)"]
 }

@@ -1,45 +1,49 @@
 {
   "name": "@marianapatcosta/my-first-design-system",
-  "version": "0.4.0",
+  "author": "Mariana Costa",
   "description": "A simple design system using React, Typescript, Styled Components, Storybook, React Testing Library and Jest",
-  "main": "./lib/main.js",
-  "module": "./lib/main.js",
-  "types": "./lib/main.d.ts",
+  "version": "0.10.0",
+  "license": "ISC",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
-    "lib"
+    "dist",
+    "README.md"
   ],
   "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marianapatcosta/my-first-design-system.git"
   },
-  "author": "Mariana Costa",
-  "license": "ISC",
-  "homepage": "https://github.com/marianapatcosta/my-first-design-system#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+  "bugs": {
+    "url": "https://github.com/marianapatcosta/my-first-design-system/issues"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.0",
-    "@types/jest": "^26.0.20",
-    "@types/node": "^12.20.4",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1",
-    "react": "^17.0.1",
-    "react-csv": "^2.0.3",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
-    "styled-components": "^5.2.1",
-    "typescript": "^4.2.2",
-    "web-vitals": "^1.1.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.10",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "react": "^18.2.0",
+    "react-csv": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.9.3",
+    "web-vitals": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "release": "standard-version && yarn publish",
-    "build": "tsc -p tsconfig.json && yarn copy-files",
-    "copy-files": "copyfiles -u 1 \"src/**/*.css\" \"src/**/*.svg\" \"src/**/*.json\" lib/",
+    "build": "tsc",
+    "copy-files": "copyfiles -u 1 \"src/**/*.css\" \"src/**/*.svg\" \"src/**/*.json\" dist/",
     "test": "react-scripts test",
     "test-coverage": "yarn test -- --env=jsdom --coverage",
     "eject": "react-scripts eject",
@@ -68,20 +72,23 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.2.2",
-    "@storybook/addon-actions": "^6.2.2",
-    "@storybook/addon-essentials": "^6.2.2",
-    "@storybook/addon-links": "^6.2.2",
-    "@storybook/addon-storyshots": "^6.2.2",
-    "@storybook/node-logger": "^6.2.2",
-    "@storybook/preset-create-react-app": "^3.1.7",
-    "@storybook/react": "^6.2.2",
-    "@types/react-csv": "^1.1.1",
-    "@types/styled-components": "^5.1.7",
-    "chromatic": "^5.7.0",
+    "@storybook/addon-a11y": "^6.5.13",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/addon-storyshots": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/node-logger": "^6.5.13",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.13",
+    "@types/react-csv": "^1.1.3",
+    "@types/styled-components": "^5.1.26",
+    "chromatic": "^6.11.4",
     "copyfiles": "^2.4.1",
-    "plop": "^2.7.4",
-    "rimraf": "^3.0.2"
+    "plop": "^3.1.1",
+    "rimraf": "^3.0.2",
+    "yarn-upgrade-all": "^0.7.1"
   },
   "jest": {
     "collectCoverageFrom": [

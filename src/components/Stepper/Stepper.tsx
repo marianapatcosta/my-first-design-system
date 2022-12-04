@@ -95,7 +95,7 @@ export const Stepper: React.FC<StepperProps> = ({
           max='100'
           isVertical={isVertical}
         />
-        {stepsMetadata.map((step: string | ReactNode, index: number) => (
+        {stepsMetadata.map((step, index: number) => (
           <StyledStepperIndicatorItem
             key={`step-indicator-${index + Math.random()}`}
             aria-current={'step'}

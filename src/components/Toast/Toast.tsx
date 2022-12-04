@@ -71,8 +71,8 @@ export const Toast: React.FC<ToastProps> = ({
   const [willBeDeleted, setWillBeDeleted] = useState<boolean>(false);
 
   useEffect(() => {
-    let autoDeleteTimer: number;
-    let fadeOutTimer: number;
+    let autoDeleteTimer: undefined | ReturnType<typeof setTimeout>;
+    let fadeOutTimer: undefined | ReturnType<typeof setTimeout>;
     if (message) {
       const fadeOutTime = autoClearTime && autoClearTime - 500;
       fadeOutTimer = setTimeout(() => setWillBeDeleted(true), fadeOutTime);
